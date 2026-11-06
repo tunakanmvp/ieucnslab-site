@@ -343,3 +343,6 @@ body:has(.bg-stage) { background-image: none; }
 }
 .avatar-initials { background: #cfe6d7; color: var(--obsidian); }
 .people:not(.people-lead) .person { align-content: start; }
+.people:not(.people-lead) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.people:not(.people-lead) .bio { font-size: .95rem; }
+@media (max-width: 900px) { .people:not(.people-lead) { grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); } }
