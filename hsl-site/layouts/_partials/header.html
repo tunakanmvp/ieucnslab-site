@@ -1,10 +1,15 @@
+{{ with site.GetPage "/news" }}
+<div class="announcement-bar">
+  <div class="wrap"><a href="{{ .RelPermalink }}">{{ if eq site.Language.Lang "tr" }}Proje çağrıları ve araştırma duyuruları{{ else }}Funding calls and research announcements{{ end }} <span aria-hidden="true">↗</span></a></div>
+</div>
+{{ end }}
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="wordmark" href="{{ site.Home.RelPermalink }}">
       <span class="wordmark-short">{{ site.Params.short }}</span>
       <span class="wordmark-long">{{ site.Title }}</span>
     </a>
-    <nav class="nav" aria-label="Main">
+    <nav class="nav" aria-label="{{ if eq site.Language.Lang "tr" }}Ana menü{{ else }}Main navigation{{ end }}">
       <ul>
         {{ $current := . }}
         {{ range site.Menus.main }}

@@ -3,17 +3,17 @@ title: Altyapı
 url: /altyapi/
 description: Deneylerimizde kullandığımız kayıt ve analiz donanımı.
 ---
-## EEG kayıt sistemi
+## Bitbrain kayıt sistemi
 
-Bitbrain Diadem kuru elektrotlu EEG başlığı ve Sennslab kayıt yazılımı. Kuru elektrotlar sayesinde katılımcı hazırlığı birkaç dakika sürüyor.
+- **Bitbrain Versatile EEG 32** — 32 kanallı, su bazlı EEG başlığı.
+- **Bitbrain SennsLab** — deney tasarımı ve kayıt yazılımı.
+- **Bitbrain Ring** — deri iletkenliği (GSR), kan hacmi nabzı (BVP) ve hareket kaydı için giyilebilir sensör.
 
-## Fizyolojik ölçümler
+[Bitbrain Versatile EEG](https://www.bitbrain.com/neurotechnology-products/water-based-eeg/versatile-eeg) · [Bitbrain Ring teknik bilgileri](https://cdn.bitbrain.com/sdk/c/1.6/devices_page.html#ring)
 
-TODO: GSR, göz izleme ve diğer sensörlerin marka ve modelleri.
+## İkinci kayıt sistemi
 
-## Deney ortamı
-
-TODO: deney odası, uyaran sunum sistemi, fotoğraflar.
+**Durum: Sipariş verildi.**
 
 ## Yazılım
 

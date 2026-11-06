@@ -2,17 +2,17 @@
 title: Facilities
 description: The recording and analysis equipment we use in our experiments.
 ---
-## EEG recording
+## Bitbrain recording system
 
-A Bitbrain Diadem dry-electrode EEG headset with Sennslab recording software. Dry electrodes keep participant preparation down to a few minutes.
+- **Bitbrain Versatile EEG 32** — a 32-channel, water-based EEG cap.
+- **Bitbrain SennsLab** — experiment design and recording software.
+- **Bitbrain Ring** — a wearable sensor for skin conductance (GSR), blood volume pulse (BVP), and motion recording.
 
-## Physiological measures
+[Bitbrain Versatile EEG](https://www.bitbrain.com/neurotechnology-products/water-based-eeg/versatile-eeg) · [Bitbrain Ring technical information](https://cdn.bitbrain.com/sdk/c/1.6/devices_page.html#ring)
 
-TODO: makes and models of GSR, eye-tracking and other sensors.
+## Second recording system
 
-## Experiment room
-
-TODO: experiment room, stimulus presentation setup, photos.
+**Status: Ordered.**
 
 ## Software
 
