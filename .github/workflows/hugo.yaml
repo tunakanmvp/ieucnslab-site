@@ -24,14 +24,10 @@ jobs:
           wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
           sudo dpkg -i hugo.deb
       - uses: actions/checkout@v4
-      - id: pages
-        uses: actions/configure-pages@v5
       - name: Build
         working-directory: hsl-site
-        env:
-          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
-          hugo --minify --baseURL "${PAGES_BASE_URL%/}/"
+          hugo --minify
           test -s public/index.html
           test -s public/en/index.html
       - uses: actions/upload-pages-artifact@v3
