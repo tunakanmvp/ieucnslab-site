@@ -1,12 +1,11 @@
 {{ define "main" }}
-{{ $tr := eq site.Language.Lang "tr" }}
 {{ $uni := cond (eq site.Language.Lang "tr") site.Params.university_tr site.Params.university_en }}
 <section class="hero">
   <div class="wrap">
     <p class="hero-uni">{{ $uni }}</p>
     <h1 class="hero-title">{{ site.Title }}</h1>
     <p class="hero-tagline">{{ site.Params.tagline }}</p>
-    {{ with site.GetPage "/research" }}<a class="button" href="{{ .RelPermalink }}">{{ i18n "all_research" }}</a>{{ end }}
+    {{ with site.GetPage "/research" }}<a class="button" href="#home-{{ .Section }}">{{ i18n "all_research" }}</a>{{ end }}
   </div>
   <div class="wrap wrap-wide">{{ partial "eeg.html" . }}</div>
 </section>
@@ -15,55 +14,36 @@
   <div class="prose lead">{{ .Content }}</div>
 </section>
 
-{{ with site.GetPage "/research" }}
-<section class="wrap block" id="home-{{ .Section }}" data-nav-section>
-  <h2 class="block-title"><a href="{{ .RelPermalink }}">{{ i18n "research_areas" }}</a></h2>
-  <ul class="area-list research-grid">
-    {{ range .Pages.ByWeight }}
-    <li>
-      <a class="area" href="{{ .RelPermalink }}">
-        <span class="area-title">{{ .Title }}</span>
-        <span class="area-summary">{{ .Summary | plainify }}</span>
-      </a>
-    </li>
+{{ range site.Menus.main }}
+  {{ with .Page }}
+    {{ if .IsSection }}
+    <section class="wrap block home-section" id="home-{{ .Section }}" data-nav-section>
+      <h2 class="block-title">{{ .Title }}</h2>
+      {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+      {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+      {{ if eq .Section "research" }}
+        <ul class="area-list research-grid">
+          {{ range .Pages.ByWeight }}
+          <li>
+            <a class="area" href="{{ .RelPermalink }}">
+              <span class="area-title">{{ .Title }}</span>
+              <span class="area-summary">{{ .Summary | plainify }}</span>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ else if eq .Section "people" }}
+        {{ partial "people-list.html" true }}
+      {{ else if eq .Section "publications" }}
+        {{ partial "publication-list.html" true }}
+      {{ else if eq .Section "news" }}
+        {{ partial "news-list.html" .Pages.ByDate.Reverse }}
+      {{ else if eq .Section "contact" }}
+        {{ partial "contact-details.html" . }}
+      {{ end }}
+    </section>
     {{ end }}
-  </ul>
-</section>
-{{ end }}
-
-{{ with site.GetPage "/people" }}
-<section class="wrap block" id="home-people" data-nav-section>
-  <h2 class="block-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p class="prose">{{ .Description }}</p>
-  {{ range where hugo.Data.people "group" "lead" }}
-    {{ if not .draft }}<p><strong>{{ .name }}</strong> · {{ cond $tr .role_tr .role_en }}</p>{{ end }}
   {{ end }}
-  <a class="section-link" href="{{ .RelPermalink }}">{{ cond $tr "Ekip sayfasını aç" "View the team" }}</a>
-</section>
-{{ end }}
-
-{{ with site.GetPage "/publications" }}
-<section class="wrap block" id="home-publications" data-nav-section>
-  <h2 class="block-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p class="prose">{{ .Description }}</p>
-  <a class="section-link" href="{{ .RelPermalink }}">{{ cond $tr "Tüm yayınları gör" "View all publications" }}</a>
-</section>
-{{ end }}
-
-{{ with site.GetPage "/facilities" }}
-<section class="wrap block" id="home-facilities" data-nav-section>
-  <h2 class="block-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-  <p class="prose">{{ .Description }}</p>
-  <a class="section-link" href="{{ .RelPermalink }}">{{ cond $tr "Sistemleri ve cihazları gör" "View the recording systems" }}</a>
-</section>
-{{ end }}
-
-{{ with site.GetPage "/news" }}
-<section class="wrap block" id="home-{{ .Section }}" data-nav-section>
-  <h2 class="block-title"><a href="{{ .RelPermalink }}">{{ i18n "latest_news" }}</a></h2>
-  {{ partial "news-list.html" (first 3 .Pages.ByDate.Reverse) }}
-  <a class="section-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-</section>
 {{ end }}
 
 {{ partial "join.html" . }}

@@ -162,27 +162,27 @@ a:hover { text-decoration-thickness: 2px; }
 .meta { color: var(--muted); margin-top: 0; }
 
 .people-group { margin-bottom: 3rem; }
-.people-group h2 { font-size: var(--step-1); margin: 0 0 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--ink); }
+.people-group > :is(h2, h3) { font-size: var(--step-1); margin: 0 0 1rem; padding-bottom: .5rem; border-bottom: 1px solid var(--ink); }
 .people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 2rem 2.5rem; }
 .person { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 1.1rem; align-items: start; padding: clamp(1rem, 3vw, 2rem); background: var(--surface); border-radius: var(--card-radius); }
 .person a { overflow-wrap: anywhere; }
 .people-lead { grid-template-columns: minmax(0, 1fr); }
 .people-lead .person { grid-template-columns: clamp(3.5rem, 12vw, 7rem) minmax(0, 1fr); }
-.people-lead h3 { font-size: var(--step-1); }
+.people-lead :is(h3, h4) { font-size: var(--step-1); }
 .person-biography { margin-top: .8rem; }
 .person-biography summary { cursor: pointer; color: var(--accent-ink); font-weight: 600; }
 .person-biography p { margin: .8rem 0 0; max-width: 72ch; }
 .avatar { width: 100%; aspect-ratio: 1; border-radius: 50%; object-fit: cover; }
 .avatar-initials { display: grid; place-items: center; background: var(--accent-wash); color: var(--accent-ink); font-weight: 700; font-size: var(--step-1); }
 .people-lead .avatar-initials { font-size: var(--step-2); }
-.person h3 { margin: 0; font-size: var(--step-0); font-weight: 650; }
+.person :is(h3, h4) { margin: 0; font-size: var(--step-0); font-weight: 650; }
 .person .role { margin: .1rem 0 .5rem; color: var(--accent-ink); font-size: var(--step--1); font-weight: 500; }
 .person .bio { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.55; }
 .person .links { margin: .5rem 0 0; display: flex; gap: 1rem; font-size: var(--step--1); }
 .person .links:empty { display: none; }
 
 .pub-year { display: grid; grid-template-columns: 6rem 1fr; gap: 1rem; border-top: 1px solid var(--ink); padding-top: 1rem; margin-bottom: 2rem; }
-.pub-year h3 { margin: 0; font-size: var(--step-1); font-variant-numeric: tabular-nums; }
+.pub-year > :is(h3, h4) { margin: 0; font-size: var(--step-1); font-variant-numeric: tabular-nums; }
 .pubs { list-style: none; margin: 0; padding: 0; }
 .pub { padding-bottom: 1.25rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--grid); max-width: 46rem; }
 .pub p { margin: 0; }
@@ -242,3 +242,6 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 @media (prefers-reduced-motion: no-preference) {
   html:has([data-nav-section]) { scroll-behavior: smooth; }
 }
+
+.home-section > .page-desc { max-width: 60ch; margin: -0.75rem 0 1.75rem; }
+.home-section > .contact { margin-top: 1.5rem; }

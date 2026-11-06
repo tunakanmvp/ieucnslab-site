@@ -1,44 +1,7 @@
 {{ define "main" }}
 {{ partial "page-head.html" . }}
-{{ $tr := eq site.Language.Lang "tr" }}
 <div class="wrap">
-  {{ $people := where hugo.Data.people "draft" "ne" true }}
-  {{ range slice "lead" "researchers" "students" "alumni" }}
-    {{ $group := . }}
-    {{ $members := where $people "group" $group }}
-    {{ with $members }}
-    <section class="people-group">
-      <h2>{{ i18n $group }}</h2>
-      <ul class="people{{ if eq $group "lead" }} people-lead{{ end }}">
-        {{ range . }}
-        <li class="person">
-          {{ if .photo }}
-            <img class="avatar" src="{{ printf "images/people/%s" .photo | relURL }}" alt="" loading="lazy">
-          {{ else }}
-            {{ $parts := split (replaceRE `^(Prof\.|Doç\.|Dr\.|Dr\. Öğr\. Üyesi)\s*` "" .name | replaceRE `^(Dr\.)\s*` "") " " }}
-            <span class="avatar avatar-initials" aria-hidden="true">{{ substr (index $parts 0) 0 1 }}{{ substr (index $parts (sub (len $parts) 1)) 0 1 }}</span>
-          {{ end }}
-          <div>
-            <h3>{{ .name }}</h3>
-            <p class="role">{{ cond $tr .role_tr .role_en }}</p>
-            <p class="bio">{{ cond $tr .bio_tr .bio_en }}</p>
-            <p class="links">
-              {{ with .email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
-              {{ with .scholar }}<a href="{{ . }}">Google Scholar</a>{{ end }}
-            </p>
-            {{ with cond $tr .biography_tr .biography_en }}
-            <details class="person-biography">
-              <summary>{{ i18n "full_biography" }}</summary>
-              {{ range split . "\n\n" }}<p>{{ . }}</p>{{ end }}
-            </details>
-            {{ end }}
-          </div>
-        </li>
-        {{ end }}
-      </ul>
-    </section>
-    {{ end }}
-  {{ end }}
+  {{ partial "people-list.html" false }}
 </div>
 {{ partial "join.html" . }}
 {{ end }}
