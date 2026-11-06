@@ -28,18 +28,18 @@
 
 - name: Berkay İlber Tunakan
   group: researchers
-  role_tr: Araştırma Görevlisi
-  role_en: Research Assistant
-  bio_tr: EEG tabanlı duygu ve beğeni sınıflandırması, çok kipli biyosinyal analizi.
-  bio_en: EEG-based emotion and preference classification, multimodal biosignal analysis.
+  role_tr: Araştırma Görevlisi, Yüksek Lisans Öğrencisi
+  role_en: Research Assistant, MSc Student
+  bio_tr: Marka güveni algısının sinirsel bağıntılarını araştırıyor.
+  bio_en: Investigates the neural correlates of brand trust perception.
   email: berkay.tunakan@ieu.edu.tr
   scholar: ""
   photo: ""
 
 - name: Nilsu Çağla Hepsev
   group: researchers
-  role_tr: ""
-  role_en: ""
+  role_tr: Yüksek Lisans Öğrencisi
+  role_en: MSc Student
   bio_tr: Türk müziğinin duygular üzerindeki etkisini makine öğrenmesi ve derin öğrenme yöntemleriyle araştırıyor.
   bio_en: Investigates how Turkish music affects emotions, using machine learning and deep learning.
   email: nncagla@gmail.com
@@ -48,8 +48,8 @@
 
 - name: Uğur Emin Baynal
   group: researchers
-  role_tr: ""
-  role_en: ""
+  role_tr: Yüksek Lisans Öğrencisi
+  role_en: MSc Student
   bio_tr: Gömülü yapay zekâ ile kayıt kapsamı genişletilmiş, yalnızca alından değil tüm kafadan kayıt alabilen yeni bir fNIRS cihazı geliştiriyor.
   bio_en: Developing a new fNIRS device with embedded AI that extends recording coverage from the forehead to the whole head.
   email: ugur.baynal@ieu.edu.tr
