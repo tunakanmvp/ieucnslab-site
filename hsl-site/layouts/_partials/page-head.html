@@ -1,0 +1,5 @@
+<header class="page-head wrap">
+  {{ with .Parent }}{{ if not .IsHome }}<a class="crumb" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
+</header>

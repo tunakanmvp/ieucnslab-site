@@ -1,0 +1,14 @@
+{{ $uni := cond (eq site.Language.Lang "tr") site.Params.university_tr site.Params.university_en }}
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-title">{{ site.Title }}</p>
+      <p>{{ $uni }}</p>
+    </div>
+    <div>
+      <p>{{ site.Params.address }}</p>
+      <p><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
+    </div>
+    <p class="footer-copy">© {{ now.Year }} {{ site.Title }}</p>
+  </div>
+</footer>

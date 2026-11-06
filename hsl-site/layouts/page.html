@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<article class="wrap">
+  {{ if eq .Section "news" }}<p class="meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time></p>{{ end }}
+  <div class="prose">{{ .Content }}</div>
+</article>
+{{ end }}

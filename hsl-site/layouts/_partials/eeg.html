@@ -1,0 +1,53 @@
+{{/* Temsili EEG şeridi: sayfa açılışında kanallar soldan sağa çizilir. Gerçek veri değildir. */}}
+<figure class="eeg" aria-label="{{ i18n "channels_label" }}">
+  <svg class="eeg-svg" viewBox="0 0 1200 300" preserveAspectRatio="none" role="img" aria-hidden="true"></svg>
+  <ul class="eeg-labels" aria-hidden="true">
+    <li>Fp1</li><li>Fz</li><li>C3</li><li>Cz</li><li>Pz</li><li class="is-accent">O1</li>
+  </ul>
+</figure>
+<script>
+(function () {
+  var svg = document.querySelector('.eeg-svg');
+  if (!svg) return;
+  var NS = 'http://www.w3.org/2000/svg', W = 1200, rows = 6, rowH = 300 / rows;
+  var seed = 7;
+  function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
+  // Her kanal için birkaç sinüs + gürültü; O1'de belirgin alfa (≈10 Hz) iğcikleri
+  var specs = [
+    { amp: 9,  bands: [[1.2, 1], [4, .5], [22, .25]] },
+    { amp: 8,  bands: [[2.5, .8], [6, .6], [18, .3]] },
+    { amp: 7,  bands: [[3, .6], [11, .5], [24, .3]] },
+    { amp: 8,  bands: [[2, .6], [10, .6], [20, .3]] },
+    { amp: 9,  bands: [[1.5, .5], [10, .9], [16, .3]] },
+    { amp: 13, bands: [[1, .4], [10, 1.4], [20, .2]], spindle: true }
+  ];
+  specs.forEach(function (s, i) {
+    var phases = s.bands.map(function () { return rnd() * Math.PI * 2; });
+    var mid = rowH * i + rowH / 2, d = '', n = 0;
+    for (var x = 0; x <= W; x += 2) {
+      var t = x / W * 4; // ≈4 s pencere
+      var y = 0;
+      s.bands.forEach(function (b, k) {
+        var a = b[1];
+        if (s.spindle && k === 1) a *= 0.35 + 0.65 * Math.pow(Math.sin(t * Math.PI * 0.55), 2);
+        y += a * Math.sin(2 * Math.PI * b[0] * t + phases[k]);
+      });
+      y += (rnd() - 0.5) * 0.5;
+      d += (n++ ? 'L' : 'M') + x + ' ' + (mid - y * s.amp / 2).toFixed(1);
+    }
+    var base = document.createElementNS(NS, 'line');
+    base.setAttribute('x1', 0); base.setAttribute('x2', W);
+    base.setAttribute('y1', mid); base.setAttribute('y2', mid);
+    base.setAttribute('class', 'eeg-base');
+    svg.appendChild(base);
+    var p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', d);
+    p.setAttribute('class', 'eeg-trace' + (s.spindle ? ' is-accent' : ''));
+    p.setAttribute('vector-effect', 'non-scaling-stroke');
+    p.setAttribute('pathLength', '1');
+    p.style.setProperty('--i', i);
+    svg.appendChild(p);
+  });
+  svg.classList.add('is-ready');
+})();
+</script>

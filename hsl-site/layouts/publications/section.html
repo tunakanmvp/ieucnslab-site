@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap">
+  {{ $pubs := sort hugo.Data.publications "year" "desc" }}
+  {{ if $pubs }}
+    {{ $years := slice }}{{ range $pubs }}{{ $years = $years | append .year }}{{ end }}
+    {{ range uniq $years }}
+    {{ $y := . }}
+    <section class="pub-year">
+      <h2>{{ $y }}</h2>
+      <ol class="pubs">
+        {{ range where $pubs "year" $y }}
+        <li class="pub">
+          <p class="pub-title">{{ .title }}</p>
+          <p class="pub-authors">{{ .authors | markdownify }}</p>
+          <p class="pub-venue">{{ .venue }}
+            {{ with .doi }} · <a href="https://doi.org/{{ . }}">DOI</a>{{ end }}
+            {{ with .pdf }} · <a href="{{ . }}">PDF</a>{{ end }}
+          </p>
+        </li>
+        {{ end }}
+      </ol>
+    </section>
+    {{ end }}
+  {{ else }}
+    <p>{{ i18n "pub_empty" }}</p>
+  {{ end }}
+</div>
+{{ end }}

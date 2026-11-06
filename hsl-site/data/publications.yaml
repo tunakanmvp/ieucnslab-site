@@ -1,0 +1,10 @@
+# Yayınlar (yeniden eskiye sıralanır). type: journal | conference | thesis
+# Laboratuvar üyelerinin isimleri otomatik kalın gösterilmez; isterseniz **Ad Soyad** yazın.
+# Aşağıdaki kayıt örnektir, gerçek bilgilerle değiştirin.
+- year: 2026
+  type: conference
+  title: "TODO: EEG-based classification of hedonic responses to food preservatives"
+  authors: "TODO Yazarlar"
+  venue: "IEEE CoDIT 2026"
+  doi: ""
+  pdf: ""

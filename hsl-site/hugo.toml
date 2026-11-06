@@ -1,0 +1,84 @@
+# TODO: domaini aldıktan sonra burayı ve static/CNAME dosyasını güncelle
+baseURL = "https://hesaplamalisinirbilim.org.tr/"
+defaultContentLanguage = "tr"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  university_tr = "İzmir Ekonomi Üniversitesi"
+  university_en = "Izmir University of Economics"
+  email = "TODO@ieu.edu.tr"
+  address = "Sakarya Cad. No:156, 35330 Balçova / İzmir"
+
+[languages]
+  [languages.tr]
+    label = "Türkçe"
+    locale = "tr-TR"
+    title = "Hesaplamalı Sinirbilim Laboratuvarı"
+    weight = 1
+    [languages.tr.params]
+      short = "HSL"
+      tagline = "Beynin elektriksel dilini, duyguyu ve kararı anlamak için ölçüyor ve modelliyoruz."
+
+    [[languages.tr.menus.main]]
+      name = "Araştırma"
+      pageRef = "/research"
+      weight = 10
+    [[languages.tr.menus.main]]
+      name = "Ekip"
+      pageRef = "/people"
+      weight = 20
+    [[languages.tr.menus.main]]
+      name = "Yayınlar"
+      pageRef = "/publications"
+      weight = 30
+    [[languages.tr.menus.main]]
+      name = "Altyapı"
+      pageRef = "/facilities"
+      weight = 40
+    [[languages.tr.menus.main]]
+      name = "Haberler"
+      pageRef = "/news"
+      weight = 50
+    [[languages.tr.menus.main]]
+      name = "İletişim"
+      pageRef = "/contact"
+      weight = 60
+
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    title = "Computational Neuroscience Laboratory"
+    weight = 2
+    [languages.en.params]
+      short = "CNL"
+      tagline = "We measure and model the brain's electrical language to understand emotion and decision-making."
+
+    [[languages.en.menus.main]]
+      name = "Research"
+      pageRef = "/research"
+      weight = 10
+    [[languages.en.menus.main]]
+      name = "People"
+      pageRef = "/people"
+      weight = 20
+    [[languages.en.menus.main]]
+      name = "Publications"
+      pageRef = "/publications"
+      weight = 30
+    [[languages.en.menus.main]]
+      name = "Facilities"
+      pageRef = "/facilities"
+      weight = 40
+    [[languages.en.menus.main]]
+      name = "News"
+      pageRef = "/news"
+      weight = 50
+    [[languages.en.menus.main]]
+      name = "Contact"
+      pageRef = "/contact"
+      weight = 60
+
+[markup.goldmark.renderer]
+  unsafe = true

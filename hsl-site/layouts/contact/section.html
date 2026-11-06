@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+{{ $uni := cond (eq site.Language.Lang "tr") site.Params.university_tr site.Params.university_en }}
+<div class="wrap contact">
+  <dl>
+    <dt>{{ cond (eq site.Language.Lang "tr") "E-posta" "Email" }}</dt>
+    <dd><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></dd>
+    <dt>{{ cond (eq site.Language.Lang "tr") "Adres" "Address" }}</dt>
+    <dd>{{ $uni }}<br>{{ site.Params.address }}</dd>
+  </dl>
+  {{/* TODO: harita kutusunu (bbox) laboratuvarın tam konumuna göre ayarlayın: openstreetmap.org → Paylaş → HTML */}}
+  <iframe class="map" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=27.03%2C38.375%2C27.06%2C38.395&amp;layer=mapnik"></iframe>
+</div>
+{{ end }}

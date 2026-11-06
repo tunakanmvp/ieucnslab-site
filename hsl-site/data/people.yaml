@@ -1,0 +1,31 @@
+# Ekip üyeleri. group: lead | researchers | students | alumni
+# photo: static/images/people/ altına dosya koyup adını yazın (boşsa baş harfler gösterilir)
+- name: Prof. Dr. Aydın Akan
+  group: lead
+  role_tr: Laboratuvar Yöneticisi
+  role_en: Lab Director
+  bio_tr: "TODO: kısa biyografi (2–3 cümle)."
+  bio_en: "TODO: short bio (2–3 sentences)."
+  email: ""
+  scholar: ""
+  photo: ""
+
+- name: Berkay TODO-Soyad
+  group: students
+  role_tr: Araştırma Görevlisi, Yüksek Lisans Öğrencisi
+  role_en: Research Assistant, MSc Student
+  bio_tr: EEG tabanlı duygu ve beğeni sınıflandırması, çok kipli biyosinyal analizi.
+  bio_en: EEG-based emotion and preference classification, multimodal biosignal analysis.
+  email: ""
+  scholar: ""
+  photo: ""
+
+- name: TODO Ad Soyad
+  group: students
+  role_tr: Yüksek Lisans Öğrencisi
+  role_en: MSc Student
+  bio_tr: "TODO"
+  bio_en: "TODO"
+  email: ""
+  scholar: ""
+  photo: ""

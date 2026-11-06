@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="{{ site.Home.RelPermalink }}">
+      <span class="wordmark-short">{{ site.Params.short }}</span>
+      <span class="wordmark-long">{{ site.Title }}</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        {{ $current := . }}
+        {{ range site.Menus.main }}
+          {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
+          {{ with .Page }}{{ if and (not $active) (or (eq $current .) ($current.IsDescendant .)) }}{{ $active = true }}{{ end }}{{ end }}
+          <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+      {{ $other := "" }}
+      {{ range .Translations }}{{ $other = . }}{{ end }}
+      {{ if not $other }}{{ range site.Home.Translations }}{{ $other = . }}{{ end }}{{ end }}
+      {{ with $other }}<a class="lang" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ i18n "switch_lang" }}</a>{{ end }}
+    </nav>
+  </div>
+</header>
