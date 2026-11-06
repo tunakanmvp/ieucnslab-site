@@ -10,5 +10,9 @@
       <p><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
     </div>
     <p class="footer-copy">© {{ now.Year }} {{ site.Title }}</p>
+    {{ if .IsHome }}
+    <p class="footer-credits">{{ if eq site.Language.Lang "tr" }}Arka plan fotoğrafları{{ else }}Background photos{{ end }}:
+      {{ range $i, $bg := hugo.Data.backgrounds }}{{ if $i }}, {{ end }}<a href="{{ $bg.page }}">{{ $bg.credit }}</a>{{ end }} / Unsplash</p>
+    {{ end }}
   </div>
 </footer>

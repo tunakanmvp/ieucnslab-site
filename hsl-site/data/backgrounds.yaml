@@ -1,0 +1,33 @@
+# Ana sayfa bölüm arka planları (Unsplash Lisansı: ücretsiz kullanım, atıf zorunlu değil)
+# section: bölümün adı (content/ altındaki klasör), tone: bölümün yeşil tonu
+# Resmi değiştirmek için: unsplash.com'da fotoğraf sayfasını aç, görsel adresini (images.unsplash.com/photo-...) image alanına yaz.
+- section: research
+  tone: "#dff0e4"
+  image: https://images.unsplash.com/photo-1719650592946-55163c4994cb
+  credit: Bhautik Patel
+  page: https://unsplash.com/photos/nerve-cells-with-glowing-nodes-NVprB2Xt1bA
+- section: people
+  tone: "#e6f3df"
+  image: https://images.unsplash.com/photo-1522071820081-009f0129c71c
+  credit: Annie Spratt
+  page: https://unsplash.com/photos/group-of-people-using-laptop-computer-QckxruozjRg
+- section: publications
+  tone: "#dceee8"
+  image: https://images.unsplash.com/photo-1770131748972-b1a08d57efbc
+  credit: Ahmet Yüksek
+  page: https://unsplash.com/photos/tall-bookshelves-filled-with-old-books-in-a-library-6vBqpVyYHX0
+- section: facilities
+  tone: "#e2f1e9"
+  image: https://images.unsplash.com/photo-1555589228-5dc844368071
+  credit: Magnus Engø
+  page: https://unsplash.com/photos/green-circuit-board-W4lcqyH9r8c
+- section: news
+  tone: "#e9f4e1"
+  image: https://images.unsplash.com/photo-1664448010557-cd3c22c21335
+  credit: Google DeepMind
+  page: https://unsplash.com/photos/3VSgApkySLA
+- section: contact
+  tone: "#dbece2"
+  image: https://images.unsplash.com/photo-1719688549434-8f89bb954308
+  credit: Parastoo Maleki
+  page: https://unsplash.com/photos/a-large-body-of-water-with-a-city-in-the-background-Ct7hDjscRrw

@@ -283,3 +283,27 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 /* Ana sayfadaki kısa yayın listesi */
 .pubs-recent { max-width: 48rem; border-top: 1px solid var(--ink); padding-top: 1.25rem; }
 .pub-year-tag { font-size: var(--step--1); font-weight: 650; color: var(--accent); font-variant-numeric: tabular-nums; margin-bottom: .2rem !important; }
+
+/* Ana sayfa: bölümlere göre değişen, solarak geçen arka plan */
+.bg-stage { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
+.bg-layer {
+  position: absolute; inset: 0; opacity: 0;
+  background: var(--tone);
+  transition: opacity 1.1s ease;
+}
+.bg-layer::before {
+  content: ""; position: absolute; inset: 0;
+  background: var(--img) center / cover no-repeat;
+  filter: grayscale(1) contrast(1.05);
+  opacity: .28; /* resim görünürlüğü: 0 = yok, 1 = tam */
+  mix-blend-mode: multiply;
+}
+.bg-layer::after {
+  content: ""; position: absolute; inset: 0;
+  background-image: var(--circuit-light); background-size: 220px 220px;
+  opacity: .45;
+}
+.bg-layer.is-active { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .bg-layer { transition: none; } }
+body:has(.bg-stage) { background-image: none; }
+.footer-credits { grid-column: 1 / -1; font-size: .75rem; opacity: .8; margin-top: .75rem !important; }

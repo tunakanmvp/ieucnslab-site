@@ -4,6 +4,8 @@ const links = new Map(
 );
 const sections = [...document.querySelectorAll("[data-nav-section]")];
 let currentLink;
+const bgLayers = [...document.querySelectorAll(".bg-layer")];
+let activeLayer = document.querySelector(".bg-layer.is-active");
 let framePending = false;
 
 function updateCurrentSection() {
@@ -15,6 +17,7 @@ function updateCurrentSection() {
   const section = atEnd
     ? sections.at(-1)
     : sections.findLast(element => element.getBoundingClientRect().top <= readingLine);
+  updateBackground(section?.id);
   const nextLink = links.get(`#${section?.id}`);
   if (nextLink === currentLink) return;
   currentLink?.removeAttribute("aria-current");
@@ -71,3 +74,12 @@ updateHeaderOffset();
 window.addEventListener("pageshow", scheduleUpdate);
 if (document.fonts) document.fonts.ready.then(() => { moveIndicator(); scheduleUpdate(); });
 updateCurrentSection();
+
+// Arka plan katmanları: aktif bölümün resmi görünür, diğerleri solar
+function updateBackground(id) {
+  const target = document.querySelector(`.bg-layer[data-bg-for="${id}"]`) || bgLayers[0];
+  if (!target || target === activeLayer) return;
+  activeLayer?.classList.remove("is-active");
+  target.classList.add("is-active");
+  activeLayer = target;
+}

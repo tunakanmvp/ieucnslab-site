@@ -1,0 +1,7 @@
+{{/* Ana sayfanın sabit arka plan katmanları. Kaydırdıkça aktif bölümün resmi solarak diğerine geçer. */}}
+<div class="bg-stage" aria-hidden="true">
+  {{ range $i, $bg := hugo.Data.backgrounds }}
+  <div class="bg-layer{{ if eq $i 0 }} is-active{{ end }}" data-bg-for="home-{{ $bg.section }}"
+       {{ printf `style="--tone: %s; --img: url('%s?auto=format&fit=crop&w=1600&q=55')"` $bg.tone $bg.image | safeHTMLAttr }}></div>
+  {{ end }}
+</div>

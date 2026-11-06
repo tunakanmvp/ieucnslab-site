@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ partial "bg-stage.html" . }}
 {{ $uni := cond (eq site.Language.Lang "tr") site.Params.university_tr site.Params.university_en }}
 <section class="hero">
   <div class="wrap">
