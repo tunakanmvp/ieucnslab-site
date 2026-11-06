@@ -346,3 +346,19 @@ body:has(.bg-stage) { background-image: none; }
 .people:not(.people-lead) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .people:not(.people-lead) .bio { font-size: .95rem; }
 @media (max-width: 900px) { .people:not(.people-lead) { grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); } }
+
+/* Okunabilirlik: ana sayfa bölümlerinin arkasında yarı saydam panel */
+#main > .intro,
+#main > .home-section {
+  background: color-mix(in srgb, #f6fbf7 78%, transparent);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: var(--card-radius);
+  padding-block: clamp(1.5rem, 3.5vw, 2.75rem);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--grid) 60%, transparent);
+}
+#main > .intro .prose, #main > .home-section .area-summary,
+#main > .home-section .page-desc, #main > .home-section .bio { color: #2c4f40; }
+@media (max-width: 760px) {
+  #main > .intro, #main > .home-section { border-radius: 0; box-shadow: none; }
+}
