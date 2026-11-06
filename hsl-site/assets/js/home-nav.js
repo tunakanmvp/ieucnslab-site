@@ -9,11 +9,12 @@ let framePending = false;
 function updateCurrentSection() {
   framePending = false;
   const headerBottom = header.getBoundingClientRect().bottom;
-  const readingLine = headerBottom + (window.innerHeight - headerBottom) * 0.25;
-  const section = sections.find(element => {
-    const { top, bottom } = element.getBoundingClientRect();
-    return top <= readingLine && bottom > readingLine;
-  });
+  const readingLine = headerBottom + (window.innerHeight - headerBottom) * 0.35;
+  const atEnd = window.scrollY > 0 &&
+    window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+  const section = atEnd
+    ? sections.at(-1)
+    : sections.findLast(element => element.getBoundingClientRect().top <= readingLine);
   const nextLink = links.get(section?.dataset.navSection);
   if (nextLink === currentLink) return;
   currentLink?.removeAttribute("aria-current");
