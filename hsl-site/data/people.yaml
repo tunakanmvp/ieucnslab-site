@@ -2,15 +2,32 @@
 # photo: static/images/people/ altına dosya koyup adını yazın (boşsa baş harfler gösterilir)
 - name: Prof. Dr. Aydın Akan
   group: lead
-  role_tr: Laboratuvar Yöneticisi
-  role_en: Lab Director
-  bio_tr: "TODO: kısa biyografi (2–3 cümle)."
-  bio_en: "TODO: short bio (2–3 sentences)."
-  email: ""
+  role_tr: Laboratuvar Kurucusu
+  role_en: Lab Founder
+  bio_tr: Durağan olmayan işaretlerin zaman-frekans analizi ve bu yöntemlerin haberleşme ve biyomedikal mühendisliğindeki uygulamaları üzerine çalışmaktadır.
+  bio_en: His research focuses on time–frequency analysis of nonstationary signals and its applications in communications and biomedical engineering.
+  biography_tr: |-
+    Aydın Akan, Ocak 1967’de Bursa’da doğdu ve ilk ve orta öğrenimini Bursa’da tamamladı. 1984’te başladığı Uludağ Üniversitesi Elektronik Mühendisliği Bölümünden 1988’de mezun oldu. Aynı yıl başladığı İstanbul Teknik Üniversitesi Elektronik ve Haberleşme Programındaki yüksek lisansını Şubat 1991’de tamamladı. Yüksek lisans tezinde biyolojik işaretler için gerçek zamanlı adaptif gürültü giderme sistemi üzerine çalıştı.
+
+    1988’de İstanbul Üniversitesinde göreve başladı ve 1990’da Elektronik Mühendisliği Bölümü Elektronik Anabilim Dalına araştırma görevlisi olarak atandı. Mart 1992’de University of Pittsburgh’da işaret işleme alanında doktora çalışmalarına başladı. Gabor açılımlarıyla zaman-frekans analizi üzerine hazırladığı doktorasını Nisan 1996’da tamamlayarak Türkiye’ye döndü. Aralık 1996’da İstanbul Üniversitesi Elektronik Mühendisliği Bölümü Elektronik Anabilim Dalına yardımcı doçent olarak atandı. Nisan 1997’de anabilim dalı başkanı, Şubat 1999’da bölüm başkan yardımcısı oldu. Kasım 2000’de Telekomünikasyon Anabilim Dalı İşaret İşleme Bilim Dalında doçent unvanını aldı. İstanbul Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü Telekomünikasyon Anabilim Dalına 2 Mayıs 2001’de doçent, 31 Ekim 2006’da profesör olarak atandı.
+
+    2004’te TÜBİTAK bursuyla University of Pittsburgh’da ziyaretçi araştırmacı ve öğretim üyesi olarak çalıştı. Şubat 2006’da İstanbul Üniversitesi Hastaneleri Biyomedikal ve Klinik Mühendisliği Biriminin kurucusu ve koordinatörü olarak görevlendirildi ve bu görevi 2017’ye kadar sürdürdü. 20 Mart 2017’de İzmir Kâtip Çelebi Üniversitesi Biyomedikal Mühendisliği Bölümüne profesör olarak atandı. Mayıs 2017 ile Ekim 2018 arasında Mühendislik ve Mimarlık Fakültesi dekanı olarak görev yaptı. 31 Ocak 2020’ye kadar bu üniversitede bölüm başkanı, BAP koordinatörü ve Biyomedikal Test, Kalibrasyon Uygulama ve Araştırma Merkezi müdürü olarak eğitim ve araştırma çalışmalarını sürdürdü. 1 Şubat 2020’de İzmir Ekonomi Üniversitesi Elektrik-Elektronik Mühendisliği Bölümüne profesör olarak atandı.
+
+    Prof. Dr. Akan, durağan olmayan işaretlerin zaman-frekans analizi ve bu yöntemlerin haberleşme ve biyomedikal mühendisliği problemlerine uygulanması üzerine çalışmaktadır. TÜBİTAK ve üniversitelerin Bilimsel Araştırma Projeleri birimlerince desteklenen çok sayıda projede yürütücü ve araştırmacı olarak görev almıştır. Araştırmaları yurt içinde ve yurt dışında kitap, makale, kitap bölümü ve bildiri olarak yayımlanmıştır. Bilimsel dergilerin hakem kurullarında ve konferansların danışma, yürütme, düzenleme, teknik program ve hakem kurullarında görev almaktadır. IEEE’nin Signal Processing ve Engineering in Medicine and Biology topluluklarının kıdemli üyesi, EURASIP’in Biyomedikal Sinyal ve Görüntü Analizi Teknik Alan Komitesi üyesidir. Elsevier’in Digital Signal Processing dergisinin editör kurulunda görev yapmaktadır.
+  biography_en: |-
+    Aydın Akan was born in Bursa in January 1967 and completed his primary and secondary education there. He studied electronic engineering at Uludağ University from 1984 to 1988. He began his master’s studies in electronics and communications at Istanbul Technical University in 1988 and completed the program in February 1991. His master’s thesis examined real-time adaptive noise cancellation for biological signals.
+
+    He joined Istanbul University in 1988 and was appointed a research assistant in the Electronics Division of the Department of Electronics Engineering in 1990. In March 1992, he began doctoral studies in signal processing at the University of Pittsburgh. He completed his doctorate on time–frequency analysis with Gabor expansions in April 1996 and returned to Türkiye. In December 1996, he was appointed assistant professor in the Electronics Division at Istanbul University. He became head of the division in April 1997 and deputy head of the department in February 1999. He earned the title of associate professor in signal processing in November 2000. Istanbul University appointed him associate professor in the Telecommunications Division of the Department of Electrical and Electronics Engineering on 2 May 2001 and professor on 31 October 2006.
+
+    In 2004, with a fellowship from TÜBİTAK, he worked as a visiting researcher and faculty member at the University of Pittsburgh. In February 2006, he was appointed founding coordinator of the Biomedical and Clinical Engineering Unit at Istanbul University Hospitals, a role he held until 2017. On 20 March 2017, he was appointed professor in the Department of Biomedical Engineering at İzmir Kâtip Çelebi University. He served as dean of the Faculty of Engineering and Architecture from May 2017 to October 2018. His roles at the university through 31 January 2020 included department chair, Scientific Research Projects coordinator, and director of the Biomedical Testing and Calibration Application and Research Center. On 1 February 2020, he was appointed professor in the Department of Electrical and Electronics Engineering at Izmir University of Economics.
+
+    Professor Akan’s research focuses on time–frequency analysis of nonstationary signals and its applications in communications and biomedical engineering. He has led and contributed to numerous projects supported by TÜBİTAK and university research programs. His work has appeared in books, journal articles, book chapters, and conference proceedings in Türkiye and internationally. He serves on journal review boards and on advisory, executive, organizing, technical program, and review committees for scientific conferences. He is an IEEE Senior Member affiliated with the Signal Processing and Engineering in Medicine and Biology societies. He is also a member of the EURASIP Technical Area Committee on Biomedical Signal and Image Analytics and serves on the editorial board of Elsevier’s Digital Signal Processing journal.
+  email: akan.aydin@ieu.edu.tr
   scholar: ""
   photo: ""
 
 - name: Berkay TODO-Soyad
+  draft: true
   group: students
   role_tr: Araştırma Görevlisi, Yüksek Lisans Öğrencisi
   role_en: Research Assistant, MSc Student
@@ -21,6 +38,7 @@
   photo: ""
 
 - name: TODO Ad Soyad
+  draft: true
   group: students
   role_tr: Yüksek Lisans Öğrencisi
   role_en: MSc Student

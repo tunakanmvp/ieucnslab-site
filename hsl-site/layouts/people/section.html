@@ -2,9 +2,10 @@
 {{ partial "page-head.html" . }}
 {{ $tr := eq site.Language.Lang "tr" }}
 <div class="wrap">
+  {{ $people := where hugo.Data.people "draft" "ne" true }}
   {{ range slice "lead" "researchers" "students" "alumni" }}
     {{ $group := . }}
-    {{ $members := where hugo.Data.people "group" $group }}
+    {{ $members := where $people "group" $group }}
     {{ with $members }}
     <section class="people-group">
       <h2>{{ i18n $group }}</h2>
@@ -22,9 +23,15 @@
             <p class="role">{{ cond $tr .role_tr .role_en }}</p>
             <p class="bio">{{ cond $tr .bio_tr .bio_en }}</p>
             <p class="links">
-              {{ with .email }}<a href="mailto:{{ . }}">E-mail</a>{{ end }}
+              {{ with .email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
               {{ with .scholar }}<a href="{{ . }}">Google Scholar</a>{{ end }}
             </p>
+            {{ with cond $tr .biography_tr .biography_en }}
+            <details class="person-biography">
+              <summary>{{ i18n "full_biography" }}</summary>
+              {{ range split . "\n\n" }}<p>{{ . }}</p>{{ end }}
+            </details>
+            {{ end }}
           </div>
         </li>
         {{ end }}
