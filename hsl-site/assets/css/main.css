@@ -1,4 +1,4 @@
-/* Hesaplamalı Sinirbilim Laboratuvarı — görsel sistem */
+/* Computational Neuroscience Lab — görsel sistem */
 :root {
   --paper: #ffffff;
   --surface: #f3f5f9;
@@ -200,7 +200,7 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
   .pub-year { grid-template-columns: 1fr; }
   .contact { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
-  .wordmark-long { display: none; }
+  .wordmark-long { max-width: none; }
   .nav { gap: 1rem; }
   .nav ul { gap: .3rem 1rem; }
   .eeg { padding-left: 2.5rem; }

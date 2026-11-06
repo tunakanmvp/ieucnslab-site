@@ -7,17 +7,17 @@ disableKinds = ["taxonomy", "term"]
 [params]
   university_tr = "İzmir Ekonomi Üniversitesi"
   university_en = "Izmir University of Economics"
-  email = "TODO@ieu.edu.tr"
+  email = "berkay.tunakan@ieu.edu.tr"
   address = "Sakarya Cad. No:156, 35330 Balçova / İzmir"
 
 [languages]
   [languages.tr]
     label = "Türkçe"
     locale = "tr-TR"
-    title = "Hesaplamalı Sinirbilim Laboratuvarı"
+    title = "Computational Neuroscience Lab"
     weight = 1
     [languages.tr.params]
-      short = "HSL"
+      short = "CNS"
       tagline = "Beynin elektriksel dilini, duyguyu ve kararı anlamak için ölçüyor ve modelliyoruz."
 
     [[languages.tr.menus.main]]
@@ -48,10 +48,10 @@ disableKinds = ["taxonomy", "term"]
   [languages.en]
     label = "English"
     locale = "en-US"
-    title = "Computational Neuroscience Laboratory"
+    title = "Computational Neuroscience Lab"
     weight = 2
     [languages.en.params]
-      short = "CNL"
+      short = "CNS"
       tagline = "We measure and model the brain's electrical language to understand emotion and decision-making."
 
     [[languages.en.menus.main]]
