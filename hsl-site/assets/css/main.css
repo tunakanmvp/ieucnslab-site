@@ -206,3 +206,12 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
   .eeg { padding-left: 2.5rem; }
   .eeg-labels { width: 2.5rem; }
 }
+
+/* Equipment photography */
+.equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 1rem; margin-block: 1.5rem 2.5rem; }
+.equipment-card { margin: 0; overflow: hidden; background: var(--surface); border-radius: var(--card-radius); }
+.equipment-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; padding: 1rem; background: var(--paper); }
+.equipment-card figcaption { padding: 1rem 1.25rem 1.25rem; }
+.equipment-card h3 { font-size: 1.125rem; margin: 0 0 .4rem; }
+.equipment-card figcaption p { color: var(--muted); font-size: 1rem; margin-bottom: .55rem; }
+.equipment-card figcaption a { font-size: .875rem; }
