@@ -279,3 +279,7 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 
 /* Kartlar desenin üstünde okunaklı kalsın */
 .home-section, .page-head + .wrap, article.wrap { position: relative; }
+
+/* Ana sayfadaki kısa yayın listesi */
+.pubs-recent { max-width: 48rem; border-top: 1px solid var(--ink); padding-top: 1.25rem; }
+.pub-year-tag { font-size: var(--step--1); font-weight: 650; color: var(--accent); font-variant-numeric: tabular-nums; margin-bottom: .2rem !important; }

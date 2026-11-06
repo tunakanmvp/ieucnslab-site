@@ -1,0 +1,22 @@
+{{/* Ana sayfa için son 5 yayın + tüm yayınlar bağlantısı. Parametre: yayınlar bölüm sayfası */}}
+{{ $tr := eq site.Language.Lang "tr" }}
+{{ $pubs := sort hugo.Data.publications "year" "desc" }}
+{{ if $pubs }}
+<ol class="pubs pubs-recent">
+  {{ range first 5 $pubs }}
+  <li class="pub">
+    <p class="pub-year-tag">{{ .year }}</p>
+    <p class="pub-title">{{ .title }}</p>
+    <p class="pub-authors">{{ .authors | markdownify }}</p>
+    <p class="pub-venue">{{ .venue }}
+      {{ with .doi }} · <a href="https://doi.org/{{ . }}">DOI</a>{{ end }}
+      {{ with .url }} · <a href="{{ . }}">{{ cond $tr "Yayın kaydı" "Publication record" }}</a>{{ end }}
+      {{ with .pdf }} · <a href="{{ . }}">PDF</a>{{ end }}
+    </p>
+  </li>
+  {{ end }}
+</ol>
+<a class="section-link" href="{{ .RelPermalink }}">{{ i18n "all_pubs" }} ({{ len $pubs }})</a>
+{{ else }}
+  <p>{{ i18n "pub_empty" }}</p>
+{{ end }}

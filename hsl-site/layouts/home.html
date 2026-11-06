@@ -35,7 +35,7 @@
       {{ else if eq .Section "people" }}
         {{ partial "people-list.html" true }}
       {{ else if eq .Section "publications" }}
-        {{ partial "publication-list.html" true }}
+        {{ partial "publication-recent.html" . }}
       {{ else if eq .Section "news" }}
         {{ partial "news-list.html" .Pages.ByDate.Reverse }}
       {{ else if eq .Section "contact" }}
