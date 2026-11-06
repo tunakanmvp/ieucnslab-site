@@ -1,5 +1,4 @@
-# TODO: domaini aldıktan sonra burayı ve static/CNAME dosyasını güncelle
-baseURL = "https://hesaplamalisinirbilim.org.tr/"
+baseURL = "https://ieucnslab.org/"
 defaultContentLanguage = "tr"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
