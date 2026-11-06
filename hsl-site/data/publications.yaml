@@ -1,10 +1,966 @@
-# Yayınlar (yeniden eskiye sıralanır). type: journal | conference | thesis
-# Laboratuvar üyelerinin isimleri otomatik kalın gösterilmez; isterseniz **Ad Soyad** yazın.
-# Aşağıdaki kayıt örnektir, gerçek bilgilerle değiştirin.
+# Aydın Akan, 2019–present. Sources: İEÜ GCRIS, OpenAlex, ORCID, Crossref.
 - year: 2026
-  type: conference
-  title: "TODO: EEG-based classification of hedonic responses to food preservatives"
-  authors: "TODO Yazarlar"
-  venue: "IEEE CoDIT 2026"
-  doi: ""
-  pdf: ""
+  eeg: false
+  title: "Fault-Source Transfer in Motor-Current-Based Bearing Fault Diagnosis: A Bearing-Level Evaluation"
+  authors: "Yalcin Cekic, **Aydın Akan**"
+  venue: "Energies"
+  doi: "10.3390/en19215226"
+
+- year: 2026
+  eeg: false
+  title: "Supplementary and Reproducibility Materials for \"Evaluation Granularity in Motor-Current Bearing Fault Diagnosis\""
+  authors: "Yalcin, Cekic, **Aydın Akan**"
+  venue: "Zenodo (CERN European Organization for Nuclear Research)"
+  doi: "10.5281/zenodo.23285174"
+
+- year: 2026
+  eeg: false
+  title: "Motor-Current-Based Bearing Fault Detection Under Unseen Operating Conditions"
+  authors: "Yalcin Cekic, **Aydın Akan**"
+  venue: "Energies"
+  doi: "10.3390/en19163884"
+
+- year: 2026
+  eeg: true
+  title: "Deep Model Families for EEG-Based Multi-Class Dementia Classification"
+  authors: "Soner Kotan, **Aydın Akan**"
+  venue: "International Journal of Neural Systems"
+  doi: "10.1142/s0129065727500055"
+
+- year: 2026
+  eeg: true
+  title: "Analysis of Human Emotions for Different Taste Stimuli Using EEG Signals"
+  authors: "Berkay Ilber Tunakan, **Aydın Akan**, Yaren Taskin, Kamile Nazan Turhan"
+  venue: "International Conference on Control, Decision and Information Technologies (CoDIT)"
+  doi: "10.1109/codit70676.2026.11630919"
+
+- year: 2026
+  eeg: false
+  title: "Deep Learning Approaches for Bearing Fault Diagnosis Using Motor Current Signals"
+  authors: "Yalçın Çekiç, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu71813.2026.11637099"
+
+- year: 2026
+  eeg: true
+  title: "Investigating the Effect of Sustainable Product Packaging on Consumer Behavior Using EEG Signals"
+  authors: "Eray Ozcan Kilic, Burak Akbugday, **Aydın Akan**, Riza Sadikzade"
+  venue: "International Conference on Control, Decision and Information Technologies (CoDIT)"
+  doi: "10.1109/codit70676.2026.11630728"
+
+- year: 2026
+  eeg: false
+  title: "Lifetime Extension of Power Converters of Type-4 Wind Turbines at System Level"
+  authors: "Ibrahim Alisar, Erhan Demirok, **Aydın Akan**"
+  venue: "Energies"
+  doi: "10.3390/en19112652"
+
+- year: 2026
+  eeg: false
+  title: "On the Use of a Depth Camera for the Assessment of Upper Extremity Movements in Healthy Individuals"
+  authors: "Serkan Çizmecioğulları, Şenay Mihçin, **Aydın Akan**"
+  venue: "Sensors"
+  doi: "10.3390/s26061762"
+
+- year: 2025
+  eeg: true
+  title: "Analysis of Dementia EEG Signals Using Empirical Mode Decomposition Variants and Deep Learning"
+  authors: "Yahya Oguzhan Senol, **Aydın Akan**, Ozlem Karabiber Cura"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno68206.2025.11270150"
+
+- year: 2025
+  eeg: false
+  title: "Artificial Intelligence Based Post-Disaster Trauma Analysis and Prioritization System"
+  authors: "Nimet Seyrek, Miray Solmaz, Ceren Bicici, Rümeysa Tuntaş, Levent Ari, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno68206.2025.11270139"
+
+- year: 2025
+  eeg: true
+  title: "Classification of Emotions Under Multiple Olfactory Stimuli Using EEG Signals and Machine Learning"
+  authors: "Ozge Ada Bozbas, Burak Akbugday, **Aydın Akan**, Sude Pehlivan Akbugday"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno68206.2025.11270194"
+
+- year: 2025
+  eeg: false
+  title: "Design of a Smart Infusion Pump with Decision Support"
+  authors: "Nursun Ustunkarli, Berkay Ilber Tunakan, Melahat Kizil, **Aydın Akan**"
+  venue: "TIPTEKNO 2025 - Medical Technologies Congress, Proceedings -- 2025 Medical Technologies Congress, TIPTEKNO 2025 -- 26 October 2025 through 28 October 2025 -- Gazi Magusa -- 217812"
+  doi: "10.1109/tiptekno68206.2025.11270096"
+
+- year: 2025
+  eeg: false
+  title: "Design of an Intelligent Triage System Using Wearable Technologies"
+  authors: "Nursun Üstünkarli, **Aydın Akan**, Furkan Cozar, Cansu Cozar"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno68206.2025.11270149"
+
+- year: 2025
+  eeg: true
+  title: "Olfactory Emotion Recognition Using EEG Spectral Topographic Heatmaps and CNNs"
+  authors: "Faezeh Yeganli, **Aydın Akan**, Riza Sadikzade"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno68206.2025.11270101"
+
+- year: 2025
+  eeg: true
+  title: "Detection of Alzheimer’s Disease by Using Time-Frequency Representations of EEG Signals with Deep Learning"
+  authors: "Meral Aslan Dil, Ozlem Karabiber Cura, **Aydın Akan**, Firat Kacar"
+  venue: "International Conference on Control, Decision and Information Technologies (CoDIT)"
+  doi: "10.1109/codit66093.2025.11321577"
+
+- year: 2025
+  eeg: true
+  title: "Liking State Estimation Using Time-Frequency Image Representation of EEG Signals"
+  authors: "Burak Ceylan, Yalçın Çekiç, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu66497.2025.11112167"
+
+- year: 2025
+  eeg: false
+  title: "System Architecture Design for Low-Complexity Downlink Receivers in MU-OFDM Systems"
+  authors: "Tuncay Eren, Muhammad Bilal Janjua, **Aydın Akan**"
+  venue: "IEEE Access"
+  doi: "10.1109/access.2025.3600403"
+
+- year: 2025
+  eeg: false
+  title: "Signals and Systems Using Matlab®"
+  authors: "**Aydın Akan**, L.F. Chaparro"
+  venue: "Signals and Systems Using MATLABÂ®"
+  doi: "10.1016/c2022-0-01198-3"
+
+- year: 2024
+  eeg: false
+  title: "A system level lifetime enhancement method for power converters of Type-4 wind turbines"
+  authors: "İbrahim Alişar, Erhan Demirok, **Aydın Akan**"
+  venue: "IEEE PES Innovative Smart Grid Technologies Europe"
+  doi: "10.1109/isgteurope62998.2024.10863239"
+
+- year: 2024
+  eeg: true
+  title: "Decoding Olfactory EEG Signals Using Multi-Domain Features and Machine Learning"
+  authors: "Sude Pehlivan Akbugday, Burak Akbugday, Faezeh Yeganli, **Aydın Akan**, Riza Sadikzade"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno63488.2024.10755366"
+
+- year: 2024
+  eeg: true
+  title: "Investigating the Effect of Noise Levels on Mental Tasks Using Artificial Intelligence"
+  authors: "Emre Sipahioglu, Burak Akbugday, Sude Pehlivan Akbugday, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno63488.2024.10755381"
+
+- year: 2024
+  eeg: false
+  title: "Vital Signs Monitoring Ecosystem for Children"
+  authors: "Burak Akbuğday, Melahat Kizil, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno63488.2024.10755495"
+
+- year: 2024
+  eeg: true
+  title: "Alzheimer's Dementia Detection: An Optimized Approach Using ITD of EEG Signals"
+  authors: "Sena Yagmur Sen, **Aydın Akan**, Ozlem Karabiber Cura"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco63174.2024.10715005"
+
+- year: 2024
+  eeg: true
+  title: "Detection of Alzheimer's Dementia by Using EEG Feature Maps and Deep Learning"
+  authors: "Sude Pehlivan Akbugday, Ozlem Karabiber Cura, Burak Akbugday, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco63174.2024.10714940"
+
+- year: 2024
+  eeg: true
+  title: "Classification of Alzheimer’s dementia EEG signals using deep learning"
+  authors: "Sena Yagmur Sen, Ozlem Karabiber Cura, Gulce Cosku Yilmaz, **Aydın Akan**"
+  venue: "Transactions of the Institute of Measurement and Control"
+  doi: "10.1177/01423312241267046"
+
+- year: 2024
+  eeg: true
+  title: "Detection of Attention Deficit Hyperactivity Disorder based on EEG feature maps and deep learning"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**, Sibel Kocaaslan Atli"
+  venue: "Journal of Applied Biomedicine"
+  doi: "10.1016/j.bbe.2024.07.003"
+
+- year: 2024
+  eeg: false
+  title: "TRANSFORMATION OF MINOR GENRES IN KAZAKH POSTFOLKLORE"
+  authors: "Zh. Rakysh, N. Sarsek, **Aydın Akan**"
+  venue: "Keruen"
+  doi: "10.53871/2078-8134.2024.2-07"
+
+- year: 2024
+  eeg: true
+  title: "Consumer Preference Estimation Using EEG Signals and Deep Learning"
+  authors: "Burak Ceylan, Yalçın Çekiç, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu61531.2024.10601136"
+
+- year: 2024
+  eeg: true
+  title: "Emotional Stimulus Classification from Brain Electrical Activity using Multivariate Empirical Mode Decomposition"
+  authors: "Merve Dogruyol Basar, Adil Deniz Duru, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu61531.2024.10600905"
+
+- year: 2024
+  eeg: false
+  title: "Continuous-time signals"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00011-2"
+
+- year: 2024
+  eeg: false
+  title: "Continuous-time systems"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00012-4"
+
+- year: 2024
+  eeg: false
+  title: "Discrete-time signals and systems"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00018-5"
+
+- year: 2024
+  eeg: false
+  title: "Fourier analysis of discrete-time signals and systems"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00020-3"
+
+- year: 2024
+  eeg: false
+  title: "Frequency analysis: the Fourier series"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00014-8"
+
+- year: 2024
+  eeg: false
+  title: "Frequency analysis: the Fourier transform"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00015-x"
+
+- year: 2024
+  eeg: false
+  title: "From the ground up!"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00009-4"
+
+- year: 2024
+  eeg: false
+  title: "Introduction to the design of discrete filters"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00021-5"
+
+- year: 2024
+  eeg: false
+  title: "Sampling theory"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00017-3"
+
+- year: 2024
+  eeg: false
+  title: "The Laplace transform"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00013-6"
+
+- year: 2024
+  eeg: false
+  title: "The Z-transform"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00019-7"
+
+- year: 2024
+  eeg: true
+  title: "Detection of Olfactory Stimulus in Electroencephalogram Signals Using Machine and Deep Learning Methods"
+  authors: "Burak Akbugday, Sude Pehlivan Akbugday, Riza Sadikzade, **Aydın Akan**, Sevtap Unal"
+  venue: "Istanbul University - Journal of Electrical & Electronics Engineering"
+  doi: "10.5152/electrica.2024.23111"
+
+- year: 2024
+  eeg: false
+  title: "Influence of Machine-Side Converter Diode Selection on the Lifetime of Type-4 Wind Turbine Power Converters"
+  authors: "İ. Alişar, E. Demirok, **Aydın Akan**"
+  venue: "PELSS 2024 - Power Electronics Student Summit 2024 -- Power Electronics Student Summit 2024, PELSS 2024 -- 21 August 2024 through 23 August 2024 -- Kassel -- 205657"
+  url: "https://hdl.handle.net/20.500.14365/5937"
+
+- year: 2023
+  eeg: true
+  title: "Detection of Alzheimer’s Dementia by Using Deep Time–Frequency Feature Extraction"
+  authors: "Ozlem Karabiber Cura, H Sabiha Ture, **Aydın Akan**"
+  venue: "Istanbul University - Journal of Electrical & Electronics Engineering"
+  doi: "10.5152/electrica.2023.23029"
+
+- year: 2023
+  eeg: false
+  title: "Automated Segmentation of Gray and White Matter Regions in Brain MRI Images for Computer Aided Diagnosis of ADHD"
+  authors: "Gulay Cicek, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno59875.2023.10359235"
+
+- year: 2023
+  eeg: true
+  title: "Detection of Attention Deficit Hyperactivity Disorder using Decision-level Fusion of Brain Connectivity Information Based on Deep Learning"
+  authors: "Ozlem Karabiber Cura, Fatma Gunseli Ciklacandir, **Aydın Akan**, Sibel Kocaaslan Atli"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno59875.2023.10359178"
+
+- year: 2023
+  eeg: true
+  title: "Detection of the Effects of Environmental Condition on Attention/Memory Using EEG Signals"
+  authors: "Alper Arinc, Burak Akbugday, Sude Pehlivan Akbugday, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno59875.2023.10359237"
+
+- year: 2023
+  eeg: true
+  title: "Classification of Dementia EEG Signals by Using Time-Frequency Images for Deep Learning"
+  authors: "Sena Yagmur Sen, Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "Innovations in Intelligent Systems and Applications Conference (ASYU)"
+  doi: "10.1109/asyu58738.2023.10296777"
+
+- year: 2023
+  eeg: false
+  title: "Machine and Deep Learning Based Detection of Attention Deficit Hyperactivity Disorder"
+  authors: "Gulay Cicek, **Aydın Akan**"
+  venue: "Innovations in Intelligent Systems and Applications Conference (ASYU)"
+  doi: "10.1109/asyu58738.2023.10296678"
+
+- year: 2023
+  eeg: true
+  title: "Classification of ADHD by Using Multiple Feature Maps of EEG Signals and Deep Feature Extraction"
+  authors: "Ozlem Karabiber Cura, Sibel Kocaaslan Atli, Sena Yagmur Sen, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco58844.2023.10289929"
+
+- year: 2023
+  eeg: true
+  title: "Combinations of EEG Topographic Feature Maps for the Classification of ADHD"
+  authors: "Sude Pehlivan, Onur Akdemir, Ozlem Karabiber Cura, Burak Akbuğday, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco58844.2023.10289787"
+
+- year: 2023
+  eeg: true
+  title: "Detection of Attention Deficit Hyperactivity Disorder by Using EEG Feature Maps and Deep Learning"
+  authors: "Burak Akbugday, Ozge Ada Bozbas, Ozlem Karabiber Cura, Sude Pehlivan, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco58844.2023.10289818"
+
+- year: 2023
+  eeg: false
+  title: "On the Use of Kinect V2 For the Assessment of Upper Extremity Movements"
+  authors: "Serkan Çızmecıoğullari, **Aydın Akan**, Yaar Keskn, Berna ÜRKMEZ, Teoman Aydin"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu59756.2023.10223942"
+
+- year: 2023
+  eeg: true
+  title: "Detection of Alzheimer's Dementia Using Intrinsic Time Scale Decomposition of EEG Signals and Deep Learning"
+  authors: "Sena Yagmur Sen, Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "International Conference on Control, Decision and Information Technologies (CoDIT)"
+  doi: "10.1109/codit58514.2023.10284052"
+
+- year: 2023
+  eeg: true
+  title: "Classification of Epileptic and Psychogenic Nonepileptic Seizures via Time–Frequency Features of EEG Data"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**, Hatice Sabiha Ture"
+  venue: "International Journal of Neural Systems"
+  doi: "10.1142/s0129065723500454"
+
+- year: 2022
+  eeg: true
+  title: "Attention deficit hyperactivity disorder recognition based on intrinsic time-scale decomposition of EEG signals"
+  authors: "Ozlem Karabiber Cura, Sibel Kocaaslan Atli, **Aydın Akan**"
+  venue: "Biomedical Signal Processing and Control"
+  doi: "10.1016/j.bspc.2022.104512"
+
+- year: 2022
+  eeg: false
+  title: "Deep Learning-Based Computer-Aided Diagnosis System for Attention Deficit Hyperactivity Disorder Classification Using Synthetic Data"
+  authors: "Gulay Cicek, **Aydın Akan**"
+  venue: "CRC Press eBooks"
+  doi: "10.1201/9781003215141-2"
+
+- year: 2022
+  eeg: false
+  title: "A Unified Diagnosis Kit Design for Telemedicine"
+  authors: "Oke Ozek, Cem Akgun, Kemal Kilic, **Aydın Akan**, Ayca Kumluca Topalli"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno56568.2022.9960215"
+
+- year: 2022
+  eeg: true
+  title: "An Assessment of Linear and Nonlinear Features for Detecting Olfactory Stimulus in EEG"
+  authors: "Burak Akbugday, **Aydın Akan**, Sude Pehlivan, Reza Sadighzadeh"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno56568.2022.9960190"
+
+- year: 2022
+  eeg: true
+  title: "Deep Time-Frequency Feature Extraction for Alzheimer's Dementia EEG Classification"
+  authors: "Ozlem Karabiber Cura, Gulce C. Yilmaz, H. Sabiha Ture, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno56568.2022.9960155"
+
+- year: 2022
+  eeg: true
+  title: "Detection of Attention Deficit Hyperactivity Disorder Using EEG Signals and Douglas—Peucker Algorithm"
+  authors: "Ozlem Karabiber Cura, Gamze N. Aydin, Sibel Celen, Sibel Kocaaslan Atli, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno56568.2022.9960193"
+
+- year: 2022
+  eeg: false
+  title: "Investigating the Effect of Signal Channels and Features in Various Domains on the EMG-based Hand Gesture Classification"
+  authors: "Deniz Hande Kisa, Muhiddin Ceyhun Yildirim, Belkis Ozdil, Mehmet Akif Ozdemir, Onan Guren, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno56568.2022.9960235"
+
+- year: 2022
+  eeg: false
+  title: "Realtime Determination of Mood in Classroom Environment"
+  authors: "Eda Yurdakul, Efe Ergun, Can Yildiz, Burak Akbugday, **Aydın Akan**, Taha Sokucu, Sude Pehlivan"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno56568.2022.9960239"
+
+- year: 2022
+  eeg: false
+  title: "Classification of Hand Gestures using sEMG Signals and Hilbert-Huang Transform"
+  authors: "Deniz Hande Kisa, Mehmet Akif Ozdemir, Onan Guren, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco55093.2022.9909748"
+
+- year: 2022
+  eeg: true
+  title: "Detection of Alzheimer’s Dementia by Using Signal Decomposition and Machine Learning Methods"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**, Gulce Cosku Yilmaz, Hatice Sabiha Ture"
+  venue: "International Journal of Neural Systems"
+  doi: "10.1142/s0129065722500423"
+
+- year: 2022
+  eeg: true
+  title: "Classification of Dementia EEG Based on Sub-bands Using Time-Frequency Approaches"
+  authors: "Ozlem Karabiber Cura, Gulce Cosku Yilmaz, Hatice Sabiha Ture, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu55565.2022.9864898"
+
+- year: 2022
+  eeg: true
+  title: "Detection of Olfactory Stimulus from EEG Signals for Neuromarketing Applications"
+  authors: "Sude Pehlivan, Burak Akbugday, **Aydın Akan**, Reza Sadighzadeh"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu55565.2022.9864841"
+
+- year: 2022
+  eeg: true
+  title: "Liking Status Estimation Using EEG Signals and Mode Decomposition Method"
+  authors: "Burak Ceylan, Serkan Tuzun, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu55565.2022.9864792"
+
+- year: 2022
+  eeg: false
+  title: "Hand gesture classification using time–frequency images and transfer learning based on CNN"
+  authors: "Mehmet Akif Ozdemir, Deniz Hande Kisa, Onan Guren, **Aydın Akan**"
+  venue: "Biomedical Signal Processing and Control"
+  doi: "10.1016/j.bspc.2022.103787"
+
+- year: 2022
+  eeg: false
+  title: "Dataset for multi-channel surface electromyography (sEMG) signals of hand gestures"
+  authors: "Mehmet Akif Ozdemir, Deniz Hande Kisa, Onan Guren, **Aydın Akan**"
+  venue: "Data in Brief"
+  doi: "10.1016/j.dib.2022.107921"
+
+- year: 2022
+  eeg: false
+  title: "Electrogastrography in Patients with Functional Dyspepsia, Joint Hypermobility, and Diabetic Gastroparesis"
+  authors: "Abdullah Al Kafee, Talar Cilacı, Yusuf Kayar, **Aydın Akan**"
+  venue: "The Turkish Journal of Gastroenterology"
+  doi: "10.5152/tjg.2021.20853"
+
+- year: 2021
+  eeg: true
+  title: "Classification of Alzheimers’ Dementia by Using Various Signal Decomposition Methods"
+  authors: "Ozlem Karabiber Cura, Gulce Cosku Yilmaz, Hatice Sabiha Ture, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno53239.2021.9633007"
+
+- year: 2021
+  eeg: false
+  title: "Deep Learning Approach Versus Traditional Machine Learning for ADHD Classification"
+  authors: "Gulay Cicek, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno53239.2021.9632940"
+
+- year: 2021
+  eeg: true
+  title: "Prediction of Sleep Apnea Using EEG Signals and Machine Learning Algorithms"
+  authors: "Aysu Onargan, Busra Gavcar, Gulizar Caliskan, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno53239.2021.9632895"
+
+- year: 2021
+  eeg: false
+  title: "Null Subcarrier Index Modulation in OFDM Systems for 6G and Beyond"
+  authors: "Tuncay Eren, **Aydın Akan**"
+  venue: "Sensors"
+  doi: "10.3390/s21217263"
+
+- year: 2021
+  eeg: true
+  title: "Synchronization Analysis In Epileptic EEG Signals Via State Transfer Networks Based On Visibility Graph Technique"
+  authors: "Ali Olamat, Pinar Ozel, **Aydın Akan**"
+  venue: "International Journal of Neural Systems"
+  doi: "10.1142/s0129065721500416"
+
+- year: 2021
+  eeg: true
+  title: "A Diagnostic Strategy Via Multiresolution Synchrosqueezing Transform on Obsessive Compulsive Disorder"
+  authors: "Pinar Ozel, Ali Olamat, **Aydın Akan**"
+  venue: "Internatıonal Journal of Neural Systems"
+  doi: "10.1142/s0129065721500441"
+
+- year: 2021
+  eeg: true
+  title: "Classification of Psychogenic Non-epileptic Seizures Using Synchrosqueezing Transform of EEG Signals"
+  authors: "Ozlem Karabiber Cura, Gulce Cosku Yilmaz, Hatice Sabiha Ture, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco54536.2021.9615988"
+
+- year: 2021
+  eeg: true
+  title: "Time–frequency signal processing: Today and future"
+  authors: "**Aydın Akan**, Ozlem Karabiber Cura"
+  venue: "Digital Signal Processing"
+  doi: "10.1016/j.dsp.2021.103216"
+
+- year: 2021
+  eeg: false
+  title: "Analysis of the quadratus lumborum muscle activity on leg length discrepancy: A randomized controlled trial"
+  authors: "Sevim Eryiğit, Abdullah Al Kafee, **Aydın Akan**"
+  venue: "Journal of Back and Musculoskeletal Rehabilitation"
+  doi: "10.3233/bmr-181177"
+
+- year: 2021
+  eeg: true
+  title: "An EEG and Machine Learning based Method for the Detection of Major Depressive Disorder"
+  authors: "Elif Izci, Mehmet Akif Ozdemir, **Aydın Akan**, Mehmet Akif Ozcoban, Mehmet Kemal Arikan"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu53274.2021.9477800"
+
+- year: 2021
+  eeg: false
+  title: "Audio Melody Extraction from Heterophonic Turkish Maqam Music"
+  authors: "Berrak Öztürk Şımşek, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu53274.2021.9477983"
+
+- year: 2021
+  eeg: true
+  title: "Epileptic EEG Classification by Using Time-Frequency Images for Deep Learning"
+  authors: "Mehmet Akif Ozdemir, Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "International Journal of Neural Systems"
+  doi: "10.1142/s012906572150026x"
+
+- year: 2021
+  eeg: true
+  title: "Channel Contributions of EEG in Emotion Modelling Based on Multivariate Adaptive Orthogonal Signal Decomposition"
+  authors: "Pinar Ozel, **Aydın Akan**"
+  venue: "IETE Journal of Research"
+  doi: "10.1080/03772063.2021.1911693"
+
+- year: 2021
+  eeg: false
+  title: "Arrhythmic Heartbeat Classification Using 2D Convolutional Neural Networks"
+  authors: "M. Degirmenci, M.A. Ozdemir, E. Izci, **Aydın Akan**"
+  venue: "IRBM"
+  doi: "10.1016/j.irbm.2021.04.002"
+
+- year: 2021
+  eeg: false
+  title: "A new CNN training approach with application to hyperspectral image classification"
+  authors: "Sezer Kutluk, Koray Kayabol, **Aydın Akan**"
+  venue: "Digital Signal Processing"
+  doi: "10.1016/j.dsp.2021.103016"
+
+- year: 2020
+  eeg: true
+  title: "Detection of Consumer Preferences Using EEG Signals"
+  authors: "Burak Ceylan, Serkan Tüzün, **Aydın Akan**"
+  venue: "International Journal of Applied Mathematics Electronics and Computers"
+  doi: "10.18100/ijamec.802214"
+
+- year: 2020
+  eeg: true
+  title: "A Dynamic Mode Decomposition Based Approach for Epileptic EEG Classification"
+  authors: "Ozlem Karabiber Cura, Mehmet Akif Ozdemir, Sude Pehlivan, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco47968.2020.9287719"
+
+- year: 2020
+  eeg: true
+  title: "Epileptic EEG Classification Using Synchrosqueezing Transform with Machine and Deep Learning Techniques"
+  authors: "Ozlem Karabiber Cura, Mehmet Akif Ozdemir, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco47968.2020.9287347"
+
+- year: 2020
+  eeg: true
+  title: "Analysis of epileptic EEG signals by using dynamic mode decomposition and spectrum"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "Journal of Applied Biomedicine"
+  doi: "10.1016/j.bbe.2020.11.002"
+
+- year: 2020
+  eeg: false
+  title: "Classification of attention deficit hyperactivity disorder (ADHD) by using statistical features of MR images"
+  authors: "Gulay Cicek, **Aydın Akan**"
+  venue: "Institute of Physics eBooks"
+  doi: "10.1088/978-0-7503-1822-8ch3"
+
+- year: 2020
+  eeg: true
+  title: "Classification of Epileptic EEG Signals Using Synchrosqueezing Transform and Machine Learning"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "International Journal of Neural Systems"
+  doi: "10.1142/s0129065721500052"
+
+- year: 2020
+  eeg: false
+  title: "Abnormal ECG Beat Detection Based on Convolutional Neural Networks"
+  authors: "Mehmet Akif Ozdemir, Onan Guren, Ozlem Karabiber Cura, **Aydın Akan**, Aytug Onan"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299260"
+
+- year: 2020
+  eeg: false
+  title: "Comparison of Parallel Magnetic Resonance Imaging Algorithms: PILS and SENSE"
+  authors: "Egehan DORUM, Mazlum UNAY, Onan GUREN, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299249"
+
+- year: 2020
+  eeg: false
+  title: "Deep Learning Based Facial Emotion Recognition System"
+  authors: "Mehmet Akif Ozdemir, Berkay Elagoz, Aysegul Alaybeyoglu Soy, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299256"
+
+- year: 2020
+  eeg: true
+  title: "EEG based Epileptic Seizures Detection using Intrinsic Time-Scale Decomposition"
+  authors: "Murside DEGIRMENCI, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299262"
+
+- year: 2020
+  eeg: false
+  title: "EMG based Hand Gesture Classification using Empirical Mode Decomposition Time-Series and Deep Learning"
+  authors: "Deniz Hande KISA, Mehmet Akif OZDEMIR, Onan GUREN, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299282"
+
+- year: 2020
+  eeg: false
+  title: "EMG based Hand Gesture Recognition using Deep Learning"
+  authors: "Mehmet Akif Ozdemir, Deniz Hande Kisa, Onan Guren, Aytug Onan, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299264"
+
+- year: 2020
+  eeg: true
+  title: "Epileptic EEG Classification Using Synchrosqueezing Transform and Machine Learning"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299317"
+
+- year: 2020
+  eeg: true
+  title: "Individual-based Estimation of Valence with EEG"
+  authors: "Bora Cebeci, **Aydın Akan**, Tamer Demiralp, Miray Erbey"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299244"
+
+- year: 2020
+  eeg: false
+  title: "Synchrosqueezing Transform in Biomedical Applications: A mini review"
+  authors: "Duygu Degirmenci, Melike Yalcin, Mehmet Akif Ozdemir, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno50054.2020.9299225"
+
+- year: 2020
+  eeg: true
+  title: "Epileptic EEG Classification by Using Advanced Signal Decomposition Methods"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "IntechOpen eBooks"
+  doi: "10.5772/intechopen.93810"
+
+- year: 2020
+  eeg: true
+  title: "An EEG Based Liking Status Detection Method for Neuromarketing Applications"
+  authors: "Burak Ceylan, Serkan Tüzün, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu49456.2020.9302508"
+
+- year: 2020
+  eeg: false
+  title: "Audio Melody Extraction from Monophonic Turkish Maqam Music"
+  authors: "Berrak Ozturk Simsek, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu49456.2020.9302166"
+
+- year: 2020
+  eeg: true
+  title: "Classification of Epileptic EEG Signals Using Dynamic Mode Decomposition"
+  authors: "Özlem Karabiber Cura, Sude Pehlivan, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu49456.2020.9302302"
+
+- year: 2020
+  eeg: false
+  title: "Design of a New System for Upper Extremity Movement Ability Assessment"
+  authors: "Serkan Çızmecıoğullari, Mertcan Koçak, Şenay Mihçin, Aliye Tosun, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu49456.2020.9302514"
+
+- year: 2020
+  eeg: false
+  title: "ECG Arrhythmia Detection with Deep Learning"
+  authors: "Elif İzci, Mürşide Değirmenci, Mehmet Akif Özdemir, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu49456.2020.9302219"
+
+- year: 2020
+  eeg: true
+  title: "EEG Based Mental Workload Estimation System"
+  authors: "Bora Cebecí, **Aydın Akan**, Bernis Sütçübaşi, Tamer Demıralp"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu49456.2020.9302362"
+
+- year: 2020
+  eeg: true
+  title: "Estimation of Emotion Status Using IAPS Image Data Set"
+  authors: "Bartu Yesilkaya, Onan Guren, Mehmet Tugay Bahar, Leyla Nur Turhal, **Aydın Akan**"
+  venue: "Signal Processing and Communications Applications Conference (SIU)"
+  doi: "10.1109/siu49456.2020.9302223"
+
+- year: 2020
+  eeg: true
+  title: "EEG-based emotion recognition with deep convolutional neural networks"
+  authors: "Mehmet Akif Ozdemir, Murside Degirmenci, Elif Izci, **Aydın Akan**"
+  venue: "Biomedizinische Technik/Biomedical Engineering"
+  doi: "10.1515/bmt-2019-0306"
+
+- year: 2020
+  eeg: true
+  title: "Intrinsic Synchronization Analysis of Brain Activity in Obsessive–compulsive Disorders"
+  authors: "Pinar Ozel, Ali Karaca, Ali Olamat, **Aydın Akan**, Mehmet Akif Ozcoban, Oguz Tan"
+  venue: "International Journal of Neural Systems"
+  doi: "10.1142/s012906572050046x"
+
+- year: 2020
+  eeg: false
+  title: "IDENTIFICATION OF PARKINSON’S DISEASE BY AR MODELLING OF GAIT SIGNALS"
+  authors: "Ömer AKGÜN, **Aydın Akan**"
+  venue: "European Journal of Technic"
+  doi: "10.36222/ejt.681232"
+
+- year: 2020
+  eeg: false
+  title: "The Spectral and Statistical Analysis of Gait Dynamics in ALS Disease"
+  authors: "Ömer AKGÜN, **Aydın Akan**, Ozgur YILMAZ"
+  venue: "Balkan Journal of Electrical and Computer Engineering"
+  doi: "10.17694/bajece.679926"
+
+- year: 2020
+  eeg: false
+  title: "Wearable sensor-based evaluation of psychosocial stress in patients with metabolic syndrome"
+  authors: "Fatma Patlar Akbulut, Baris Ikitimur, **Aydın Akan**"
+  venue: "Artificial Intelligence in Medicine"
+  doi: "10.1016/j.artmed.2020.101824"
+
+- year: 2020
+  eeg: true
+  title: "Epileptic seizure classifications using empirical mode decomposition and its derivative"
+  authors: "Ozlem Karabiber Cura, Sibel Kocaaslan Atli, Hatice Sabiha Türe, **Aydın Akan**"
+  venue: "BioMedical Engineering OnLine"
+  doi: "10.1186/s12938-020-0754-y"
+
+- year: 2019
+  eeg: true
+  title: "Emotional state detection based on common spatial patterns of EEG"
+  authors: "Merve Dogruyol Basar, Adil Deniz Duru, **Aydın Akan**"
+  venue: "Signal Image and Video Processing"
+  doi: "10.1007/s11760-019-01580-8"
+
+- year: 2019
+  eeg: false
+  title: "Cardiac Arrhythmia Detection from 2D ECG Images by Using Deep Learning Technique"
+  authors: "Elif Izci, Mehmet Akif Ozdemir, Murside Degirmenci, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895011"
+
+- year: 2019
+  eeg: false
+  title: "Classification of ADHD Using Ensemble Algorithms with Deep Learning and Hand Crafted Features"
+  authors: "Gülay Çiçek, Mesut Çevik, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895197"
+
+- year: 2019
+  eeg: true
+  title: "Comparison of IMF Selection Methods in Classification of Multiple Sclerosis EEG Data"
+  authors: "Soner Kotan, Jeroen Van Schependom, Guy Nagels, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895091"
+
+- year: 2019
+  eeg: true
+  title: "Control of Serious Games Designed for Alzheimer's and Dementia Patients by EEG Signals"
+  authors: "Ahmet Ata, Bartu Yeşılkaya, Özlem Karabıber Cura, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895043"
+
+- year: 2019
+  eeg: false
+  title: "Counting Bacteria Colonies Based on Image Processing Methods"
+  authors: "Busra Kis, Mazlum Unay, Gizem Dilara Ekimci, Utku Kursat Ercan, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895213"
+
+- year: 2019
+  eeg: false
+  title: "Design of Real Time Cardiac Arrhythmia Detection Device"
+  authors: "Yasemin Yol, Mehmet Akif Ozdemir, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8894964"
+
+- year: 2019
+  eeg: false
+  title: "Designing an Obstacle Detection and Alerting System for Visually Impaired People on Sidewalks"
+  authors: "Sude Pehlivan, Mazlum Unay, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895181"
+
+- year: 2019
+  eeg: true
+  title: "Desıgn of Brain-Computer Interface for Controlling A Virtual Keyboard"
+  authors: "Delal Karakus, Ozlem Karabiber Cura, Bartu Yesilkaya, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895133"
+
+- year: 2019
+  eeg: true
+  title: "EEG based Emotional State Estimation using 2-D Deep Learning Technique"
+  authors: "Mehmet Akif Ozdemir, Murside Degirmenci, Onan Guren, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895158"
+
+- year: 2019
+  eeg: true
+  title: "Emotion Recognition with Multi-Channel EEG Signals Using Auditory Stimulus"
+  authors: "Cansu Gunes, Mehmet Akif Ozdemir, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895124"
+
+- year: 2019
+  eeg: true
+  title: "Emotion Recognition with Multi-Channel EEG Signals Using Visual Stimulus"
+  authors: "Tugba Ergin, Mehmet Akif Ozdemir, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895242"
+
+- year: 2019
+  eeg: true
+  title: "Frontal Synchronization Biases in Obsessive-Compulsive Disorders"
+  authors: "Mehmet Akif Özçoban, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895180"
+
+- year: 2019
+  eeg: true
+  title: "Investigation of Emotional Changes Using Features of EEG-Gamma Band and Different Classifiers"
+  authors: "Merve Dogruyol Basar, Adil Deniz Duru, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895088"
+
+- year: 2019
+  eeg: false
+  title: "Real Time Emotion Recognition from Facial Expressions Using CNN Architecture"
+  authors: "Mehmet Akif Ozdemir, Berkay Elagoz, Aysegul Alaybeyoglu, Reza Sadighzadeh, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895215"
+
+- year: 2019
+  eeg: true
+  title: "Selection of Intrinsic Mode Functions for Epileptic EEG Classification Using Ensemble Empirical Mode Decomposition"
+  authors: "Ozlem Karabiber Cura, **Aydın Akan**, Sibel Kocaaslan Atli"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895000"
+
+- year: 2019
+  eeg: false
+  title: "The Effect of Data Augmentation on ADHD Diagnostic Model using Deep Learning"
+  authors: "Gülay Çiçek, Atilla Özmen, **Aydın Akan**"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+  doi: "10.1109/tiptekno.2019.8895056"
+
+- year: 2019
+  eeg: false
+  title: "Analysis of linear lung models based on state-space models"
+  authors: "Esra Saatci, Ertugrul Saatci, **Aydın Akan**"
+  venue: "Computer Methods and Programs in Biomedicine"
+  doi: "10.1016/j.cmpb.2019.105094"
+
+- year: 2019
+  eeg: false
+  title: "Spectral-Spatial Classification of Hyperspectral Images Using CNNs and Approximate Sparse Multinomial Logistic Regression"
+  authors: "Sezer Kutluk, Koray Kayabol, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+  doi: "10.23919/eusipco.2019.8902983"
+
+- year: 2019
+  eeg: false
+  title: "Investigation of Wearable Motion Capture System Towards Biomechanical Modelling"
+  authors: "Senay Mihcin, Hakki Kose, Serkan Cizmeciogullari, Samet Ciklacandir, Mertcan Kocak, Aliye Tosun, **Aydın Akan**"
+  venue: "IEEE International Symposium on Medical Measurements and Applications (MeMeA)"
+  doi: "10.1109/memea.2019.8802208"
+
+- year: 2019
+  eeg: false
+  title: "Force irradiation effect of kinesiotaping on contralateral muscle activation"
+  authors: "Hilal Denizoglu Kulli, Derya Karabulut, Tolga Saka, **Aydın Akan**, Yunus Ziya Arslan"
+  venue: "Human Movement Science"
+  doi: "10.1016/j.humov.2019.05.011"
+
+- year: 2019
+  eeg: false
+  title: "Indocyanine green based fluorescent polymeric nanoprobes for in vitro imaging"
+  authors: "Zeynep R. Ege, **Aydın Akan**, Faik N. Oktar, Chi C. Lin, Durdane S. Kuruca, Betul Karademir, Yesim M. Sahin, Gokce Erdemir, Oguzhan Gunduz"
+  venue: "Journal of Biomedical Materials Research Part B Applied Biomaterials"
+  doi: "10.1002/jbm.b.34410"
+
+- year: 2019
+  eeg: true
+  title: "Synchrosqueezing transform based feature extraction from EEG signals for emotional state prediction"
+  authors: "Pinar Ozel, **Aydın Akan**, Bulent Yilmaz"
+  venue: "Biomedical Signal Processing and Control"
+  doi: "10.1016/j.bspc.2019.04.023"

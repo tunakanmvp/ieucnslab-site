@@ -1,20 +1,29 @@
 {{ define "main" }}
 {{ partial "page-head.html" . }}
 <div class="wrap">
+  {{ $tr := eq site.Language.Lang "tr" }}
   {{ $pubs := sort hugo.Data.publications "year" "desc" }}
   {{ if $pubs }}
-    {{ $years := slice }}{{ range $pubs }}{{ $years = $years | append .year }}{{ end }}
+  {{ range slice true false }}
+    {{ $section := . }}
+    {{ $entries := where $pubs "eeg" "==" true }}
+    {{ if not $section }}{{ $entries = where $pubs "eeg" "!=" true }}{{ end }}
+    {{ with $entries }}
+    <section class="publication-group">
+    <h2>{{ if $section }}{{ cond $tr "EEG çalışmaları" "EEG publications" }}{{ else }}{{ cond $tr "Diğer yayınlar" "Other publications" }}{{ end }}</h2>
+    {{ $years := slice }}{{ range . }}{{ $years = $years | append .year }}{{ end }}
     {{ range uniq $years }}
     {{ $y := . }}
     <section class="pub-year">
-      <h2>{{ $y }}</h2>
+      <h3>{{ $y }}</h3>
       <ol class="pubs">
-        {{ range where $pubs "year" $y }}
+        {{ range where $entries "year" $y }}
         <li class="pub">
           <p class="pub-title">{{ .title }}</p>
           <p class="pub-authors">{{ .authors | markdownify }}</p>
           <p class="pub-venue">{{ .venue }}
             {{ with .doi }} · <a href="https://doi.org/{{ . }}">DOI</a>{{ end }}
+            {{ with .url }} · <a href="{{ . }}">{{ cond $tr "Yayın kaydı" "Publication record" }}</a>{{ end }}
             {{ with .pdf }} · <a href="{{ . }}">PDF</a>{{ end }}
           </p>
         </li>
@@ -22,6 +31,9 @@
       </ol>
     </section>
     {{ end }}
+    </section>
+    {{ end }}
+  {{ end }}
   {{ else }}
     <p>{{ i18n "pub_empty" }}</p>
   {{ end }}

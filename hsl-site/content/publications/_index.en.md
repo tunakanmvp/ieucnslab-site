@@ -1,4 +1,4 @@
 ---
 title: Publications
-description: Articles, conference papers and theses by lab members.
+description: Professor Aydın Akan’s publications since 2019.
 ---
