@@ -40,8 +40,8 @@
   group: researchers
   role_tr: ""
   role_en: ""
-  bio_tr: ""
-  bio_en: ""
+  bio_tr: Türk müziğinin duygular üzerindeki etkisini makine öğrenmesi ve derin öğrenme yöntemleriyle araştırıyor.
+  bio_en: Investigates how Turkish music affects emotions, using machine learning and deep learning.
   email: nncagla@gmail.com
   scholar: ""
   photo: ""
@@ -50,8 +50,8 @@
   group: researchers
   role_tr: ""
   role_en: ""
-  bio_tr: ""
-  bio_en: ""
+  bio_tr: Gömülü yapay zekâ ile kayıt kapsamı genişletilmiş, yalnızca alından değil tüm kafadan kayıt alabilen yeni bir fNIRS cihazı geliştiriyor.
+  bio_en: Developing a new fNIRS device with embedded AI that extends recording coverage from the forehead to the whole head.
   email: ugur.baynal@ieu.edu.tr
   scholar: ""
   photo: ""
