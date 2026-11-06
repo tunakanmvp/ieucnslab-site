@@ -236,3 +236,9 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 .equipment-card h3 { font-size: 1.125rem; margin: 0 0 .4rem; }
 .equipment-card figcaption p { color: var(--muted); font-size: 1rem; margin-bottom: .55rem; }
 .equipment-card figcaption a { font-size: .875rem; }
+
+/* Keep home section headings clear of the sticky navigation. */
+[data-nav-section] { scroll-margin-top: var(--home-header-offset, 9rem); }
+@media (prefers-reduced-motion: no-preference) {
+  html:has([data-nav-section]) { scroll-behavior: smooth; }
+}

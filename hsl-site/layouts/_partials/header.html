@@ -15,7 +15,13 @@
         {{ range site.Menus.main }}
           {{ $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) }}
           {{ with .Page }}{{ if and (not $active) (or (eq $current .) ($current.IsDescendant .)) }}{{ $active = true }}{{ end }}{{ end }}
-          <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+          {{ $url := .URL }}
+          {{ with .Page }}
+            {{ if and $current.IsHome (in (slice "research" "people" "publications" "facilities" "news") .Section) }}
+              {{ $url = printf "#home-%s" .Section }}
+            {{ end }}
+          {{ end }}
+          <li><a href="{{ $url }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
         {{ end }}
       </ul>
       {{ $other := "" }}

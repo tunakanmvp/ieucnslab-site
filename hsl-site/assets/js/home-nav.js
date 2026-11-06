@@ -15,7 +15,7 @@ function updateCurrentSection() {
   const section = atEnd
     ? sections.at(-1)
     : sections.findLast(element => element.getBoundingClientRect().top <= readingLine);
-  const nextLink = links.get(section?.dataset.navSection);
+  const nextLink = links.get(`#${section?.id}`);
   if (nextLink === currentLink) return;
   currentLink?.removeAttribute("aria-current");
   nextLink?.setAttribute("aria-current", "location");
@@ -29,7 +29,12 @@ function scheduleUpdate() {
 }
 
 window.addEventListener("scroll", scheduleUpdate, { passive: true });
-window.addEventListener("resize", scheduleUpdate);
+const updateHeaderOffset = () => {
+  document.documentElement.style.setProperty("--home-header-offset", `${header.offsetHeight + 16}px`);
+  scheduleUpdate();
+};
+new ResizeObserver(updateHeaderOffset).observe(header);
+updateHeaderOffset();
 window.addEventListener("pageshow", scheduleUpdate);
 if (document.fonts) document.fonts.ready.then(scheduleUpdate);
 updateCurrentSection();
