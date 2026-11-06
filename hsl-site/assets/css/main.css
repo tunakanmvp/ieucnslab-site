@@ -1,16 +1,18 @@
 /* Computational Neuroscience Lab — görsel sistem */
 :root {
-  --paper: #ffffff;
-  --surface: #f3f5f9;
-  --obsidian: #000;
-  --carbon: #191919;
-  --light-muted: #c7c7c7;
+  --paper: #e6f2e9;
+  --surface: #f3faf5;
+  --obsidian: #0c2a1f;
+  --carbon: #08201a;
+  --light-muted: #a8cbb6;
+  --electric: #5ef0a2;
+  --line-dark: #21503d;
   --card-radius: 24px;
   --pill-radius: 300px;
-  --ink: #191919;
-  --muted: #575757;
-  --grid: #e5e7eb;
-  --accent: #4a53ff;
+  --ink: #0f3526;
+  --muted: #3d6352;
+  --grid: #c6ddcd;
+  --accent: #187a4a;
   --accent-ink: var(--obsidian);
   --accent-wash: var(--surface);
 
@@ -30,7 +32,9 @@
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image: var(--circuit-light);
+  background-size: 220px 220px;
   color: var(--ink);
   font: 400 var(--step-0)/1.48 var(--font);
   font-feature-settings: "kern", "liga";
@@ -48,10 +52,10 @@ a:hover { text-decoration-thickness: 2px; }
 .wrap-wide { max-width: calc(var(--wrap) + 8rem); }
 
 /* Header */
-.announcement-bar { background: var(--accent); color: var(--paper); text-align: center; padding-block: .65rem; font-size: .875rem; }
+.announcement-bar { background: var(--accent); color: #f2fbf5; text-align: center; padding-block: .65rem; font-size: .875rem; }
 .announcement-bar a { color: inherit; font-weight: 650; }
-.announcement-bar a:focus-visible { outline-color: var(--paper); }
-.site-header { position: sticky; top: 0; z-index: 5; background: var(--obsidian); color: var(--paper); border-bottom: 1px solid #292929; }
+.announcement-bar a:focus-visible { outline-color: #f2fbf5; }
+.site-header { position: sticky; top: 0; z-index: 5; background: var(--obsidian); color: #eaf7ee; border-bottom: 1px solid var(--line-dark); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 5.25rem; flex-wrap: wrap; padding-block: .75rem; }
 .wordmark { display: flex; align-items: baseline; gap: .7rem; color: inherit; text-decoration: none; }
 .wordmark-short { font-weight: 800; font-size: var(--step-1); letter-spacing: -0.04em; color: inherit; }
@@ -75,17 +79,19 @@ a:hover { text-decoration-thickness: 2px; }
   opacity: 0;
   transition: transform 180ms ease, opacity 180ms ease;
 }
+.nav li a::after { background: var(--electric); }
 .nav li a:hover::after, .nav li a[aria-current]::after { transform: scaleX(1); opacity: 1; }
-.nav li a[aria-current] { transform: scale(1.05); }
+.nav li a[aria-current] { color: var(--electric); }
+
 @media (prefers-reduced-motion: reduce) {
   .nav li a, .nav li a::after { transition: none; }
 }
 #main { scroll-margin-top: 8rem; }
-.nav .lang { color: var(--paper); border: 1px solid #747474; border-radius: var(--pill-radius); padding: .4rem .9rem; }
-.nav .lang:hover { border-color: var(--paper); }
+.nav .lang { color: #eaf7ee; border: 1px solid #4d7a66; border-radius: var(--pill-radius); padding: .4rem .9rem; }
+.nav .lang:hover { border-color: var(--electric); }
 
 /* Hero */
-.hero { background: var(--obsidian); color: var(--paper); padding-block: clamp(3.5rem, 7vw, 6rem) clamp(3rem, 7vw, 5rem); }
+.hero { background-color: var(--obsidian); background-image: var(--circuit-dark); background-size: 220px 220px; color: #eaf7ee; padding-block: clamp(3.5rem, 7vw, 6rem) clamp(3rem, 7vw, 5rem); }
 .hero .button { margin-top: 1.6rem; }
 .hero-title {
   font-size: var(--hero);
@@ -100,14 +106,14 @@ a:hover { text-decoration-thickness: 2px; }
 .hero-uni { color: var(--light-muted); margin: 0 0 1rem; font-size: var(--step--1); text-transform: uppercase; letter-spacing: .1em; }
 
 /* EEG strip */
-.eeg { position: relative; margin: clamp(2.5rem, 6vw, 4rem) 0 0; padding-left: 3.25rem; border-block: 1px solid #343434; }
+.eeg { position: relative; margin: clamp(2.5rem, 6vw, 4rem) 0 0; padding-left: 3.25rem; border-block: 1px solid var(--line-dark); background: color-mix(in srgb, var(--obsidian) 80%, transparent); }
 .eeg-svg { display: block; width: 100%; height: clamp(110px, 16vw, 185px); overflow: visible; }
 .eeg-labels { position: absolute; inset: 0 auto 0 0; width: 3.25rem; margin: 0; padding: 0; list-style: none; display: grid; grid-template-rows: repeat(6, 1fr); }
 .eeg-labels li { display: flex; align-items: center; font-size: .75rem; font-weight: 600; color: var(--light-muted); font-variant-numeric: tabular-nums; }
-.eeg-labels li.is-accent { color: var(--paper); }
-.eeg-base { stroke: #383838; stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 2 4; }
-.eeg-trace { fill: none; stroke: var(--paper); stroke-opacity: .55; stroke-width: 1.15; stroke-linejoin: round; }
-.eeg-trace.is-accent { stroke: var(--accent); stroke-opacity: 1; stroke-width: 1.8; }
+.eeg-labels li.is-accent { color: var(--electric); }
+.eeg-base { stroke: var(--line-dark); stroke-width: 1; vector-effect: non-scaling-stroke; stroke-dasharray: 2 4; }
+.eeg-trace { fill: none; stroke: #cfeedd; stroke-opacity: .5; stroke-width: 1.15; stroke-linejoin: round; }
+.eeg-trace.is-accent { stroke: var(--electric); stroke-opacity: 1; stroke-width: 1.8; }
 .eeg-svg.is-ready .eeg-trace { stroke-dasharray: 1; stroke-dashoffset: 1; animation: trace 2.6s cubic-bezier(.3,.1,.2,1) forwards; animation-delay: calc(var(--i) * 90ms); }
 @keyframes trace { to { stroke-dashoffset: 0; } }
 @media (prefers-reduced-motion: reduce) {
@@ -134,10 +140,10 @@ a:hover { text-decoration-thickness: 2px; }
 .block .area-list { margin-top: 0; }
 .research-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1.5rem; border: 0; }
 .research-grid .area { height: 100%; display: flex; flex-direction: column; gap: .8rem; padding: clamp(1.5rem, 3vw, 2rem); background: var(--surface); border: 1px solid transparent; border-radius: var(--card-radius); }
-.research-grid .area:hover { border-color: #a0a0a0; }
+.research-grid .area:hover { border-color: var(--accent); }
 .research-grid .area-title { font-size: 1.35rem; }
 .research-grid .area-summary { font-size: 1rem; }
-.section-link { display: inline-block; padding: .65rem 1.2rem; margin-top: 1.25rem; border: 1px solid #b0b0b0; border-radius: var(--pill-radius); font-size: .875rem; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; text-decoration: none; }
+.section-link { display: inline-block; padding: .65rem 1.2rem; margin-top: 1.25rem; border: 1px solid #8fbfa3; border-radius: var(--pill-radius); font-size: .875rem; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; text-decoration: none; }
 .section-link:hover { border-color: var(--ink); }
 
 .news-list { list-style: none; margin: 0; padding: 0; }
@@ -146,13 +152,13 @@ a:hover { text-decoration-thickness: 2px; }
 .news-list a { color: var(--ink); font-weight: 550; text-decoration: none; }
 .news-list a:hover { color: var(--accent-ink); text-decoration: underline; }
 
-.join-band { background: var(--obsidian); color: var(--paper); padding-block: clamp(3.5rem, 8vw, 7rem); }
+.join-band { background-color: var(--obsidian); background-image: var(--circuit-dark); background-size: 220px 220px; color: #eaf7ee; padding-block: clamp(3.5rem, 8vw, 7rem); }
 .join { display: grid; gap: .75rem 3rem; grid-template-columns: 1fr auto; align-items: end; }
 .join h2 { grid-column: 1 / -1; margin: 0; font-size: var(--step-2); letter-spacing: -0.02em; }
 .join p { margin: 0; max-width: 46ch; color: var(--light-muted); }
-.button { display: inline-block; background: #fff; color: var(--accent-ink); font-weight: 650; text-decoration: none; padding: .85rem 1.5rem; border-radius: var(--pill-radius); font-size: .875rem; text-transform: uppercase; letter-spacing: .1em; text-align: center; }
-.button:hover { background: var(--accent-wash); }
-.join .button:focus-visible { outline-color: #fff; }
+.button { display: inline-block; background: var(--electric); color: var(--obsidian); font-weight: 650; text-decoration: none; padding: .85rem 1.5rem; border-radius: var(--pill-radius); font-size: .875rem; text-transform: uppercase; letter-spacing: .1em; text-align: center; }
+.button:hover { background: #8ff7bf; }
+.join .button:focus-visible, .hero .button:focus-visible { outline-color: var(--electric); }
 
 /* Inner pages */
 .page-head { padding-top: clamp(2.5rem, 6vw, 4.5rem); padding-bottom: 2rem; }
@@ -201,7 +207,7 @@ a:hover { text-decoration-thickness: 2px; }
 .site-footer { margin-top: clamp(4rem, 10vw, 7rem); background: var(--carbon); padding-block: 2.5rem; font-size: var(--step--1); color: var(--light-muted); }
 .footer-inner { display: grid; grid-template-columns: 1fr 1fr auto; gap: 1.5rem 2.5rem; align-items: start; }
 .footer-inner p { margin: 0 0 .25rem; }
-.footer-title, .site-footer a { color: var(--paper); }
+.footer-title, .site-footer a { color: #eaf7ee; }
 .footer-title { font-weight: 650; }
 .footer-copy { align-self: end; }
 
@@ -231,7 +237,7 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 /* Equipment photography */
 .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: 1rem; margin-block: 1.5rem 2.5rem; }
 .equipment-card { margin: 0; overflow: hidden; background: var(--surface); border-radius: var(--card-radius); }
-.equipment-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; padding: 1rem; background: var(--paper); }
+.equipment-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; padding: 1rem; background: #fff; }
 .equipment-card figcaption { padding: 1rem 1.25rem 1.25rem; }
 .equipment-card h3 { font-size: 1.125rem; margin: 0 0 .4rem; }
 .equipment-card figcaption p { color: var(--muted); font-size: 1rem; margin-bottom: .55rem; }
@@ -245,3 +251,31 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 
 .home-section > .page-desc { max-width: 60ch; margin: -0.75rem 0 1.75rem; }
 .home-section > .contact { margin-top: 1.5rem; }
+
+/* Devre deseni zeminler */
+:root {
+  --circuit-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' fill='%23e6f2e9' stroke='%23c9e1d1' stroke-width='1.4'%3E%3Cpath fill='none' d='M0 30H70l20 20h50 M200 30h20 M180 0v40l-20 20v40 M180 220v-14 M30 220v-60l30-30h40 M30 0v14 M220 150h-40l-20 20v50 M0 150h14 M120 220v-30l20-20h30 M120 0v12 M0 110h30 M220 110h-14 M60 0v20 M60 220v-8 M90 50v30l-15 15'/%3E%3Ccircle cx='140' cy='50' r='3.5'/%3E%3Ccircle cx='160' cy='100' r='3.5'/%3E%3Ccircle cx='100' cy='130' r='3.5'/%3E%3Ccircle cx='170' cy='170' r='3.5'/%3E%3Ccircle cx='30' cy='110' r='3.5'/%3E%3Ccircle cx='30' cy='14' r='3.5'/%3E%3Ccircle cx='120' cy='12' r='3.5'/%3E%3Ccircle cx='14' cy='150' r='3.5'/%3E%3Ccircle cx='206' cy='110' r='3.5'/%3E%3Ccircle cx='75' cy='95' r='3.5'/%3E%3Ccircle cx='60' cy='20' r='3.5'/%3E%3C/svg%3E");
+  --circuit-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' fill='%230c2a1f' stroke='%23143d2e' stroke-width='1.4'%3E%3Cpath fill='none' d='M0 30H70l20 20h50 M200 30h20 M180 0v40l-20 20v40 M180 220v-14 M30 220v-60l30-30h40 M30 0v14 M220 150h-40l-20 20v50 M0 150h14 M120 220v-30l20-20h30 M120 0v12 M0 110h30 M220 110h-14 M60 0v20 M60 220v-8 M90 50v30l-15 15'/%3E%3Ccircle cx='140' cy='50' r='3.5'/%3E%3Ccircle cx='160' cy='100' r='3.5'/%3E%3Ccircle cx='100' cy='130' r='3.5'/%3E%3Ccircle cx='170' cy='170' r='3.5'/%3E%3Ccircle cx='30' cy='110' r='3.5'/%3E%3Ccircle cx='30' cy='14' r='3.5'/%3E%3Ccircle cx='120' cy='12' r='3.5'/%3E%3Ccircle cx='14' cy='150' r='3.5'/%3E%3Ccircle cx='206' cy='110' r='3.5'/%3E%3Ccircle cx='75' cy='95' r='3.5'/%3E%3Ccircle cx='60' cy='20' r='3.5'/%3E%3C/svg%3E");
+}
+
+/* Ana sayfada aktif bölümü izleyen kayan çizgi */
+.nav ul { position: relative; }
+.nav-indicator {
+  position: absolute; left: 0; top: 0; height: 2px; width: 0;
+  background: var(--electric); border-radius: 1px; pointer-events: none; opacity: 0;
+  box-shadow: 0 0 8px color-mix(in srgb, var(--electric) 70%, transparent);
+  transition: transform 320ms cubic-bezier(.3,.1,.2,1), width 320ms cubic-bezier(.3,.1,.2,1), opacity 200ms ease;
+}
+.nav-indicator.is-on { opacity: 1; }
+.nav ul.has-indicator a[aria-current]::after { opacity: 0; }
+
+/* Bölümler kaydırdıkça belirir */
+.js-reveal .reveal { opacity: 0; transform: translateY(24px); transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.7,.2,1); }
+.js-reveal .reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .nav-indicator { transition: none; }
+  .js-reveal .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Kartlar desenin üstünde okunaklı kalsın */
+.home-section, .page-head + .wrap, article.wrap { position: relative; }
