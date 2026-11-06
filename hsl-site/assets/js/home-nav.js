@@ -65,7 +65,7 @@ function scheduleUpdate() {
 
 window.addEventListener("scroll", scheduleUpdate, { passive: true });
 const updateHeaderOffset = () => {
-  document.documentElement.style.setProperty("--home-header-offset", `${header.offsetHeight + 16}px`);
+  document.documentElement.style.setProperty("--home-header-offset", `${header.offsetHeight + 32}px`);
   moveIndicator();
   scheduleUpdate();
 };

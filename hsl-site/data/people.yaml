@@ -1,5 +1,5 @@
 # Ekip üyeleri. group: lead | researchers | students | alumni
-# photo: static/images/people/ altına dosya koyup adını yazın (boşsa baş harfler gösterilir)
+# photo: static/images/people/ altına dosya koyup adını yazın ya da tam https adresi verin (boşsa ya da yüklenemezse baş harfler gösterilir)
 - name: Prof. Dr. Aydın Akan
   group: lead
   role_tr: Laboratuvar Kurucusu
@@ -24,26 +24,34 @@
     Professor Akan’s research focuses on time–frequency analysis of nonstationary signals and its applications in communications and biomedical engineering. He has led and contributed to numerous projects supported by TÜBİTAK and university research programs. His work has appeared in books, journal articles, book chapters, and conference proceedings in Türkiye and internationally. He serves on journal review boards and on advisory, executive, organizing, technical program, and review committees for scientific conferences. He is an IEEE Senior Member affiliated with the Signal Processing and Engineering in Medicine and Biology societies. He is also a member of the EURASIP Technical Area Committee on Biomedical Signal and Image Analytics and serves on the editorial board of Elsevier’s Digital Signal Processing journal.
   email: akan.aydin@ieu.edu.tr
   scholar: ""
-  photo: ""
+  photo: https://gcris.ieu.edu.tr/server/api/core/bitstreams/08f09923-8aa2-4e4b-a9bc-ece3d0cf433c/content
 
-- name: Berkay TODO-Soyad
-  draft: true
-  group: students
-  role_tr: Araştırma Görevlisi, Yüksek Lisans Öğrencisi
-  role_en: Research Assistant, MSc Student
+- name: Berkay İlber Tunakan
+  group: researchers
+  role_tr: Araştırma Görevlisi
+  role_en: Research Assistant
   bio_tr: EEG tabanlı duygu ve beğeni sınıflandırması, çok kipli biyosinyal analizi.
   bio_en: EEG-based emotion and preference classification, multimodal biosignal analysis.
+  email: berkay.tunakan@ieu.edu.tr
+  scholar: ""
+  photo: ""
+
+- name: Nilsu
+  group: researchers
+  role_tr: ""
+  role_en: ""
+  bio_tr: ""
+  bio_en: ""
   email: ""
   scholar: ""
   photo: ""
 
-- name: TODO Ad Soyad
-  draft: true
-  group: students
-  role_tr: Yüksek Lisans Öğrencisi
-  role_en: MSc Student
-  bio_tr: "TODO"
-  bio_en: "TODO"
+- name: Uğur Emin
+  group: researchers
+  role_tr: ""
+  role_en: ""
+  bio_tr: ""
+  bio_en: ""
   email: ""
   scholar: ""
   photo: ""

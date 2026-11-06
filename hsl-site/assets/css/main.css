@@ -307,3 +307,39 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) { .bg-layer { transition: none; } }
 body:has(.bg-stage) { background-image: none; }
 .footer-credits { grid-column: 1 / -1; font-size: .75rem; opacity: .8; margin-top: .75rem !important; }
+
+/* Bölüm başlıkları: koyu yeşil zemin üzerinde beyaz, kalın */
+.block-title, .page-head h1 {
+  display: inline-block;
+  background: var(--obsidian);
+  color: #fff;
+  font-weight: 800;
+  padding: .3em .65em .35em;
+  border-radius: 14px;
+  line-height: 1.05;
+}
+.block-title a { color: inherit; }
+.page-head h1 { font-size: var(--step-2); }
+
+/* Fotoğraf yüklenemezse altındaki baş harfler görünür */
+.avatar-wrap { position: relative; display: block; width: 100%; aspect-ratio: 1; }
+.avatar-wrap > .avatar { position: absolute; inset: 0; width: 100%; height: 100%; }
+.avatar-photo { object-fit: cover; object-position: center 20%; background: var(--surface); }
+
+/* Ekip: kurucunun altında küçük dikey kartlar */
+.people:not(.people-lead) { grid-template-columns: repeat(3, minmax(0, 15rem)); gap: 1.25rem; }
+.people:not(.people-lead) .person {
+  grid-template-columns: 1fr;
+  justify-items: start;
+  gap: .9rem;
+  padding: 1.4rem 1.25rem 1.5rem;
+  border: 1px solid var(--grid);
+}
+.people:not(.people-lead) .avatar-wrap { width: 4.5rem; }
+.people:not(.people-lead) .avatar-initials { font-size: 1.35rem; }
+.people:not(.people-lead) .links { flex-direction: column; gap: .25rem; }
+@media (max-width: 760px) {
+  .people:not(.people-lead) { grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); }
+}
+.avatar-initials { background: #cfe6d7; color: var(--obsidian); }
+.people:not(.people-lead) .person { align-content: start; }

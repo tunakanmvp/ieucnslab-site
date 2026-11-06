@@ -11,16 +11,18 @@
     <ul class="people{{ if eq $group "lead" }} people-lead{{ end }}">
       {{ range . }}
       <li class="person">
-        {{ if .photo }}
-          <img class="avatar" src="{{ printf "images/people/%s" .photo | relURL }}" alt="" loading="lazy">
-        {{ else }}
-          {{ $parts := split (replaceRE `^(Prof\.|Doç\.|Dr\.|Dr\. Öğr\. Üyesi)\s*` "" .name | replaceRE `^(Dr\.)\s*` "") " " }}
-          <span class="avatar avatar-initials" aria-hidden="true">{{ substr (index $parts 0) 0 1 }}{{ substr (index $parts (sub (len $parts) 1)) 0 1 }}</span>
-        {{ end }}
+        {{ $parts := split (replaceRE `^(Prof\.|Doç\.|Dr\.|Dr\. Öğr\. Üyesi)\s*` "" .name | replaceRE `^(Dr\.)\s*` "") " " }}
+        <span class="avatar-wrap">
+          <span class="avatar avatar-initials" aria-hidden="true">{{ substr (index $parts 0) 0 1 }}{{ if gt (len $parts) 1 }}{{ substr (index $parts (sub (len $parts) 1)) 0 1 }}{{ end }}</span>
+          {{ with .photo }}
+          {{ $src := cond (hasPrefix . "http") . (printf "images/people/%s" . | relURL) }}
+          <img class="avatar avatar-photo" src="{{ $src }}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+          {{ end }}
+        </span>
         <div>
           {{ printf "<%s>" $personHeading | safeHTML }}{{ .name }}{{ printf "</%s>" $personHeading | safeHTML }}
-          <p class="role">{{ cond $tr .role_tr .role_en }}</p>
-          <p class="bio">{{ cond $tr .bio_tr .bio_en }}</p>
+          {{ with cond $tr .role_tr .role_en }}<p class="role">{{ . }}</p>{{ end }}
+          {{ with cond $tr .bio_tr .bio_en }}<p class="bio">{{ . }}</p>{{ end }}
           <p class="links">
             {{ with .email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
             {{ with .scholar }}<a href="{{ . }}">Google Scholar</a>{{ end }}
