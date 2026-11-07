@@ -1,8 +1,11 @@
 {{ $uni := cond (eq site.Language.Lang "tr") site.Params.university_tr site.Params.university_en }}
 <div class="contact">
   <dl>
-    <dt>{{ cond (eq site.Language.Lang "tr") "E-posta" "Email" }}</dt>
-    <dd><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></dd>
+    {{ $tr := eq site.Language.Lang "tr" }}
+    <dt>{{ cond $tr "Ortak projeler ve iş birlikleri" "Joint projects and collaborations" }}</dt>
+    <dd>Prof. Dr. Aydın Akan<br><a href="mailto:{{ site.Params.collab_email }}">{{ site.Params.collab_email }}</a></dd>
+    <dt>{{ cond $tr "Site ve genel bilgi" "Website and general enquiries" }}</dt>
+    <dd>Berkay İlber Tunakan<br><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></dd>
     <dt>{{ cond (eq site.Language.Lang "tr") "Adres" "Address" }}</dt>
     <dd>{{ $uni }}<br>{{ site.Params.address }}</dd>
   </dl>

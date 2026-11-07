@@ -8,6 +8,7 @@ disableKinds = ["taxonomy", "term"]
   university_tr = "İzmir Ekonomi Üniversitesi"
   university_en = "Izmir University of Economics"
   email = "berkay.tunakan@ieu.edu.tr"
+  collab_email = "akan.aydin@ieu.edu.tr"
   address = "Sakarya Cad. No:156, 35330 Balçova / İzmir"
 
 [languages]
