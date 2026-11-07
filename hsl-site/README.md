@@ -80,7 +80,17 @@ category: Temel kavramlar   # Temel kavramlar | Nöropazarlama | Yapay zeka | Si
 summary: Kartta başlığın altında görünen bir-iki cümlelik özet.
 author: Yazarın adı
 ---
-Yazının tamamı. Karta tıklanınca açılır. Resim için: ![açıklama](/images/blog/resim.jpg)
+Yazının tamamı. Karta tıklanınca açılır. Resim için: ![açıklama](resim.jpg "İsteğe bağlı alt yazı")
 ```
 
 `2026-12-01-ornek.en.md`: aynısı İngilizce, `url:` yerine `slug: example`.
+
+#### Resim ekleme
+
+Resimleri `static/images/` klasörüne koyun ve yazıda yalnızca dosya adıyla çağırın:
+
+```markdown
+![EEG başlığı takılmış bir katılımcı](eeg-baslik.jpg "Alt yazı (isteğe bağlı)")
+```
+
+Tırnak içindeki kısım yazılırsa resmin altında alt yazı olarak görünür. Dosya adlarında Türkçe karakter ve boşluk kullanmayın (`eeg-baslik.jpg` gibi). Katılımcı yüzü ya da kimliği görünen fotoğraf eklemeyin.

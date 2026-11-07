@@ -1,0 +1,9 @@
+{{- $src := .Destination -}}
+{{- if not (or (strings.HasPrefix $src "/") (strings.Contains $src "://")) -}}
+  {{- $src = printf "/images/%s" $src | relURL -}}
+{{- end -}}
+{{- if .Title -}}
+<figure class="blog-figure"><img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy"><figcaption>{{ .Title }}</figcaption></figure>
+{{- else -}}
+<img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy">
+{{- end -}}
