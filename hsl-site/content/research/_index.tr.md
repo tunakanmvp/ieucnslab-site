@@ -1,5 +1,5 @@
 ---
-title: Araştırma
+title: Aktif Araştırmalarımız
 url: /arastirma/
 description: Laboratuvarımızın çalıştığı başlıca konular.
 ---
