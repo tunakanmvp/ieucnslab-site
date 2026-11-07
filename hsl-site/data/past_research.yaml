@@ -17,4 +17,43 @@
 #   summary_tr: "Kısa Türkçe özet."
 #   summary_en: "Short English summary."
 #   link: "https://doi.org/..."
-[]
+
+- year: 2026
+  title_tr: "Ürün Görsellerinin Oluşturduğu Duygusal Tepkilerin EEG ve Derin Öğrenme Yöntemleriyle Tahmin Edilmesi"
+  title_en: "Estimation of Human Emotions Under Product Image Stimuli Using EEG Signals"
+  who: "Yaren Gürbüz, Vatan Eren Sönmez, Sinem İzgi"
+  degree_tr: "Lisans bitirme projesi (FENG 497–498)"
+  degree_en: "Undergraduate Capstone Project (FENG 497–498)"
+  summary_tr: "Farklı ürün maskotlarının oluşturduğu duygusal tepkilerin EEG sinyalleri üzerinden tahmin edilmesi amacıyla derin öğrenme yöntemleri karşılaştırıldı. EEG sinyallerinden çıkarılan spektral ve istatistiksel öznitelikler topografik haritalara dönüştürülerek AlexNet, Inception ve Vision Transformer (ViT) mimarileriyle duygusal değerlik (valence) ve uyarılmışlık (arousal) sınıflandırması gerçekleştirildi."
+  summary_en: "Deep learning approaches were compared to estimate emotional responses elicited by different product mascot designs using EEG signals. Spectral and statistical EEG features were transformed into topographic maps and analyzed using AlexNet, Inception, and Vision Transformer (ViT) architectures for emotional valence and arousal classification."
+  link: ""
+
+- year: 2025
+  title_tr: "Yapay Zekâ Yöntemleriyle EEG Sinyallerinden İnsan Duygularının Tahmin Edilmesi"
+  title_en: "Estimation of Human Emotions from EEG Signals Using Artificial Intelligence Methods"
+  who: "Eray Özcan Kılıç, Ünal Karadayı, Onat Filik, Ege Deniz Aslan, Melike İlhan"
+  degree_tr: "Lisans bitirme projesi (FENG 497–498)"
+  degree_en: "Undergraduate Capstone Project (FENG 497–498)"
+  summary_tr: "EEG sinyallerinden duygusal değerlik (valence) ve uyarılmışlık (arousal) düzeylerinin tahmin edilmesi amacıyla DEAP veri kümesi üzerinde makine öğrenmesi ve derin öğrenme yöntemleri karşılaştırıldı. Sinyallerden çıkarılan zamansal ve spektral öznitelikler ile EEG topografik haritaları kullanılarak Random Forest, XGBoost, SVM, derin sinir ağları, 2D-CNN ve ResNet-18 modellerinin duygu sınıflandırma performansları değerlendirildi."
+  summary_en: "Machine learning and deep learning approaches were compared for estimating emotional valence and arousal from EEG signals using the DEAP dataset. Time-domain and spectral EEG features, along with topographic brain maps, were used to evaluate the emotion classification performance of Random Forest, XGBoost, SVM, deep neural networks, 2D-CNN, and ResNet-18 models."
+  link: ""
+
+- year: 2024
+  title_tr: "Uçak Gürültüsünün Dikkat ve Zihinsel İş Yükü Üzerindeki Etkilerinin EEG ve PPG ile İncelenmesi"
+  title_en: "Investigation of the Impact of Aircraft Noise on Attention and Mental Workload Using EEG and PPG"
+  who: "Berkay İlber Tunakan, Duygu Köybaşı, Can Mungan, Altuğ Güneş"
+  degree_tr: "Lisans bitirme projesi (FENG 497–498)"
+  degree_en: "Undergraduate Capstone Project (FENG 497–498)"
+  summary_tr: "Farklı uçak gürültüsü seviyelerinin dikkat ve zihinsel iş yükü üzerindeki etkileri, 30 katılımcıya uygulanan n-back görevleri sırasında kaydedilen EEG, PPG ve davranışsal performans verileriyle incelendi. EEG sinyallerinden çıkarılan öznitelikler makine öğrenmesi yöntemleriyle analiz edilerek farklı gürültü koşullarındaki bilişsel ve fizyolojik tepkiler değerlendirildi."
+  summary_en: "The effects of aircraft noise levels on attention and mental workload were investigated using EEG, PPG, and behavioral performance data collected from 30 participants performing n-back tasks. EEG features were analyzed using machine learning methods to evaluate cognitive and physiological responses under different noise conditions."
+  link: ""
+
+- year: 2024
+  title_tr: "Çevresel Gürültünün Bilişsel Performans Üzerindeki Etkilerinin EEG ve Makine Öğrenmesi ile İncelenmesi"
+  title_en: "Investigation of the Effects of Environmental Noise on Cognitive Performance Using EEG and Machine Learning"
+  who: "Emre Sipahioğlu, Ozan Ege Dündar, Uğur Emre Özübelli"
+  degree_tr: "Lisans bitirme projesi (FENG 497–498)"
+  degree_en: "Undergraduate Capstone Project (FENG 497–498)"
+  summary_tr: "Farklı çevresel gürültü seviyelerinin dikkat, çalışma belleği ve zihinsel iş yükü üzerindeki etkileri EEG, PPG ve 2-back görevleri kullanılarak araştırıldı. EEG sinyallerinden çıkarılan öznitelikler destek vektör makineleri (SVM) ve Random Forest algoritmalarıyla analiz edilerek farklı gürültü koşullarındaki bilişsel tepkiler değerlendirildi. Bu çalışmadan türetilen araştırma, TIPTEKNO 2024 konferansında bildiri olarak yayımlanmıştır."
+  summary_en: "The effects of environmental noise levels on attention, working memory, and mental workload were investigated using EEG, PPG, and 2-back tasks. Features extracted from EEG signals were analyzed using Support Vector Machines (SVM) and Random Forest algorithms to evaluate cognitive responses under different noise conditions. Research derived from this project was also published as a conference paper at TIPTEKNO 2024."
+  link: ""
