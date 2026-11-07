@@ -12,6 +12,7 @@
       {{ end }}
     </ul>
     {{ end }}
+    {{ if eq .Section "research" }}{{ partial "past-research.html" . }}{{ end }}
   {{ end }}
 </div>
 {{ end }}

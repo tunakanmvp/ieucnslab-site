@@ -22,6 +22,7 @@ hugo server
 | Araştırma alanları | `content/research/*.tr.md` + `*.en.md` |
 | Ekip | `data/people.yaml` (fotoğraflar `static/images/people/`) |
 | Yayınlar | `data/publications.yaml` |
+| Geçmiş çalışmalar (Araştırma sayfası) | `data/past_research.yaml` |
 | Altyapı | `content/facilities/_index.*.md` |
 | Haberler | `content/news/` |
 | Arayüz metinleri (butonlar vb.) | `i18n/tr.toml`, `i18n/en.toml` |
