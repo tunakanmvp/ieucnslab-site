@@ -87,10 +87,10 @@ His research focuses on neuroengineering, biomedical device development, embedde
   group: researchers
   role_tr: "Araştırma Görevlisi"
   role_en: "Research Assistant"
-  bio_tr: ""
-  bio_en: ""
-  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  bio_tr: "EEG sinyallerinin makine ve derin öğrenme yöntemleriyle analizi üzerine çalışmaktadır."
+  bio_en: "EEG signal analysis with machine and deep learning methods."
+  biography_tr: "Çalışmaları, EEG sinyallerinin makine öğrenmesi ve derin öğrenme yöntemleriyle analizi üzerinde yoğunlaşmaktadır. Nöropazarlama uygulamalarına yönelik olarak koku uyaranlarının EEG'den tespiti ve koku karşısında oluşan duygusal tepkilerin sınıflandırılması üzerine bir dizi çalışmada yer almıştır. EEG öznitelik haritaları ve derin öğrenme kullanılarak dikkat eksikliği ve hiperaktivite bozukluğu (DEHB) ile Alzheimer demansının tespiti, çevre koşulları ve gürültünün dikkat ve zihinsel görevler üzerindeki etkisi, sınıf ortamında anlık duygu durumunun belirlenmesi ve sürdürülebilir ürün ambalajının tüketici davranışına etkisi de çalıştığı konular arasındadır."
+  biography_en: "His work focuses on analysing EEG signals with machine learning and deep learning methods. He has contributed to a series of studies on detecting olfactory stimuli from EEG and classifying emotional responses to odours for neuromarketing applications. His other topics include detecting attention deficit hyperactivity disorder (ADHD) and Alzheimer's dementia using EEG feature maps and deep learning, the effect of environmental conditions and noise on attention and mental tasks, real-time mood detection in the classroom, and the effect of sustainable product packaging on consumer behaviour."
   email:
     - burak.akbugday@ieu.edu.tr
     - burak.akbugday@std.ieu.edu.tr
@@ -102,10 +102,10 @@ His research focuses on neuroengineering, biomedical device development, embedde
   group: researchers
   role_tr: "Araştırma Görevlisi"
   role_en: "Research Assistant"
-  bio_tr: ""
-  bio_en: ""
-  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  bio_tr: "EEG tabanlı biyomedikal sinyal işleme ve nöropazarlama üzerine çalışmaktadır."
+  bio_en: "EEG-based biomedical signal processing and neuromarketing."
+  biography_tr: "Çalışmaları EEG tabanlı biyomedikal sinyal işleme ve nöropazarlama üzerinde yoğunlaşmaktadır. Koku uyaranlarının EEG'den tespiti, çok alanlı öznitelikler ve makine öğrenmesiyle koku EEG'sinin çözümlenmesi ve koku karşısında oluşan duyguların sınıflandırılması üzerine çalışmalarda yer almıştır. EEG topografik öznitelik haritaları ve derin öğrenmeyle DEHB ve Alzheimer demansının tespiti, dinamik mod ayrışımı ile epileptik EEG sınıflandırması ve çevre koşullarının dikkat ve bellek üzerindeki etkisi de çalıştığı konular arasındadır."
+  biography_en: "Her work focuses on EEG-based biomedical signal processing and neuromarketing. She has contributed to studies on detecting olfactory stimuli from EEG, decoding olfactory EEG with multi-domain features and machine learning, and classifying emotions evoked by odours. Her other topics include detecting ADHD and Alzheimer's dementia with EEG topographic feature maps and deep learning, classifying epileptic EEG with dynamic mode decomposition, and the effect of environmental conditions on attention and memory."
   email:
     - sude.pehlivan@ieu.edu.tr
     - sude.pehlivan@std.ieu.edu.tr
@@ -117,10 +117,10 @@ His research focuses on neuroengineering, biomedical device development, embedde
   group: researchers
   role_tr: "Dr. Öğretim Üyesi"
   role_en: "Assistant Professor"
-  bio_tr: ""
-  bio_en: ""
-  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  bio_tr: "İzmir Ekonomi Üniversitesi Uygulamalı Yönetim Bilimleri Yüksekokulu'nda nöropazarlama ve tüketici sinirbilimi üzerine çalışmaktadır."
+  bio_en: "Neuromarketing and consumer neuroscience, School of Applied Management Sciences, İzmir University of Economics."
+  biography_tr: "İzmir Ekonomi Üniversitesi Uygulamalı Yönetim Bilimleri Yüksekokulu'nda görev yapmaktadır. Laboratuvarımızda nöropazarlama ve tüketici sinirbilimi alanındaki çalışmalarda yer almaktadır. Koku uyaranlarının EEG'den tespiti ve koku kaynaklı duyguların tanınması, ürün maskotunun cinsiyetinin ve sürdürülebilir ambalajın tüketici duyguları ve davranışı üzerindeki etkisi ile yüz ifadelerinden gerçek zamanlı duygu tanıma çalıştığı konular arasındadır."
+  biography_en: "He is with the School of Applied Management Sciences at İzmir University of Economics and contributes to the lab's work in neuromarketing and consumer neuroscience. His topics include detecting olfactory stimuli from EEG and recognising odour-evoked emotions, the effect of product mascot gender and sustainable packaging on consumer emotions and behaviour, and real-time emotion recognition from facial expressions."
   email:
     - riza.sadikzade@ieu.edu.tr
     - riza@taimaksan.com
@@ -132,10 +132,10 @@ His research focuses on neuroengineering, biomedical device development, embedde
   group: researchers
   role_tr: "Dr. Öğretim Üyesi"
   role_en: "Assistant Professor"
-  bio_tr: ""
-  bio_en: ""
-  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  bio_tr: "İzmir Ekonomi Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü'nde EEG tabanlı duygu tanıma ve derin öğrenme üzerine çalışmaktadır."
+  bio_en: "EEG-based emotion recognition and deep learning, Department of Electrical and Electronics Engineering, İzmir University of Economics."
+  biography_tr: "İzmir Ekonomi Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü'nde görev yapmaktadır. Laboratuvarımızda koku uyaranlarına verilen EEG tepkilerinin analizi üzerine çalışmaktadır. EEG sinyallerini frekans bantlarına özgü topografik ısı haritalarına dönüştürüp evrişimli sinir ağlarıyla koku kaynaklı duyguları tanıyan hafif bir yöntem geliştirmiş, çok alanlı öznitelikler ve makine öğrenmesiyle koku EEG'sinin çözümlenmesi üzerine çalışmalarda da yer almıştır."
+  biography_en: "She is with the Department of Electrical and Electronics Engineering at İzmir University of Economics and works in the lab on analysing EEG responses to olfactory stimuli. She developed a lightweight method that turns EEG signals into band-specific topographic heatmaps and recognises odour-evoked emotions with convolutional neural networks, and has contributed to studies decoding olfactory EEG with multi-domain features and machine learning."
   email:
     - faezeh.yeganli@ieu.edu.tr
   scholar: ""
