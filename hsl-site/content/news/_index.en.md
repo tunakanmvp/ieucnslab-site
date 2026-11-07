@@ -1,6 +1,6 @@
 ---
-title: Announcements
-description: Research funding, calls for proposals and lab announcements.
+title: News
+description: News from Izmir University of Economics about our lab and team.
 ---
 ## Funding calls and research announcements
 

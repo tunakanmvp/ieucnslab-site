@@ -37,7 +37,7 @@ disableKinds = ["taxonomy", "term"]
       pageRef = "/facilities"
       weight = 40
     [[languages.tr.menus.main]]
-      name = "Duyurular"
+      name = "Haberler"
       pageRef = "/news"
       weight = 50
     [[languages.tr.menus.main]]
@@ -71,7 +71,7 @@ disableKinds = ["taxonomy", "term"]
       pageRef = "/facilities"
       weight = 40
     [[languages.en.menus.main]]
-      name = "Announcements"
+      name = "News"
       pageRef = "/news"
       weight = 50
     [[languages.en.menus.main]]

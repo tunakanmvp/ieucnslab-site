@@ -1,7 +1,7 @@
 ---
-title: Duyurular
+title: Haberler
 url: /haberler/
-description: Araştırma fonları, proje çağrıları ve laboratuvar duyuruları.
+description: İzmir Ekonomi Üniversitesi’nden laboratuvarımız ve ekibimizle ilgili haberler.
 ---
 ## Proje çağrıları ve araştırma duyuruları
 

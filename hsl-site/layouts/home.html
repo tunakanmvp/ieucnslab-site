@@ -21,7 +21,9 @@
     <section class="wrap block home-section" id="home-{{ .Section }}" data-nav-section>
       <h2 class="block-title">{{ .Title }}</h2>
       {{ with .Description }}<p class="page-desc">{{ . }}</p>{{ end }}
-      {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+      {{ if ne .Section "news" }}
+        {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+      {{ end }}
       {{ if eq .Section "research" }}
         <ul class="area-list research-grid">
           {{ range .Pages.ByWeight }}
@@ -38,7 +40,7 @@
       {{ else if eq .Section "publications" }}
         {{ partial "publication-recent.html" . }}
       {{ else if eq .Section "news" }}
-        {{ partial "news-list.html" .Pages.ByDate.Reverse }}
+        {{ partial "news-section.html" . }}
       {{ else if eq .Section "contact" }}
         {{ partial "contact-details.html" . }}
       {{ end }}

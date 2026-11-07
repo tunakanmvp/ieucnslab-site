@@ -1,15 +1,17 @@
 {{ define "main" }}
 {{ partial "page-head.html" . }}
 <div class="wrap">
-  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
   {{ if eq .Section "news" }}
-    {{ partial "news-list.html" .Pages.ByDate.Reverse }}
-  {{ else if .Pages }}
+    {{ partial "news-section.html" . }}
+  {{ else }}
+    {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+    {{ if .Pages }}
     <ul class="area-list">
       {{ range .Pages.ByWeight }}
       <li><a class="area" href="{{ .RelPermalink }}"><span class="area-title">{{ .Title }}</span><span class="area-summary">{{ .Summary | plainify }}</span></a></li>
       {{ end }}
     </ul>
+    {{ end }}
   {{ end }}
 </div>
 {{ end }}
