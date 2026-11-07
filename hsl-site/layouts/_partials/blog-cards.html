@@ -1,15 +1,19 @@
 {{/* Blog yazıları: açılır kartlar. Parametreler: dict "page" (blog bölümü) "limit" (0 = hepsi) */}}
 {{ $tr := eq site.Language.Lang "tr" }}
-{{ $posts := .page.Pages.ByDate.Reverse }}
+{{ $page := .page }}
+{{ $posts := $page.Pages.ByDate.Reverse }}
 {{ $limit := .limit | default 0 }}
 {{ $shown := cond (gt $limit 0) (first $limit $posts) $posts }}
 {{ with $shown }}
 <ul class="blog-cards">
   {{ range . }}
-  <li>
+  <li data-cat="{{ .Params.category | default "" | urlize }}">
     <details class="blog-card" id="yazi-{{ .File.ContentBaseName }}">
       <summary>
-        <time class="blog-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+        <span class="blog-meta">
+          {{ with .Params.category }}<span class="blog-cat">{{ . }}</span>{{ end }}
+          <time class="blog-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+        </span>
         <h3 class="blog-title">{{ .Title }}</h3>
         <p class="blog-summary">{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}</p>
         <span class="person-toggle blog-toggle" aria-hidden="true"><span class="when-closed">{{ cond $tr "Yazının tamamı" "Read more" }}</span><span class="when-open">{{ cond $tr "Kapat" "Close" }}</span></span>
@@ -23,7 +27,7 @@
   {{ end }}
 </ul>
 {{ if gt (len $posts) (len $shown) }}
-<a class="section-link" href="{{ .page.RelPermalink }}">{{ cond $tr "Tüm yazılar" "All posts" }} ({{ len $posts }})</a>
+<a class="section-link" href="{{ $page.RelPermalink }}">{{ cond $tr "Tüm yazılar" "All posts" }} ({{ len $posts }})</a>
 {{ end }}
 {{ else }}
 <p>{{ cond $tr "Henüz yazı yok." "No posts yet." }}</p>

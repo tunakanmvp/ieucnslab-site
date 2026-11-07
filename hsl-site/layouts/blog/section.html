@@ -2,11 +2,28 @@
 {{ partial "page-head.html" . }}
 <div class="wrap">
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ $cats := slice }}{{ range .Pages }}{{ with .Params.category }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
+  {{ with uniq $cats }}
+  <div class="blog-filter" role="group" aria-label="{{ cond (eq site.Language.Lang "tr") "Kategoriye göre süz" "Filter by category" }}">
+    <button type="button" data-filter="" aria-pressed="true">{{ cond (eq site.Language.Lang "tr") "Tümü" "All" }}</button>
+    {{ range . }}<button type="button" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>{{ end }}
+  </div>
+  {{ end }}
   {{ partial "blog-cards.html" (dict "page" . "limit" 0) }}
 </div>
 <script>
   // Bağlantı #yazi-... ile gelinirse ilgili kartı açık göster
   (function () {
+    var buttons = document.querySelectorAll(".blog-filter button");
+    buttons.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.dataset.filter;
+        buttons.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+        document.querySelectorAll(".blog-cards > li").forEach(function (li) {
+          li.hidden = !!f && li.dataset.cat !== f;
+        });
+      });
+    });
     var el = location.hash && document.getElementById(location.hash.slice(1));
     if (el && el.tagName === "DETAILS") { el.open = true; el.scrollIntoView(); }
   })();

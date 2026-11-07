@@ -38,6 +38,7 @@ hugo server
 title: Başlık
 url: /haberler/baslik/
 date: 2026-12-01
+category: Temel kavramlar   # ya da: Çalışmalarımız (EN: Basics / Our work)
 summary: Tek cümlelik özet.
 ---
 Metin...
@@ -74,6 +75,7 @@ grep -rn TODO content data hugo.toml static
 title: Başlık (kartta büyük ve kalın görünür)
 url: /blog/ornek/
 date: 2026-12-01
+category: Temel kavramlar   # ya da: Çalışmalarımız (EN: Basics / Our work)
 summary: Kartta başlığın altında görünen bir-iki cümlelik özet.
 author: Yazarın adı
 ---
