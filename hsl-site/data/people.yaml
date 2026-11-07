@@ -99,7 +99,7 @@
   photo: ""
 
 - name: Dr. Rıza Sadıkzade
-  match: "R[ıi]za Sad[ıi]kzade"
+  match: "R[ıi]za Sad[ıi]kzade|Reza Sadighzadeh"
   group: researchers
   role_tr: ""
   role_en: ""
