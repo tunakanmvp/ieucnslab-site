@@ -2,8 +2,11 @@
 {{ partial "page-head.html" . }}
 <div class="wrap">
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
-  {{ $cats := slice }}{{ range .Pages }}{{ with .Params.category }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
-  {{ with uniq $cats }}
+  {{ $present := slice }}{{ range .Pages }}{{ with .Params.category }}{{ $present = $present | append . }}{{ end }}{{ end }}
+  {{ $cats := slice }}
+  {{ range site.Params.blog_categories }}{{ if in $present . }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
+  {{ range uniq $present }}{{ if not (in $cats .) }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
+  {{ with $cats }}
   <div class="blog-filter" role="group" aria-label="{{ cond (eq site.Language.Lang "tr") "Kategoriye göre süz" "Filter by category" }}">
     <button type="button" data-filter="" aria-pressed="true">{{ cond (eq site.Language.Lang "tr") "Tümü" "All" }}</button>
     {{ range . }}<button type="button" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>{{ end }}

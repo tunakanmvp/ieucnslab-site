@@ -17,6 +17,7 @@ disableKinds = ["taxonomy", "term"]
     title = "Computational Neuroscience Lab"
     weight = 1
     [languages.tr.params]
+      blog_categories = ["Temel kavramlar", "Nöropazarlama", "Yapay zeka", "Sinyal işleme teorisi"]
       short = "CNS"
       tagline = "Beynin elektriksel dilini, duyguları ve kararları anlamak için ölçüyor ve modelliyoruz."
 
@@ -59,6 +60,7 @@ disableKinds = ["taxonomy", "term"]
     title = "Computational Neuroscience Lab"
     weight = 2
     [languages.en.params]
+      blog_categories = ["Basics", "Neuromarketing", "Artificial intelligence", "Signal processing theory"]
       short = "CNS"
       tagline = "We measure and model the brain's electrical language to understand emotions and decisions."
 

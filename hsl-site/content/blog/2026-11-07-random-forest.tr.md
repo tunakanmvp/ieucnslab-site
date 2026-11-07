@@ -2,7 +2,7 @@
 title: Random Forest, tek bir uzman yerine bir konsey
 url: /blog/random-forest-nedir/
 date: 2026-11-07T11:10:00+03:00
-category: Temel kavramlar
+category: Yapay zeka
 summary: "Tek bir kişiye sorduğunuzda yanılabilir. Yüz kişiye sorup çoğunluğa bakarsanız işler değişir. Random Forest bu fikri karar ağaçlarıyla uyguluyor."
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

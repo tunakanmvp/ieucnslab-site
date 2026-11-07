@@ -1,6 +1,7 @@
 ---
 title: Blogumuz açıldı
 url: /blog/blogumuz-acildi/
+category: Temel kavramlar
 date: 2026-11-07
 summary: Laboratuvarda neler yaptığımızı, deneylerin perde arkasını ve öğrendiklerimizi buradan kısa yazılarla paylaşacağız.
 author: Hesaplamalı Sinirbilim Laboratuvarı

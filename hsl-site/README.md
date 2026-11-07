@@ -74,7 +74,7 @@ grep -rn TODO content data hugo.toml static
 title: Başlık (kartta büyük ve kalın görünür)
 url: /blog/ornek/
 date: 2026-12-01
-category: Temel kavramlar   # ya da: Çalışmalarımız (EN: Basics / Our work)
+category: Temel kavramlar   # Temel kavramlar | Nöropazarlama | Yapay zeka | Sinyal işleme teorisi (EN: Basics | Neuromarketing | Artificial intelligence | Signal processing theory)
 summary: Kartta başlığın altında görünen bir-iki cümlelik özet.
 author: Yazarın adı
 ---

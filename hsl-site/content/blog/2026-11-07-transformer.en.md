@@ -2,7 +2,7 @@
 title: The Transformer, a meeting where everyone can look at everyone
 slug: how-does-a-transformer-work
 date: 2026-11-07T09:20:00+03:00
-category: Basics
+category: Artificial intelligence
 summary: The Transformer, the architecture behind language models like ChatGPT, doesn't read a sentence word by word. It looks at all the words at once and decides which ones relate to which.
 author: Computational Neuroscience Lab
 ---

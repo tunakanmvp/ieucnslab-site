@@ -2,7 +2,7 @@
 title: Transformer, herkesin herkese bakabildiği toplantı
 url: /blog/transformer-nasil-calisir/
 date: 2026-11-07T09:20:00+03:00
-category: Temel kavramlar
+category: Yapay zeka
 summary: ChatGPT gibi dil modellerinin temelindeki Transformer, bir cümleyi kelime kelime okumak yerine bütün kelimelere aynı anda bakar ve hangisinin hangisiyle ilgili olduğuna karar verir.
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

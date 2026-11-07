@@ -2,7 +2,7 @@
 title: Nöropazarlama, anketin söyleyemediğini dinlemek
 url: /blog/noropazarlama-nedir/
 date: 2026-11-07T09:40:00+03:00
-category: Temel kavramlar
+category: Nöropazarlama
 summary: İnsanlara bir ürünü beğenip beğenmediklerini sorabiliriz. Ama verdikleri cevap her zaman hissettiklerinin tamamı değildir. Nöropazarlama bu boşluğa bakıyor.
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

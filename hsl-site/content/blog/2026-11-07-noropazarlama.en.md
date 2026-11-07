@@ -2,7 +2,7 @@
 title: Neuromarketing, or listening to what surveys can't tell you
 slug: what-is-neuromarketing
 date: 2026-11-07T09:40:00+03:00
-category: Basics
+category: Neuromarketing
 summary: We can ask people whether they like a product. But their answer isn't always the whole story of what they feel. Neuromarketing looks into that gap.
 author: Computational Neuroscience Lab
 ---

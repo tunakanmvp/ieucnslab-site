@@ -2,7 +2,7 @@
 title: Random Forest, a panel instead of a single expert
 slug: what-is-random-forest
 date: 2026-11-07T11:10:00+03:00
-category: Basics
+category: Artificial intelligence
 summary: "Ask one person and they might be wrong. Ask a hundred and go with the majority, and things change. Random Forest applies that idea with decision trees."
 author: Computational Neuroscience Lab
 ---

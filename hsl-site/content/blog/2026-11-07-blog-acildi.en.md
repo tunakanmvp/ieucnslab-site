@@ -1,6 +1,7 @@
 ---
 title: Our blog is live
 slug: our-blog-is-live
+category: Basics
 date: 2026-11-07
 summary: We will use short posts here to share what we do in the lab, the behind-the-scenes of our experiments and what we learn along the way.
 author: Computational Neuroscience Lab
