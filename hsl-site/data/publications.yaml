@@ -62,6 +62,13 @@
   venue: "Signal Processing and Communications Applications Conference (SIU)"
   doi: "10.1109/siu66497.2025.11112167"
 
+- year: 2025
+  eeg: false
+  title: "Signals and Systems Using Matlab®"
+  authors: "**Aydın Akan**, L.F. Chaparro"
+  venue: "Signals and Systems Using MATLAB®"
+  doi: "10.1016/c2022-0-01198-3"
+
 - year: 2024
   eeg: true
   title: "Decoding Olfactory EEG Signals Using Multi-Domain Features and Machine Learning"
@@ -124,6 +131,83 @@
   authors: "Merve Dogruyol Basar, Adil Deniz Duru, **Aydın Akan**"
   venue: "Signal Processing and Communications Applications Conference (SIU)"
   doi: "10.1109/siu61531.2024.10600905"
+
+- year: 2024
+  eeg: false
+  title: "Continuous-time signals"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00011-2"
+
+- year: 2024
+  eeg: false
+  title: "Continuous-time systems"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00012-4"
+
+- year: 2024
+  eeg: false
+  title: "Discrete-time signals and systems"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00018-5"
+
+- year: 2024
+  eeg: false
+  title: "Fourier analysis of discrete-time signals and systems"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00020-3"
+
+- year: 2024
+  eeg: false
+  title: "Frequency analysis: the Fourier series"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00014-8"
+
+- year: 2024
+  eeg: false
+  title: "Frequency analysis: the Fourier transform"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00015-x"
+
+- year: 2024
+  eeg: false
+  title: "From the ground up!"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00009-4"
+
+- year: 2024
+  eeg: false
+  title: "Introduction to the design of discrete filters"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00021-5"
+
+- year: 2024
+  eeg: false
+  title: "Sampling theory"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00017-3"
+
+- year: 2024
+  eeg: false
+  title: "The Laplace transform"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00013-6"
+
+- year: 2024
+  eeg: false
+  title: "The Z-transform"
+  authors: "**Aydın Akan**, Luis F. Chaparro"
+  venue: "Elsevier eBooks"
+  doi: "10.1016/b978-0-44-315709-7.00019-7"
 
 - year: 2024
   eeg: true
@@ -201,6 +285,13 @@
   authors: "Ozlem Karabiber Cura, Sibel Kocaaslan Atli, **Aydın Akan**"
   venue: "Biomedical Signal Processing and Control"
   doi: "10.1016/j.bspc.2022.104512"
+
+- year: 2022
+  eeg: false
+  title: "Deep Learning-Based Computer-Aided Diagnosis System for Attention Deficit Hyperactivity Disorder Classification Using Synthetic Data"
+  authors: "Gulay Cicek, **Aydın Akan**"
+  venue: "CRC Press eBooks"
+  doi: "10.1201/9781003215141-2"
 
 - year: 2022
   eeg: true
@@ -348,6 +439,13 @@
   authors: "Ozlem Karabiber Cura, **Aydın Akan**"
   venue: "Journal of Applied Biomedicine"
   doi: "10.1016/j.bbe.2020.11.002"
+
+- year: 2020
+  eeg: false
+  title: "Classification of attention deficit hyperactivity disorder (ADHD) by using statistical features of MR images"
+  authors: "Gulay Cicek, **Aydın Akan**"
+  venue: "Institute of Physics eBooks"
+  doi: "10.1088/978-0-7503-1822-8ch3"
 
 - year: 2020
   eeg: true
