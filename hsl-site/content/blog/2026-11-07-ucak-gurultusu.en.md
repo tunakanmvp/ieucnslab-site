@@ -14,13 +14,19 @@ Imagine living near an airport. Every few minutes, whether you open a window, ta
 
 Lawsuits in Japan show most strikingly that aircraft noise is more than a nuisance. In 1969, residents living directly under the take-off and landing routes of Osaka International Airport (Itami) sued the state, arguing that aircraft noise and vibration were harming their daily lives and health. They asked for flights to be stopped between 9 p.m. and 7 a.m. and for compensation for past and future damages.
 
-In 1975 the Osaka High Court recognised the harm to the residents' health and ordered night flights to be halted during those hours. When the case reached Japan's Supreme Court in 1981, the night-flight injunction was rejected, but compensation for past damages was upheld. In Japan this case paved the way for a series of noise lawsuits around military bases such as Kadena, Yokota and Atsugi that continue to this day.
+In 1975 the Osaka High Court recognised the harm to the residents' health and ordered night flights to be halted during those hours. When the case reached Japan's Supreme Court in 1981, the night-flight injunction was rejected, but compensation for past damages was upheld ([English summary of the Supreme Court judgment](https://www.courts.go.jp/app/hanrei_en/detail?id=66)). In Japan this case paved the way for a series of noise lawsuits around military bases that continue to this day:
+
+- **Yokota (Tokyo):** In 2007 the Supreme Court ordered compensation for past damages to about 6,000 plaintiffs but rejected the demand to halt night flights ([The Japan Times](https://www.japantimes.co.jp/news/2007/05/30/national/top-court-cuts-some-redress-from-yokota-base-noise-suit/)).
+- **Atsugi (Kanagawa):** In 2014 the Yokohama District Court became the first district court to order night flights by Self-Defense Forces aircraft to be suspended, and the Tokyo High Court upheld the decision in 2015 ([The Japan Times](https://www.japantimes.co.jp/opinion/2015/08/09/editorials/reducing-military-jet-noise)).
+- **Kadena (Okinawa):** In 2017 about 22,000 residents were awarded ¥30.2 billion, the largest noise damages in Japanese history ([The Japan Times](https://www.japantimes.co.jp/news/2017/02/23/national/crime-legal/japanese-government-ordered-pay-record-damages-u-s-base-noise-suit)). The lawsuits were still continuing in 2026 ([Stars and Stripes](https://www.stripes.com/theaters/asia_pacific/2026-01-29/aircraft-noise-lawsuit-kadena-okinawa-20560141.html)).
 
 These cases show that the impact of aircraft noise on quality of life is recognised even in law. Yet studies examining how this impact shows up in the brain and body with objective measurements are still limited. That is where our project started.
 
 ## How We Measured It
 
 Thirty healthy participants aged 20 to 30 solved an **n-back test**, which measures attention and working memory. Images appear on the screen one after another, and the participant marks whether the current image matches the one shown a few steps earlier. The test was repeated under three sound conditions: **silence**, **moderate aircraft noise** and **loud aircraft noise**.
+
+![Example screens from the n-back test](nback.jpg "In the n-back test, the participant marks whether the image on screen matches the one shown a few steps earlier.")
 
 During the test we recorded brain activity with our lab's EEG system and heart rate with a wrist-worn photoplethysmography (PPG) band. We filtered the EEG signals and extracted time- and frequency-domain features for each sound condition. We then trained machine learning models that predict the participant's test performance from these features.
 

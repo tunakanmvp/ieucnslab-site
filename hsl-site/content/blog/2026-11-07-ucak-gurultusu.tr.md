@@ -14,13 +14,19 @@ Bir havalimanının yakınında yaşadığınızı düşünün. Pencereyi her a�
 
 Uçak gürültüsünün yalnızca bir rahatsızlık olmadığını en çarpıcı biçimde Japonya'daki davalar gösteriyor. Osaka Uluslararası Havalimanı'nın (Itami) kalkış ve iniş rotasının hemen altında yaşayan sakinler, uçak gürültüsü ve titreşimin günlük yaşamlarına ve sağlıklarına zarar verdiğini öne sürerek 1969'da devlete dava açtı. Talepleri, akşam 21.00 ile sabah 07.00 arasında uçuşların durdurulması ve geçmiş ile gelecekteki zararlarının tazmin edilmesiydi.
 
-Osaka Yüksek Mahkemesi 1975'te sakinlerin sağlıklarının zarar gördüğünü kabul ederek gece uçuşlarının bu saatlerde durdurulmasına hükmetti. Dava 1981'de Japonya Yüksek Mahkemesi'ne ulaştığında gece uçuş yasağı talebi reddedildi, ancak geçmiş zararlar için tazminat kararı onandı. Japonya'da bu dava, sonraki yıllarda Kadena, Yokota ve Atsugi gibi askerî üslerin çevresinde açılan ve bugün de süren bir dizi gürültü davasının öncüsü oldu.
+Osaka Yüksek Mahkemesi 1975'te sakinlerin sağlıklarının zarar gördüğünü kabul ederek gece uçuşlarının bu saatlerde durdurulmasına hükmetti. Dava 1981'de Japonya Yüksek Mahkemesi'ne ulaştığında gece uçuş yasağı talebi reddedildi, ancak geçmiş zararlar için tazminat kararı onandı ([Yüksek Mahkeme kararının İngilizce özeti](https://www.courts.go.jp/app/hanrei_en/detail?id=66)). Japonya'da bu dava, sonraki yıllarda askerî üslerin çevresinde açılan ve bugün de süren bir dizi gürültü davasının öncüsü oldu:
+
+- **Yokota (Tokyo):** Yüksek Mahkeme 2007'de yaklaşık 6.000 davacıya geçmiş zararlar için tazminat ödenmesine hükmetti, gece uçuşlarının durdurulması talebini ise reddetti ([The Japan Times](https://www.japantimes.co.jp/news/2007/05/30/national/top-court-cuts-some-redress-from-yokota-base-noise-suit/)).
+- **Atsugi (Kanagawa):** Yokohama Bölge Mahkemesi 2014'te, bir bölge mahkemesi düzeyinde ilk kez, Öz Savunma Kuvvetleri uçaklarının gece uçuşlarının durdurulmasına hükmetti; Tokyo Yüksek Mahkemesi 2015'te bu kararı onadı ([The Japan Times](https://www.japantimes.co.jp/opinion/2015/08/09/editorials/reducing-military-jet-noise)).
+- **Kadena (Okinawa):** 2017'de yaklaşık 22.000 sakine 30,2 milyar yen ile Japonya tarihinin en yüksek gürültü tazminatına hükmedildi ([The Japan Times](https://www.japantimes.co.jp/news/2017/02/23/national/crime-legal/japanese-government-ordered-pay-record-damages-u-s-base-noise-suit)). Davalar 2026'da da sürüyor ([Stars and Stripes](https://www.stripes.com/theaters/asia_pacific/2026-01-29/aircraft-noise-lawsuit-kadena-okinawa-20560141.html)).
 
 Bu davalar, uçak gürültüsünün insanların yaşam kalitesi üzerindeki etkisinin hukuken bile tanındığını gösteriyor. Ancak bu etkinin beyinde ve bedende nasıl ortaya çıktığını nesnel ölçümlerle inceleyen çalışmalar hâlâ sınırlı. Bizim projemiz tam bu noktadan yola çıktı.
 
 ## Nasıl Ölçtük?
 
 Yaşları 20 ile 30 arasında değişen 30 sağlıklı katılımcı, dikkat ve çalışma belleğini ölçen bir **n-back testi** çözdü. Bu testte ekranda art arda görseller beliriyor ve katılımcı, gördüğü görselin birkaç adım önceki görselle aynı olup olmadığını işaretliyor. Test üç farklı ses koşulunda tekrarlandı: **sessiz**, **orta düzeyde uçak gürültüsü** ve **yüksek düzeyde uçak gürültüsü**.
+
+![n-back testinden örnek ekranlar](nback.jpg "n-back testinde katılımcı, ekrandaki görselin birkaç adım önceki görselle aynı olup olmadığını işaretliyor.")
 
 Test boyunca katılımcıların beyin etkinliğini laboratuvarımızdaki EEG sistemiyle, kalp atışını ise bileğe takılan bir fotopletismografi (PPG) bandıyla kaydettik. EEG sinyallerini filtreleyip her ses koşulu için zaman ve frekans alanı özniteliklerini çıkardık. Ardından bu özniteliklerden katılımcının testteki performansını tahmin eden makine öğrenmesi modelleri eğittik.
 

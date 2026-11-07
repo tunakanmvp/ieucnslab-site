@@ -1,5 +1,6 @@
 {{- /* Bare file name -> /images/<section>/ (blog: /images/blog/<post>/). "folder/x.jpg" -> /images/folder/x.jpg */ -}}
 {{- $src := .Destination -}}
+{{- $show := true -}}
 {{- if not (or (strings.HasPrefix $src "/") (strings.Contains $src "://")) -}}
   {{- if strings.Contains $src "/" -}}
     {{- $src = printf "/images/%s" $src -}}
@@ -12,9 +13,11 @@
       {{- $src = printf "/images/%s/%s" $sec $src -}}
     {{- end -}}
   {{- end -}}
+  {{- $show = os.FileExists (printf "static%s" $src) -}}
   {{- $src = $src | relURL -}}
 {{- end -}}
-{{- if .Title -}}
+{{- if not $show -}}{{- /* image not uploaded yet: render nothing */ -}}
+{{- else if .Title -}}
 <figure class="blog-figure"><img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy"><figcaption>{{ .Title }}</figcaption></figure>
 {{- else -}}
 <img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy">
