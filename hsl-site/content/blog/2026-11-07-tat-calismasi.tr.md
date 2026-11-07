@@ -2,7 +2,7 @@
 title: Etiketteki Tek Kelime, İçeceğin Tadını Değiştirir Mi?
 url: /blog/etiket-tadi-degistirir-mi/
 date: 2026-11-07T09:50:00+03:00
-category: Nöropazarlama
+category: Araştırmalarımız
 summary: Bir içeceğin içinde ne olduğunu bilmek, onu nasıl tattığımızı etkiler mi? IEEE CoDIT 2026'da sunduğumuz çalışmada bu soruyu hem katılımcılara sorduk hem de beyinlerine baktık.
 author: Berkay İlber Tunakan
 ---
