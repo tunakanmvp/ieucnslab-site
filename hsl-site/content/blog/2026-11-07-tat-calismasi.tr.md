@@ -1,5 +1,5 @@
 ---
-title: Etiketteki tek kelime, içeceğin tadını değiştirir mi?
+title: Etiketteki Tek Kelime, İçeceğin Tadını Değiştirir Mi?
 url: /blog/etiket-tadi-degistirir-mi/
 date: 2026-11-07T09:50:00+03:00
 category: Nöropazarlama

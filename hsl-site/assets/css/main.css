@@ -480,3 +480,8 @@ body:has(.bg-stage) { background-image: none; }
 .lab-news { margin-top: 2.5rem; padding-top: 1.75rem; border-top: 2px solid var(--ink); scroll-margin-top: var(--home-header-offset, 6rem); }
 .lab-news-title { display: inline-block; margin: 0 0 .25rem; font-size: var(--step-1); font-weight: 800; color: #fff; background: var(--obsidian); padding: .3em .7em; border-radius: 12px; }
 .lab-news .blog-title { font-size: clamp(1.2rem, 2.2vw, 1.55rem); }
+.blog-subfilter { margin-top: .6rem; padding-left: .9rem; border-left: 3px solid var(--accent); }
+.blog-subfilter button { font-size: calc(var(--step--1) * .92); padding: .25rem .75rem; }
+.blog-subfilter[hidden] { display: none; }
+.blog-meta .blog-subcat { background: var(--accent); }
+.blog-empty { margin-top: 1.5rem; opacity: .75; }

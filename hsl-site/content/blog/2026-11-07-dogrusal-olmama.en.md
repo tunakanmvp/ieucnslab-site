@@ -1,5 +1,5 @@
 ---
-title: Nonlinearity, adding ten more cars to traffic
+title: Nonlinearity, Adding Ten More Cars To Traffic
 slug: nonlinearity
 date: 2026-11-07T12:26:00+03:00
 category: Signal processing theory

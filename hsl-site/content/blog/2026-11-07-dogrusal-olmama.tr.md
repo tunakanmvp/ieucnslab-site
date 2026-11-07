@@ -1,5 +1,5 @@
 ---
-title: Doğrusal olmama, trafiğe on araba daha eklemek
+title: Doğrusal Olmama, Trafiğe On Araba Daha Eklemek
 url: /blog/dogrusal-olmama/
 date: 2026-11-07T12:26:00+03:00
 category: Sinyal işleme teorisi

@@ -1,5 +1,5 @@
 ---
-title: The Transformer, a meeting where everyone can look at everyone
+title: The Transformer, A Meeting Where Everyone Can Look At Everyone
 slug: how-does-a-transformer-work
 date: 2026-11-07T09:20:00+03:00
 category: Artificial intelligence

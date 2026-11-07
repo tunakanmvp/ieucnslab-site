@@ -1,5 +1,5 @@
 ---
-title: Doğrusallık, sesi iki kat açınca ne olur?
+title: Doğrusallık, Sesi İki Kat Açınca Ne Olur?
 url: /blog/dogrusallik/
 date: 2026-11-07T12:24:00+03:00
 category: Sinyal işleme teorisi

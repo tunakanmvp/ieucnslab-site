@@ -1,5 +1,5 @@
 ---
-title: Örnekleme, filmlerde tekerlekler neden geriye döner?
+title: Örnekleme, Filmlerde Tekerlekler Neden Geriye Döner?
 url: /blog/ornekleme/
 date: 2026-11-07T12:22:00+03:00
 category: Sinyal işleme teorisi

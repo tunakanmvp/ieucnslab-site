@@ -1,5 +1,5 @@
 ---
-title: Sampling, why do wheels spin backwards in films?
+title: Sampling, Why Do Wheels Spin Backwards In Films?
 slug: sampling
 date: 2026-11-07T12:22:00+03:00
 category: Signal processing theory

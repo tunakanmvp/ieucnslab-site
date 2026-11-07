@@ -1,5 +1,5 @@
 ---
-title: Nöropazarlama, anketin söyleyemediğini dinlemek
+title: Nöropazarlama, Anketin Söyleyemediğini Dinlemek
 url: /blog/noropazarlama-nedir/
 date: 2026-11-07T09:40:00+03:00
 category: Nöropazarlama

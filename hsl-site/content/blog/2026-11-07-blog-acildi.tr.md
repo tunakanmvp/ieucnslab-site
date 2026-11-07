@@ -1,5 +1,5 @@
 ---
-title: Blogumuz açıldı
+title: Blogumuz Açıldı
 url: /blog/blogumuz-acildi/
 category: Temel kavramlar
 date: 2026-11-07

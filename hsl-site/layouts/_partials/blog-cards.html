@@ -7,11 +7,11 @@
 {{ with $shown }}
 <ul class="blog-cards">
   {{ range . }}
-  <li data-cat="{{ .Params.category | default "" | urlize }}">
+  <li data-cat="{{ .Params.category | default "" | urlize }}" data-sub="{{ .Params.subcategory | default "" | urlize }}">
     <details class="blog-card" id="{{ $.prefix | default "yazi" }}-{{ .File.ContentBaseName }}">
       <summary>
         <span class="blog-meta">
-          {{ with .Params.category }}<span class="blog-cat">{{ . }}</span>{{ end }}
+          {{ with .Params.category }}<span class="blog-cat">{{ . }}</span>{{ end }}{{ with .Params.subcategory }}<span class="blog-cat blog-subcat">{{ . }}</span>{{ end }}
           <time class="blog-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
         </span>
         <h3 class="blog-title">{{ .Title }}</h3>

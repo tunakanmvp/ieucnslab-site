@@ -1,5 +1,5 @@
 ---
-title: Random Forest, a panel instead of a single expert
+title: Random Forest, A Panel Instead Of A Single Expert
 slug: what-is-random-forest
 date: 2026-11-07T11:10:00+03:00
 category: Artificial intelligence

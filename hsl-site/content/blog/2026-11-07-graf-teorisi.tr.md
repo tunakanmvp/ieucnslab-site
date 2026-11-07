@@ -1,5 +1,5 @@
 ---
-title: Graf teorisi, beyni bir metro haritası gibi okumak
+title: Graf Teorisi, Beyni Bir Metro Haritası Gibi Okumak
 url: /blog/graf-teorisi/
 date: 2026-11-07T12:05:00+03:00
 category: Sinyal işleme teorisi

@@ -1,5 +1,5 @@
 ---
-title: Linearity, what happens when you double the volume?
+title: Linearity, What Happens When You Double The Volume?
 slug: linearity
 date: 2026-11-07T12:24:00+03:00
 category: Signal processing theory

@@ -1,5 +1,5 @@
 ---
-title: Our blog is live
+title: Our Blog Is Live
 slug: our-blog-is-live
 category: Basics
 date: 2026-11-07

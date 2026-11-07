@@ -1,5 +1,5 @@
 ---
-title: Can one word on the label change how a drink tastes?
+title: Can One Word On The Label Change How A Drink Tastes?
 slug: can-a-label-change-taste
 date: 2026-11-07T09:50:00+03:00
 category: Neuromarketing

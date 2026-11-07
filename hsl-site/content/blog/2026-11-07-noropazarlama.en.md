@@ -1,5 +1,5 @@
 ---
-title: Neuromarketing, or listening to what surveys can't tell you
+title: Neuromarketing, Or Listening To What Surveys Can't Tell You
 slug: what-is-neuromarketing
 date: 2026-11-07T09:40:00+03:00
 category: Neuromarketing

@@ -1,31 +1,56 @@
 {{ define "main" }}
 {{ partial "page-head.html" . }}
+{{ $tr := eq site.Language.Lang "tr" }}
+{{ $courses := site.Params.blog_courses }}
 <div class="wrap">
   {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
   {{ $present := slice }}{{ range .Pages }}{{ with .Params.category }}{{ $present = $present | append . }}{{ end }}{{ end }}
   {{ $cats := slice }}
-  {{ range site.Params.blog_categories }}{{ if in $present . }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
+  {{ range site.Params.blog_categories }}{{ if or (in $present .) (eq . $courses) }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
   {{ range uniq $present }}{{ if not (in $cats .) }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
   {{ with $cats }}
-  <div class="blog-filter" role="group" aria-label="{{ cond (eq site.Language.Lang "tr") "Kategoriye göre süz" "Filter by category" }}">
-    <button type="button" data-filter="" aria-pressed="true">{{ cond (eq site.Language.Lang "tr") "Tümü" "All" }}</button>
+  <div class="blog-filter" data-level="main" role="group" aria-label="{{ cond $tr "Kategoriye göre süz" "Filter by category" }}">
+    <button type="button" data-filter="" aria-pressed="true">{{ cond $tr "Tümü" "All" }}</button>
     {{ range . }}<button type="button" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>{{ end }}
   </div>
   {{ end }}
+  {{ with $courses }}
+  <div class="blog-filter blog-subfilter" data-level="sub" data-parent="{{ . | urlize }}" role="group" aria-label="{{ cond $tr "Alt başlığa göre süz" "Filter by topic" }}" hidden>
+    <button type="button" data-filter="" aria-pressed="true">{{ cond $tr "Tümü" "All" }}</button>
+    {{ range site.Params.blog_categories }}{{ if ne . $courses }}<button type="button" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>{{ end }}{{ end }}
+  </div>
+  {{ end }}
   {{ partial "blog-cards.html" (dict "page" . "limit" 0) }}
+  <p class="blog-empty" hidden>{{ cond $tr "Bu başlıkta henüz yazı yok." "No posts under this topic yet." }}</p>
 </div>
 <script>
-  // Bağlantı #yazi-... ile gelinirse ilgili kartı açık göster
   (function () {
-    var buttons = document.querySelectorAll(".blog-filter button");
-    buttons.forEach(function (b) {
-      b.addEventListener("click", function () {
-        var f = b.dataset.filter;
-        buttons.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
-        document.querySelectorAll(".blog-cards > li").forEach(function (li) {
-          li.hidden = !!f && li.dataset.cat !== f;
-        });
+    var main = "", sub = "";
+    var mainBtns = document.querySelectorAll('.blog-filter[data-level="main"] button');
+    var subBox = document.querySelector('.blog-subfilter');
+    var subBtns = subBox ? subBox.querySelectorAll("button") : [];
+    var empty = document.querySelector(".blog-empty");
+    function press(list, btn) { list.forEach(function (x) { x.setAttribute("aria-pressed", String(x === btn)); }); }
+    function apply() {
+      var shown = 0;
+      document.querySelectorAll(".blog-cards > li").forEach(function (li) {
+        var ok = (!main || li.dataset.cat === main) && (!sub || li.dataset.sub === sub);
+        li.hidden = !ok; if (ok) shown++;
       });
+      if (empty) empty.hidden = shown > 0;
+    }
+    mainBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        main = b.dataset.filter; press(mainBtns, b);
+        if (subBox) {
+          subBox.hidden = main !== subBox.dataset.parent;
+          sub = ""; press(subBtns, subBtns[0]);
+        }
+        apply();
+      });
+    });
+    subBtns.forEach(function (b) {
+      b.addEventListener("click", function () { sub = b.dataset.filter; press(subBtns, b); apply(); });
     });
     var el = location.hash && document.getElementById(location.hash.slice(1));
     if (el && el.tagName === "DETAILS") { el.open = true; el.scrollIntoView(); }

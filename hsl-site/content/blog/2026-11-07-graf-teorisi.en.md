@@ -1,5 +1,5 @@
 ---
-title: Graph theory, reading the brain like a metro map
+title: Graph Theory, Reading The Brain Like A Metro Map
 slug: graph-theory
 date: 2026-11-07T12:05:00+03:00
 category: Signal processing theory

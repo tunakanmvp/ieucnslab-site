@@ -1,5 +1,5 @@
 ---
-title: Transformer, herkesin herkese bakabildiği toplantı
+title: Transformer, Herkesin Herkese Bakabildiği Toplantı
 url: /blog/transformer-nasil-calisir/
 date: 2026-11-07T09:20:00+03:00
 category: Yapay zeka
