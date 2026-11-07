@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap">
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ partial "conference-list.html" (dict "page" . "limit" 0) }}
+</div>
+{{ end }}

@@ -41,6 +41,8 @@
         {{ partial "publication-recent.html" . }}
       {{ else if eq .Section "news" }}
         {{ partial "news-section.html" . }}
+      {{ else if eq .Section "conferences" }}
+        {{ partial "conference-list.html" (dict "page" . "limit" 6) }}
       {{ else if eq .Section "contact" }}
         {{ partial "contact-details.html" . }}
       {{ end }}

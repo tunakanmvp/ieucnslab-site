@@ -1,6 +1,5 @@
 ---
 title: Konferanslar
 url: /konferanslar/
-description: Laboratuvar üyelerinin katıldığı ve sunum yaptığı konferanslar.
+description: Laboratuvar üyelerinin sunum yaptığı konferanslar, en yeniden en eskiye.
 ---
-Bu bölüm yakında güncellenecek.

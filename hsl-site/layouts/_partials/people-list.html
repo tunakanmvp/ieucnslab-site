@@ -35,7 +35,8 @@
               {{ printf "<%s>" $personHeading | safeHTML }}{{ $p.name }}{{ printf "</%s>" $personHeading | safeHTML }}
               {{ with cond $tr $p.role_tr $p.role_en }}<span class="role">{{ . }}</span>{{ end }}
               {{ with cond $tr $p.bio_tr $p.bio_en }}<span class="bio">{{ . }}</span>{{ end }}
-              {{ with $p.email }}<a class="person-mail" href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+              {{ $mails := $p.email }}{{ if not (reflect.IsSlice $mails) }}{{ $mails = slice $mails }}{{ end }}
+              {{ range $mails }}{{ with . }}<a class="person-mail" href="mailto:{{ . }}">{{ . }}</a>{{ end }}{{ end }}
               <span class="person-toggle" aria-hidden="true"><span class="when-closed">{{ i18n "person_more" }}</span><span class="when-open">{{ i18n "person_less" }}</span></span>
             </span>
           </summary>

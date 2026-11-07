@@ -1,0 +1,34 @@
+{{/* Yayın listesindeki konferans bildirileri, yeniden eskiye.
+     Bir kayıt "type: conference" ya da yayın yerinde konferans/kongre/sempozyum vb. geçiyorsa konferans sayılır.
+     Parametreler: dict "page" (bölüm sayfası) "limit" (0 = hepsi) */}}
+{{ $tr := eq site.Language.Lang "tr" }}
+{{ $re := `(?i)conference|congress|symposium|proceedings|workshop|meeting|summit|kongre|sempozyum|konferans|Innovative Smart Grid|\bSIU\b|TIPTEKNO|CoDIT|EMBC|ICASSP|EUSIPCO` }}
+{{ $items := slice }}
+{{ range sort hugo.Data.publications "year" "desc" }}
+  {{ $isConf := false }}
+  {{ with .type }}{{ $isConf = eq . "conference" }}{{ else }}{{ $isConf = findRE $re .venue 1 }}{{ end }}
+  {{ if $isConf }}{{ $items = $items | append . }}{{ end }}
+{{ end }}
+{{ $limit := .limit | default 0 }}
+{{ $shown := cond (gt $limit 0) (first $limit $items) $items }}
+{{ if $items }}
+<ol class="conf-list">
+  {{ $lastYear := 0 }}
+  {{ range $shown }}
+  <li class="conf-item">
+    <span class="conf-year">{{ if ne .year $lastYear }}{{ .year }}{{ end }}</span>
+    {{ $lastYear = .year }}
+    <span class="conf-body">
+      <span class="conf-venue">{{ replaceRE ` --.*$` "" .venue }}</span>
+      <span class="conf-title">{{ .title }}</span>
+      {{ with .doi }}<a class="conf-link" href="https://doi.org/{{ . }}">DOI</a>{{ end }}
+    </span>
+  </li>
+  {{ end }}
+</ol>
+{{ if gt (len $items) (len $shown) }}
+<a class="section-link" href="{{ .page.RelPermalink }}">{{ cond $tr "Tüm konferans bildirileri" "All conference papers" }} ({{ len $items }})</a>
+{{ end }}
+{{ else }}
+<p>{{ cond $tr "Henüz konferans bildirisi eklenmedi." "No conference papers yet." }}</p>
+{{ end }}

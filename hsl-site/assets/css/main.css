@@ -430,3 +430,14 @@ body:has(.bg-stage) { background-image: none; }
 @media (prefers-reduced-motion: reduce) { .person-toggle::after, .people .person { transition: none; } }
 .pp-title { font-size: 1rem; }
 @media (max-width: 760px) { .person-pub-list li { grid-template-columns: 1fr; gap: .2rem; } }
+
+/* Konferans listesi */
+.conf-list { list-style: none; margin: 1.25rem 0 0; padding: 0; max-width: 56rem; border-top: 1px solid var(--ink); }
+.conf-item { display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--grid); }
+.conf-year { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; }
+.conf-body { display: flex; flex-direction: column; gap: .2rem; }
+.conf-venue { font-weight: 650; color: var(--ink); line-height: 1.35; }
+.conf-title { color: var(--muted); font-size: var(--step--1); line-height: 1.5; }
+.conf-link { font-size: var(--step--1); align-self: flex-start; }
+.person-head .person-mail + .person-mail { margin-top: .1rem; }
+@media (max-width: 760px) { .conf-item { grid-template-columns: 3rem minmax(0, 1fr); gap: .6rem; } }
