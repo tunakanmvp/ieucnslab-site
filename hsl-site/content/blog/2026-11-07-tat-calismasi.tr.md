@@ -8,6 +8,8 @@ author: Berkay İlber Tunakan
 ---
 Market rafında iki şişe meyve suyu var. Birinin etiketinde "doğal koruyucu", diğerinde kimyasal bir koruyucunun adı yazıyor. İçindekiler neredeyse aynı. Sizce ikisinin tadı da aynı gelir mi?
 
+![Market rafının önünde, bir elinde "doğal" etiketli diğerinde sodyum benzoat yazan iki meyve suyu şişesi tutan biri](tat_calismasi.jpg "Aynı meyve suyu, farklı iki etiket. Etikette okuduğumuz, içeceği nasıl hayal ettiğimizi ve tattığımızı etkiler.")
+
 Çoğumuz "tabii ki" deriz. Ama tat, sadece dilimizde olan bir şey değil. Ne yediğimizi ya da içtiğimizi düşündüğümüz, nasıl tattığımızı da etkiliyor. Biz de bu çalışmada tam olarak bunu merak ettik.
 
 ## Ne Yaptık?
