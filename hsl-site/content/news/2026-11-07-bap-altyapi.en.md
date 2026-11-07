@@ -1,7 +1,7 @@
 ---
 title: Our IUE BAP infrastructure project was accepted
 slug: bap-infrastructure-project
-date: 2026-11-07T10:20:00+03:00
+date: 2026-09-25
 summary: "The infrastructure project we prepared under Izmir University of Economics' Scientific Research Projects programme has been accepted."
 ---
 The infrastructure project we prepared under Izmir University of Economics' **Scientific Research Projects (BAP)** programme has been accepted.
