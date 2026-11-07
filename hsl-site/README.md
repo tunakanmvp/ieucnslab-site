@@ -78,6 +78,7 @@ url: /blog/ornek/
 date: 2026-12-01
 category: Temel Kavramlar   # Temel Kavramlar | Nöropazarlama | Yapay Zeka | Sinyal İşleme Teorisi | Açık Dersler (EN: Basics | Neuromarketing | Artificial Intelligence | Signal Processing Theory | Open Courseware)
 subcategory: Yapay Zeka     # Yalnızca Açık Dersler için: diğer dört kategoriden biri
+pinned: true                # İsteğe bağlı: yazıyı listenin en üstünde sabit tutar
 summary: Kartta başlığın altında görünen bir-iki cümlelik özet.
 author: Yazarın adı
 ---

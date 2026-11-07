@@ -4,6 +4,9 @@
 {{ $posts := $page.Pages.ByDate.Reverse }}
 {{ $cat := .cat }}
 {{ with $cat }}{{ $posts = where $posts "Params.category" . }}{{ end }}
+{{/* "pinned: true" olan yazılar en üstte sabit durur */}}
+{{ $pinned := where $posts "Params.pinned" true }}
+{{ $posts = $pinned | append (where $posts "Params.pinned" "!=" true) }}
 {{ $limit := .limit | default 0 }}
 {{ $shown := cond (gt $limit 0) (first $limit $posts) $posts }}
 {{ with $shown }}
