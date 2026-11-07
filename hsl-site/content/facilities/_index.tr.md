@@ -66,7 +66,7 @@ Sistem, EEG, ekran tabanlı göz izleme ve elektrodermal aktivite ölçümünü 
 
 ### Açık Kaynak Python Kütüphaneleri
 
-Çalışmalarımızda sıkça kullandığımız, bu alana başlamak isteyenlere de önerdiğimiz temel kütüphaneler:
+Bu alana başlamak isteyenlere önerdiğimiz temel kütüphaneler:
 
 - **[NumPy](https://github.com/numpy/numpy):** Sayısal hesaplamanın temeli. Sinyalleri çok boyutlu diziler olarak tutup hızlıca işlemeyi sağlar.
 - **[SciPy](https://github.com/scipy/scipy):** Filtre tasarımı, Fourier dönüşümü, spektral analiz ve istatistik gibi bilimsel hesaplama araçları.

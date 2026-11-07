@@ -65,7 +65,7 @@ This system combines EEG, screen-based eye tracking and electrodermal activity r
 
 ### Open-Source Python Libraries
 
-The core libraries we use often in our work, and recommend to anyone starting out in the field:
+The core libraries we recommend to anyone starting out in the field:
 
 - **[NumPy](https://github.com/numpy/numpy):** The foundation of numerical computing. Holds signals as multidimensional arrays and processes them fast.
 - **[SciPy](https://github.com/scipy/scipy):** Scientific computing tools such as filter design, the Fourier transform, spectral analysis and statistics.
