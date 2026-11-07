@@ -26,6 +26,7 @@
           <p class="links">
             {{ with .email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
             {{ with .scholar }}<a href="{{ . }}">Google Scholar</a>{{ end }}
+            {{ with .ieee }}<a href="{{ . }}">IEEE Xplore</a>{{ end }}
           </p>
           {{ with cond $tr .biography_tr .biography_en }}
           <details class="person-biography">

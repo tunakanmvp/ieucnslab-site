@@ -1,4 +1,4 @@
 ---
 title: Publications
-description: Professor Aydın Akan’s publications since 2019.
+description: Research published by our lab.
 ---

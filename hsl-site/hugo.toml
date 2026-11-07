@@ -18,7 +18,7 @@ disableKinds = ["taxonomy", "term"]
     weight = 1
     [languages.tr.params]
       short = "CNS"
-      tagline = "Beynin elektriksel dilini, duyguyu ve kararı anlamak için ölçüyor ve modelliyoruz."
+      tagline = "Beynin elektriksel dilini, duyguları ve kararları anlamak için ölçüyor ve modelliyoruz."
 
     [[languages.tr.menus.main]]
       name = "Araştırma"
@@ -52,7 +52,7 @@ disableKinds = ["taxonomy", "term"]
     weight = 2
     [languages.en.params]
       short = "CNS"
-      tagline = "We measure and model the brain's electrical language to understand emotion and decision-making."
+      tagline = "We measure and model the brain's electrical language to understand emotions and decisions."
 
     [[languages.en.menus.main]]
       name = "Research"

@@ -57,6 +57,9 @@ description: Deneylerimizde kullandığımız kayıt ve analiz donanımı.
   </figure>
 </div>
 
-## Yazılım
+## Yazılımlar
 
-Analizlerimizi Python (MNE-Python, scikit-learn, XGBoost) ile yürütüyor, deney arayüzlerini web tabanlı olarak kendimiz geliştiriyoruz.
+- **Bitbrain SennsLab:** Deney tasarımı, uyaran sunumu ve fizyolojik sinyal kaydı.
+- **iMotions:** Sipariş verilen sistemin çoklu veri toplama arayüzü. Paket, Core, Screen-Based Eye Tracking, Affectiva yüz ifadesi analizi, GSR ve EEG modüllerini içeriyor.
+- **Neuroelectrics NIC:** Sipariş verilen Enobio 20 için cihaz kontrolü ve EEG kaydı.
+- **Python ve web tabanlı araçlar:** Deney ortamları ve görev arayüzleri geliştiriyoruz. Biyosinyal işleme ve veri analizinde MNE-Python, makine öğrenmesinde scikit-learn ve XGBoost kullanıyoruz.

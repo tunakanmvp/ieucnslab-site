@@ -58,4 +58,7 @@ description: The recording and analysis equipment we use in our experiments.
 
 ## Software
 
-We run our analyses in Python (MNE-Python, scikit-learn, XGBoost) and build our own web-based experiment interfaces.
+- **Bitbrain SennsLab:** Experiment design, stimulus presentation and physiological signal recording.
+- **iMotions:** The multimodal data collection interface for the system on order. The package includes Core, Screen-Based Eye Tracking, Affectiva facial expression analysis, GSR and EEG modules.
+- **Neuroelectrics NIC:** Device control and EEG recording for the Enobio 20 on order.
+- **Python and web-based tools:** We develop experimental environments and task interfaces. We use MNE-Python for biosignal processing and data analysis, and scikit-learn and XGBoost for machine learning.

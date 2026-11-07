@@ -2,8 +2,8 @@
 # photo: static/images/people/ altına dosya koyup adını yazın ya da tam https adresi verin (boşsa ya da yüklenemezse baş harfler gösterilir)
 - name: Prof. Dr. Aydın Akan
   group: lead
-  role_tr: Laboratuvar Kurucusu
-  role_en: Lab Founder
+  role_tr: Ekip Lideri
+  role_en: Lab Lead
   bio_tr: Durağan olmayan işaretlerin zaman-frekans analizi ve bu yöntemlerin haberleşme ve biyomedikal mühendisliğindeki uygulamaları üzerine çalışmaktadır.
   bio_en: His research focuses on time–frequency analysis of nonstationary signals and its applications in communications and biomedical engineering.
   biography_tr: |-
@@ -30,10 +30,11 @@
   group: researchers
   role_tr: Araştırma Görevlisi, Yüksek Lisans Öğrencisi
   role_en: Research Assistant, MSc Student
-  bio_tr: 2024 yılında Elektrik-Elektronik Mühendisliği bölümünden mezun oldu. Bitirme projesinde uçak gürültüsünün dikkat üzerindeki etkisini EEG ile inceledi. Yüksek lisans tezinde marka güveni algısının sinirsel bağıntılarını araştırıyor.
-  bio_en: "Graduated in Electrical and Electronics Engineering in 2024. His capstone project used EEG to study how aircraft noise affects attention. His master's thesis investigates the neural correlates of brand trust perception."
+  bio_tr: "2024 yılında Elektrik-Elektronik Mühendisliği Bölümünden mezun oldu. Bitirme projesinde uçak gürültüsünün dikkat üzerindeki etkisini EEG ile inceledi. Yüksek lisans tezinde marka güveni algısının sinirsel bağıntılarını araştırıyor. Laboratuvarda deney tasarımı, veri toplama ve analiz süreçlerinde görev alıyor ve Python ile deney ortamları ve görev arayüzleri geliştiriyor. Tat uyaranlarına verilen duygusal tepkilerin EEG ile analizi (CoDIT 2026) ve karar destekli akıllı infüzyon pompası tasarımı (TIPTEKNO 2025) üzerine bildirilerde ortak yazardır."
+  bio_en: "He graduated in Electrical and Electronics Engineering in 2024. In his capstone project, he used EEG to study how aircraft noise affects attention. His master’s thesis investigates the neural correlates of perceived brand trust. At the lab, he contributes to experimental design, data collection and analysis, and builds experimental environments and task interfaces in Python. He co-authored conference papers on EEG analysis of emotional responses to taste stimuli (CoDIT 2026) and the design of a smart infusion pump with decision support (TIPTEKNO 2025)."
   email: berkay.tunakan@ieu.edu.tr
   scholar: ""
+  ieee: https://ieeexplore.ieee.org/author/441163491886823
   photo: ""
 
 - name: Nilsu Çağla Hepsev
