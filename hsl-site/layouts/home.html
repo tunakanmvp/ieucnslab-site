@@ -42,7 +42,7 @@
       {{ else if eq .Section "news" }}
         {{ partial "news-section.html" . }}
       {{ else if eq .Section "blog" }}
-        {{ partial "blog-cards.html" (dict "page" . "limit" 3) }}
+        {{ partial "blog-cards.html" (dict "page" . "limit" 3 "cat" (index site.Params.blog_categories 0)) }}
       {{ else if eq .Section "conferences" }}
         {{ partial "conference-list.html" (dict "page" . "limit" 6) }}
       {{ else if eq .Section "contact" }}

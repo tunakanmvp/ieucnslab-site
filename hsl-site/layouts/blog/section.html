@@ -10,8 +10,7 @@
   {{ range uniq $present }}{{ if not (in $cats .) }}{{ $cats = $cats | append . }}{{ end }}{{ end }}
   {{ with $cats }}
   <div class="blog-filter" data-level="main" role="group" aria-label="{{ cond $tr "Kategoriye göre süz" "Filter by category" }}">
-    <button type="button" data-filter="" aria-pressed="true">{{ cond $tr "Tümü" "All" }}</button>
-    {{ range . }}<button type="button" data-filter="{{ . | urlize }}" aria-pressed="false">{{ . }}</button>{{ end }}
+    {{ range $i, $c := . }}<button type="button" data-filter="{{ $c | urlize }}" aria-pressed="{{ if eq $i 0 }}true{{ else }}false{{ end }}">{{ $c }}</button>{{ end }}
   </div>
   {{ end }}
   {{ with $courses }}
@@ -39,20 +38,25 @@
       });
       if (empty) empty.hidden = shown > 0;
     }
-    mainBtns.forEach(function (b) {
-      b.addEventListener("click", function () {
+    function selectMain(b) {
         main = b.dataset.filter; press(mainBtns, b);
         if (subBox) {
           subBox.hidden = main !== subBox.dataset.parent;
           sub = ""; press(subBtns, subBtns[0]);
         }
         apply();
-      });
-    });
+    }
+    mainBtns.forEach(function (b) { b.addEventListener("click", function () { selectMain(b); }); });
     subBtns.forEach(function (b) {
       b.addEventListener("click", function () { sub = b.dataset.filter; press(subBtns, b); apply(); });
     });
     var el = location.hash && document.getElementById(location.hash.slice(1));
+    var start = mainBtns[0];
+    if (el && el.tagName === "DETAILS") {
+      var cat = el.parentElement.dataset.cat;
+      mainBtns.forEach(function (b) { if (b.dataset.filter === cat) start = b; });
+    }
+    if (start) selectMain(start);
     if (el && el.tagName === "DETAILS") { el.open = true; el.scrollIntoView(); }
   })();
 </script>
