@@ -1,4 +1,4 @@
 ---
 title: Computational Neuroscience Lab
 ---
-İzmir Ekonomi Üniversitesi Elektrik-Elektronik Mühendisliği bünyesindeki laboratuvarımızda EEG, galvanik deri tepkisi, göz izleme ve fNIRS kayıtlarını birlikte ele alıyoruz. İnsanların bir tadı, bir müziği ya da bir kararı nasıl deneyimlediğini beyin ve beden sinyallerinden okumaya çalışıyor; bunun için deney düzenekleri, sinyal işleme yöntemleri ve makine öğrenmesi modelleri geliştiriyoruz.
+İzmir Ekonomi Üniversitesi Elektrik-Elektronik Mühendisliği Bölümü bünyesinde, fizyolojik ölçümlere dayalı duygu kestirimi ve nöropazarlama araştırmaları yürütüyoruz. Laboratuvarımızdaki ölçüm sistemlerini kullanarak deneyler tasarlıyor, veri topluyor ve topladığımız verileri analiz ediyoruz.

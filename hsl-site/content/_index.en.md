@@ -1,4 +1,4 @@
 ---
 title: Computational Neuroscience Lab
 ---
-Based in the Department of Electrical and Electronics Engineering at Izmir University of Economics, our lab studies EEG, galvanic skin response, eye tracking and fNIRS recordings together. We try to read how people experience a taste, a piece of music or a decision from brain and body signals, and we build the experimental setups, signal processing methods and machine learning models to do it.
+At the Department of Electrical and Electronics Engineering at Izmir University of Economics, we conduct research on emotion estimation and neuromarketing using physiological measurements. We use our lab’s recording systems to design experiments, collect data and analyze the results.
