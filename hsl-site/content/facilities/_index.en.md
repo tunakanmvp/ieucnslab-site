@@ -58,7 +58,23 @@ This system combines EEG, screen-based eye tracking and electrodermal activity r
 
 ## Software
 
-- **Bitbrain SennsLab:** Experiment design, stimulus presentation and physiological signal recording.
-- **iMotions:** Multimodal recording software that collects EEG, eye-tracking and skin conductance data in one interface. The package includes Core, Screen-Based Eye Tracking, Affectiva facial expression analysis, GSR and EEG modules.
-- **Neuroelectrics NIC:** Device control and EEG recording for the Enobio 20.
-- **Python and web-based tools:** We develop experimental environments and task interfaces. We use MNE-Python for biosignal processing and data analysis, and scikit-learn and XGBoost for machine learning.
+- **[Bitbrain SennsLab](https://www.bitbrain.com/neurotechnology-products/software/sennslab):** The experiment software we use with our Bitbrain devices. In one environment we design the experiment, present the stimuli in sequence, and record physiological signals such as EEG and GSR time-locked to the stimuli.
+- **[iMotions](https://imotions.com/):** A multimodal platform that collects data from different sensors on a single timeline. We can record EEG, eye tracking and skin conductance at the same time and analyse them together. Our package includes the Core, Screen-Based Eye Tracking, Affectiva facial expression analysis, GSR and EEG modules.
+- **[Neuroelectrics NIC2](https://www.neuroelectrics.com/nic2):** Device control, signal quality monitoring and EEG recording for the Enobio 20. Its Lab Streaming Layer (LSL) support lets us synchronise recordings with experiment interfaces we write ourselves.
+- **Python and web-based tools:** We build our own experimental environments and task interfaces. For biosignal processing, data analysis and machine learning we rely mainly on open-source Python libraries.
+
+### Open-Source Python Libraries
+
+The core libraries we use often in our work, and recommend to anyone starting out in the field:
+
+- **[NumPy](https://github.com/numpy/numpy):** The foundation of numerical computing. Holds signals as multidimensional arrays and processes them fast.
+- **[SciPy](https://github.com/scipy/scipy):** Scientific computing tools such as filter design, the Fourier transform, spectral analysis and statistics.
+- **[pandas](https://github.com/pandas-dev/pandas):** For organising and analysing tabular data, such as experiment logs and extracted features.
+- **[Matplotlib](https://github.com/matplotlib/matplotlib):** The basic plotting library for visualising signals, spectra and results.
+- **[MNE-Python](https://github.com/mne-tools/mne-python):** The most comprehensive open-source toolkit for EEG and MEG data: reading data, preprocessing, artefact removal with ICA, epoching and topographic maps.
+- **[NeuroKit2](https://github.com/neuropsychology/NeuroKit):** Processing and feature extraction for physiological signals such as ECG, skin conductance (EDA/GSR) and respiration.
+- **[scikit-learn](https://github.com/scikit-learn/scikit-learn):** The classic machine learning library for classification, regression, cross-validation and model evaluation.
+- **[XGBoost](https://github.com/dmlc/xgboost):** A fast and widely used implementation of gradient-boosted decision trees.
+- **[PyTorch](https://github.com/pytorch/pytorch):** For building and training deep learning models.
+- **[Lab Streaming Layer](https://github.com/sccn/labstreaminglayer):** For collecting data streams and event markers from different devices and software on a single timeline.
+- **[PsychoPy](https://github.com/psychopy/psychopy):** For building experiment and stimulus presentation interfaces with precise timing.

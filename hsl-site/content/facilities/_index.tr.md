@@ -59,7 +59,23 @@ Sistem, EEG, ekran tabanlı göz izleme ve elektrodermal aktivite ölçümünü 
 
 ## Yazılımlar
 
-- **Bitbrain SennsLab:** Deney tasarımı, uyaran sunumu ve fizyolojik sinyal kaydı.
-- **iMotions:** EEG, göz izleme ve deri iletkenliği verilerini tek arayüzde toplayan çoklu ölçüm yazılımı. Paket, Core, Screen-Based Eye Tracking, Affectiva yüz ifadesi analizi, GSR ve EEG modüllerini içeriyor.
-- **Neuroelectrics NIC:** Enobio 20 için cihaz kontrolü ve EEG kaydı.
-- **Python ve web tabanlı araçlar:** Deney ortamları ve görev arayüzleri geliştiriyoruz. Biyosinyal işleme ve veri analizinde MNE-Python, makine öğrenmesinde scikit-learn ve XGBoost kullanıyoruz.
+- **[Bitbrain SennsLab](https://www.bitbrain.com/neurotechnology-products/software/sennslab):** Bitbrain cihazlarıyla birlikte kullandığımız deney yazılımı. Deneyi tasarlamayı, uyaranları sırayla sunmayı ve EEG, GSR gibi fizyolojik sinyalleri uyaranlarla zaman olarak eşleşmiş biçimde kaydetmeyi tek bir ortamda yapıyoruz.
+- **[iMotions](https://imotions.com/):** Farklı sensörlerden gelen verileri aynı zaman ekseninde toplayan çoklu ölçüm platformu. EEG, göz izleme ve deri iletkenliğini aynı anda kaydedip birlikte analiz edebiliyoruz. Paketimizde Core, Screen-Based Eye Tracking, Affectiva yüz ifadesi analizi, GSR ve EEG modülleri var.
+- **[Neuroelectrics NIC2](https://www.neuroelectrics.com/nic2):** Enobio 20 için cihaz kontrolü, sinyal kalitesinin izlenmesi ve EEG kaydı. Lab Streaming Layer (LSL) desteği sayesinde kaydı kendi yazdığımız deney arayüzleriyle eşzamanlayabiliyoruz.
+- **Python ve web tabanlı araçlar:** Deney ortamlarını ve görev arayüzlerini kendimiz geliştiriyoruz. Biyosinyal işleme, veri analizi ve makine öğrenmesinde ağırlıklı olarak açık kaynak Python kütüphaneleri kullanıyoruz.
+
+### Açık Kaynak Python Kütüphaneleri
+
+Çalışmalarımızda sıkça kullandığımız, bu alana başlamak isteyenlere de önerdiğimiz temel kütüphaneler:
+
+- **[NumPy](https://github.com/numpy/numpy):** Sayısal hesaplamanın temeli. Sinyalleri çok boyutlu diziler olarak tutup hızlıca işlemeyi sağlar.
+- **[SciPy](https://github.com/scipy/scipy):** Filtre tasarımı, Fourier dönüşümü, spektral analiz ve istatistik gibi bilimsel hesaplama araçları.
+- **[pandas](https://github.com/pandas-dev/pandas):** Tablo biçimindeki verileri, örneğin deney kayıtlarını ve çıkarılan özellikleri düzenlemek ve analiz etmek için.
+- **[Matplotlib](https://github.com/matplotlib/matplotlib):** Sinyalleri, spektrumları ve sonuçları görselleştirmek için temel çizim kütüphanesi.
+- **[MNE-Python](https://github.com/mne-tools/mne-python):** EEG ve MEG verisi için en kapsamlı açık kaynak araç. Veri okuma, ön işleme, ICA ile artefakt temizleme, epoklama ve topografik haritalar.
+- **[NeuroKit2](https://github.com/neuropsychology/NeuroKit):** EKG, deri iletkenliği (EDA/GSR) ve solunum gibi fizyolojik sinyallerin işlenmesi ve özellik çıkarımı.
+- **[scikit-learn](https://github.com/scikit-learn/scikit-learn):** Sınıflandırma, regresyon, çapraz doğrulama ve model değerlendirme için klasik makine öğrenmesi kütüphanesi.
+- **[XGBoost](https://github.com/dmlc/xgboost):** Gradyan artırmalı karar ağaçlarının hızlı ve yaygın kullanılan uygulaması.
+- **[PyTorch](https://github.com/pytorch/pytorch):** Derin öğrenme modellerini kurmak ve eğitmek için.
+- **[Lab Streaming Layer](https://github.com/sccn/labstreaminglayer):** Farklı cihazlardan ve yazılımlardan gelen veri akışlarını ve olay işaretlerini aynı zaman ekseninde toplamak için.
+- **[PsychoPy](https://github.com/psychopy/psychopy):** Zamanlaması hassas deney ve uyaran sunumu arayüzleri hazırlamak için.
