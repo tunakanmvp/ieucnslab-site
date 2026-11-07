@@ -2,8 +2,8 @@
 title: MIT 6.S191, Derin Öğrenmeye Hızlı Bir Giriş
 url: /blog/mit-derin-ogrenmeye-giris/
 date: 2026-11-07T13:02:00+03:00
-category: Açık dersler
-subcategory: Yapay zeka
+category: Açık Dersler
+subcategory: Yapay Zeka
 summary: "Her yıl baştan yazılan, kısa ve yoğun bir derin öğrenme dersi. Videolar, slaytlar ve tarayıcıda çalışan uygulamalar ücretsiz."
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

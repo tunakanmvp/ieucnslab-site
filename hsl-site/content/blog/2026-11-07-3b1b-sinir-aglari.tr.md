@@ -2,8 +2,8 @@
 title: 3Blue1Brown, Sinir Ağlarını Gözle Görmek
 url: /blog/3blue1brown-sinir-aglari/
 date: 2026-11-07T13:12:00+03:00
-category: Açık dersler
-subcategory: Yapay zeka
+category: Açık Dersler
+subcategory: Yapay Zeka
 summary: "Sinir ağlarının nasıl öğrendiğini formüllerle değil, animasyonlarla anlatan kısa bir video serisi. Başlamak için en iyi yer olabilir."
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

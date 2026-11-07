@@ -1,6 +1,6 @@
 {{/* Haberler: önce genel duyurular (_index içeriği), ardından laboratuvardan haberler (bölümdeki sayfalar). */}}
 {{ with .Content }}<div class="prose news-general">{{ . }}</div>{{ end }}
 <section class="lab-news" id="lab-news">
-  <h3 class="lab-news-title">{{ cond (eq site.Language.Lang "tr") "Laboratuvardan haberler" "News from the lab" }}</h3>
+  <h3 class="lab-news-title">{{ cond (eq site.Language.Lang "tr") "Laboratuvardan Haberler" "News From The Lab" }}</h3>
   {{ partial "blog-cards.html" (dict "page" . "limit" 0 "prefix" "haber" "more" (cond (eq site.Language.Lang "tr") "Haberin tamamı" "Read more")) }}
 </section>

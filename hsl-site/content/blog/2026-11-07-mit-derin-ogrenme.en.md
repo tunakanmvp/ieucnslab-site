@@ -2,8 +2,8 @@
 title: MIT 6.S191, A Fast Introduction To Deep Learning
 slug: mit-intro-to-deep-learning
 date: 2026-11-07T13:02:00+03:00
-category: Open courseware
-subcategory: Artificial intelligence
+category: Open Courseware
+subcategory: Artificial Intelligence
 summary: "A short, intensive deep learning course rewritten every year. Videos, slides and browser-based labs are free."
 author: Computational Neuroscience Lab
 ---

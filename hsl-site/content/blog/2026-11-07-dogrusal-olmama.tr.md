@@ -2,7 +2,7 @@
 title: Doğrusal Olmama, Trafiğe On Araba Daha Eklemek
 url: /blog/dogrusal-olmama/
 date: 2026-11-07T12:26:00+03:00
-category: Sinyal işleme teorisi
+category: Sinyal İşleme Teorisi
 summary: "Boş bir yola on araba eklemek hiçbir şeyi değiştirmez. Sıkışık bir yola on araba eklemek ise trafiği kilitleyebilir. Beyin de çoğu zaman böyle davranır."
 author: Berkay İlber Tunakan
 ---
@@ -12,7 +12,7 @@ Trafiği düşünün. Gece boş bir yola on araba eklerseniz hiçbir şey deği�
 
 Bir hoparlörün sesini sonuna kadar açtığınızda da benzer bir şey olur: ses artık sadece yükselmez, cızırdamaya başlar. Doğrusal olmayan sistemler girişte hiç olmayan yeni frekanslar üretebilir.
 
-## Beyin neden doğrusal değil?
+## Beyin Neden Doğrusal Değil?
 
 En küçük yapı taşından başlayalım. Bir nöron, gelen sinyaller belli bir eşiği aşana kadar sessiz kalır. Eşik aşıldığında ise ya hep ya hiç mantığıyla tam bir ateşleme yapar. Yarım ateşleme yoktur. Bu, doğrusal davranışın tam tersidir. Milyarlarca böyle birimin birbirine bağlandığı bir ağ, çok zengin ve bazen öngörülmesi zor davranışlar sergiler.
 

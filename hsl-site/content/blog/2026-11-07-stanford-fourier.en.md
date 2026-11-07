@@ -2,8 +2,8 @@
 title: Stanford EE261, The Fourier Transform With Brad Osgood
 slug: stanford-fourier-transform
 date: 2026-11-07T13:06:00+03:00
-category: Open courseware
-subcategory: Signal processing theory
+category: Open Courseware
+subcategory: Signal Processing Theory
 summary: "A whole term devoted to the Fourier transform: Stanford's 30-lecture series, free together with notes and exams."
 author: Computational Neuroscience Lab
 ---

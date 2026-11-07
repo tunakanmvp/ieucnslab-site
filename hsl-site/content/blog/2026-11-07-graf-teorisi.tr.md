@@ -2,7 +2,7 @@
 title: Graf Teorisi, Beyni Bir Metro Haritası Gibi Okumak
 url: /blog/graf-teorisi/
 date: 2026-11-07T12:05:00+03:00
-category: Sinyal işleme teorisi
+category: Sinyal İşleme Teorisi
 summary: "Bir metro haritası durakların gerçek konumunu değil, nereden nereye gidilebildiğini gösterir. Graf teorisi de beyne aynı gözle bakar: kim kiminle konuşuyor?"
 author: Berkay İlber Tunakan
 ---
@@ -15,7 +15,7 @@ Graf teorisi tam olarak bu bakış açısıdır. Bir sistemi iki şeye indirger:
 
 Beyin ağlarını graf teorisiyle incelemek son yirmi yılda nörobilimin en canlı alanlarından biri oldu. [Bullmore ve Sporns'un](https://doi.org/10.1038/nrn2575) derlemesi bu alanın başlangıç noktası sayılır.
 
-## Haritadan ne okuyabiliriz?
+## Haritadan Ne Okuyabiliriz?
 
 Bir kez haritayı çizdikten sonra, ona birkaç basit soru sorabiliriz:
 
@@ -25,13 +25,13 @@ Bir kez haritayı çizdikten sonra, ona birkaç basit soru sorabiliriz:
 
 Beyin ağlarının ilginç bir özelliği, **küçük dünya** yapısında olmalarıdır. Hem sıkı yerel kümeler vardır, hem de birkaç uzun "ekspres hat" sayesinde ağın bir ucundan öbür ucuna birkaç adımda ulaşılır. "Herkes herkese altı el sıkışma uzaklığındadır" sözünü duymuşsunuzdur, beyin de benzer şekilde örgütlenmiştir.
 
-## Bir sinyali grafa çevirmek
+## Bir Sinyali Grafa Çevirmek
 
 Graf yalnızca elektrotlar arasında kurulmak zorunda değil. Tek bir zaman serisi de grafa dönüştürülebilir. Bunun güzel bir yolu **görünürlük grafıdır**: sinyalin her örneğini düz bir arazide yan yana dikilmiş direkler gibi düşünün. Direklerin boyu sinyalin o andaki değeri. İki direğin tepesi arasına gergin bir ip çektiğinizde arada ipe değen başka bir direk yoksa, bu iki direk birbirini "görüyor" demektir ve aralarına bir kenar çizilir.
 
 Böylece sinyalin şekli, ağın şekline dönüşür. Sivri tepeler çok direği gördüğü için birer merkez olur, düzgün ve tekdüze bölgeler başka bir ağ dokusu bırakır. Laboratuvarımızda bu yaklaşımı epileptik EEG kayıtlarında beyin bölgeleri arasındaki [senkronizasyonu incelemek için](https://doi.org/10.1142/s0129065721500416) kullandık.
 
-## Grafta da Fourier var
+## Grafta Da Fourier Var
 
 [Spektral özellikler yazısında](/blog/spektral-ozellikler/) bir sinyali "başka bir ölçü sistemiyle" anlatmaktan bahsetmiştim. Fourier dönüşümü zamanda düzenli aralıklarla alınmış örnekler için tasarlanmıştır. Peki elektrotlar gibi düzensiz yerleşmiş noktalardaki sinyaller için ne yapacağız?
 

@@ -2,7 +2,7 @@
 title: Graph Theory, Reading The Brain Like A Metro Map
 slug: graph-theory
 date: 2026-11-07T12:05:00+03:00
-category: Signal processing theory
+category: Signal Processing Theory
 summary: "A metro map doesn't show where stations really are, only where you can get to from where. Graph theory looks at the brain the same way: who is talking to whom?"
 author: Berkay İlber Tunakan
 ---
@@ -15,7 +15,7 @@ Graph theory is exactly that point of view. It reduces a system to two things:
 
 Studying brain networks with graph theory has been one of the liveliest areas of neuroscience over the last two decades. The review by [Bullmore and Sporns](https://doi.org/10.1038/nrn2575) is widely seen as its starting point.
 
-## What can we read from the map?
+## What Can We Read From The Map?
 
 Once the map is drawn, we can ask it a few simple questions:
 
@@ -25,13 +25,13 @@ Once the map is drawn, we can ask it a few simple questions:
 
 An interesting property of brain networks is their **small-world** structure. There are tight local clusters, yet a few long "express lines" let you get from one end of the network to the other in just a few steps. You've probably heard that everyone is six handshakes away from everyone else; the brain is organised in a similar way.
 
-## Turning a signal into a graph
+## Turning A Signal Into A Graph
 
 A graph doesn't have to be built between electrodes. A single time series can be turned into a graph too. One elegant way is the **visibility graph**: picture each sample of the signal as a pole standing side by side on flat ground, with the pole's height equal to the signal's value at that moment. Stretch a taut string between the tops of two poles; if no other pole touches the string, the two poles "see" each other and we draw an edge between them.
 
 This way the shape of the signal becomes the shape of a network. Sharp peaks see many poles and become hubs, while smooth, flat stretches leave a different network texture. In our lab we used this approach to study [synchronisation between brain regions](https://doi.org/10.1142/s0129065721500416) in epileptic EEG recordings.
 
-## Graphs have a Fourier too
+## Graphs Have A Fourier Too
 
 In the [spectral features post](/en/blog/spectral-features/) I talked about describing a signal "in another unit system". The Fourier transform is designed for samples taken at regular intervals in time. So what do we do with signals sitting on irregularly placed points, like electrodes?
 

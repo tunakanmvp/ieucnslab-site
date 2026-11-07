@@ -2,7 +2,7 @@
 title: Nonlinearity, Adding Ten More Cars To Traffic
 slug: nonlinearity
 date: 2026-11-07T12:26:00+03:00
-category: Signal processing theory
+category: Signal Processing Theory
 summary: "Adding ten cars to an empty road changes nothing. Adding ten cars to a busy road can bring traffic to a standstill. The brain often behaves the same way."
 author: Berkay İlber Tunakan
 ---
@@ -12,7 +12,7 @@ Think of traffic. Add ten cars to an empty road at night and nothing changes. Ad
 
 Something similar happens when you turn a speaker all the way up: the sound doesn't just get louder, it starts to crackle. Nonlinear systems can produce new frequencies that weren't in the input at all.
 
-## Why isn't the brain linear?
+## Why Isn't The Brain Linear?
 
 Start with the smallest building block. A neuron stays silent until its incoming signals cross a certain threshold. Once the threshold is crossed, it fires fully, all or nothing. There is no half-firing. That is the exact opposite of linear behaviour. A network of billions of such units wired together shows very rich, and sometimes hard to predict, behaviour.
 

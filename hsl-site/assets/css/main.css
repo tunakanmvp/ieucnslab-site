@@ -271,7 +271,7 @@ main:has(> .join-band) + .site-footer { margin-top: 0; }
 
 /* Bölümler kaydırdıkça belirir */
 .js-reveal .reveal { opacity: 0; transform: translateY(24px); transition: opacity 600ms ease, transform 600ms cubic-bezier(.2,.7,.2,1); }
-.js-reveal .reveal.is-visible { opacity: 1; transform: none; }
+.js-reveal .reveal.is-visible { opacity: var(--focus, 1); transform: none; transition: opacity 220ms linear, transform 600ms cubic-bezier(.2,.7,.2,1); }
 @media (prefers-reduced-motion: reduce) {
   .nav-indicator { transition: none; }
   .js-reveal .reveal { opacity: 1; transform: none; transition: none; }

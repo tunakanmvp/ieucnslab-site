@@ -10,13 +10,13 @@ Bir markete girdiğinizi düşünün. Raftaki iki şampuandan birini neden seçt
 
 Klasik pazarlama araştırması insanlara sorar: anket, odak grup, mülakat. Bunlar değerlidir, ama bir sorunları var. İnsanlar hissettiklerini her zaman tam olarak söyleyemez, bazen de söylemek istemez. **Nöropazarlama**, kararın verildiği anda beyin ve beden sinyallerine bakarak bu boşluğu doldurmaya çalışır.
 
-## Neyi ölçüyoruz?
+## Neyi Ölçüyoruz?
 
 - **EEG:** Kafa derisine yerleştirilen elektrotlarla beynin elektriksel etkinliği. Bir reklamı izlerken ya da bir logoyu görürken beynin milisaniyeler içinde nasıl tepki verdiğini gösterir.
 - **Galvanik deri tepkisi (GSR):** Heyecanlandığımızda avuç içimiz çok az terler. Bu küçük değişim, duygusal uyarılmanın bir göstergesidir.
 - **Göz izleme:** Bir ambalajda ya da web sayfasında gözün ilk nereye gittiği, nerede ne kadar oyalandığı.
 
-## Neyi ölçemiyoruz?
+## Neyi Ölçemiyoruz?
 
 Nöropazarlama [zihin okumak değildir](https://doi.org/10.1038/nrn2795). EEG, "bu kişi yarın bu ürünü alacak" demez. Yaptığı şey, birçok katılımcının ortalamasına bakarak "bu ambalaj, diğerine göre daha güçlü bir duygusal tepki uyandırıyor" gibi karşılaştırmalı sonuçlara ulaşmaktır. İyi bir çalışma, beyin sinyallerini anket cevaplarıyla birlikte değerlendirir. Biri diğerinin yerine geçmez.
 

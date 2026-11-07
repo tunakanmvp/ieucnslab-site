@@ -2,7 +2,7 @@
 title: Copenhagen Business School, Tüketici Sinirbilimine Giriş
 url: /blog/cbs-noropazarlama/
 date: 2026-11-07T13:16:00+03:00
-category: Açık dersler
+category: Açık Dersler
 subcategory: Nöropazarlama
 summary: "Nöropazarlamaya giriş için belki de en bilinen çevrim içi ders. Dikkatten duygulara, bellekten karar vermeye, etiğiyle birlikte."
 author: Hesaplamalı Sinirbilim Laboratuvarı

@@ -2,8 +2,8 @@
 title: MIT'den Oppenheim İle Sinyaller Ve Sistemler
 url: /blog/oppenheim-sinyaller-ve-sistemler/
 date: 2026-11-07T13:00:00+03:00
-category: Açık dersler
-subcategory: Sinyal işleme teorisi
+category: Açık Dersler
+subcategory: Sinyal İşleme Teorisi
 summary: "Sinyal işlemenin klasik ders kitabının yazarından, tahtada tebeşirle anlatılan ücretsiz bir ders serisi. Fourier'den örneklemeye her şey burada."
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

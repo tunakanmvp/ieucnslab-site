@@ -2,7 +2,7 @@
 title: MIT 9.13, The Human Brain With Nancy Kanwisher
 slug: mit-the-human-brain
 date: 2026-11-07T13:04:00+03:00
-category: Open courseware
+category: Open Courseware
 subcategory: Basics
 summary: "From face recognition to language, from music to attention: an enjoyable undergraduate course on how the brain works, with no background required."
 author: Computational Neuroscience Lab

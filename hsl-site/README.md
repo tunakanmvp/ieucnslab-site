@@ -76,8 +76,8 @@ grep -rn TODO content data hugo.toml static
 title: Her Kelimenin İlk Harfi Büyük Başlık (kartta büyük ve kalın görünür)
 url: /blog/ornek/
 date: 2026-12-01
-category: Temel kavramlar   # Temel kavramlar | Nöropazarlama | Yapay zeka | Sinyal işleme teorisi | Açık dersler (EN: Basics | Neuromarketing | Artificial intelligence | Signal processing theory | Open courseware)
-subcategory: Yapay zeka     # Yalnızca Açık dersler için: diğer dört kategoriden biri
+category: Temel Kavramlar   # Temel Kavramlar | Nöropazarlama | Yapay Zeka | Sinyal İşleme Teorisi | Açık Dersler (EN: Basics | Neuromarketing | Artificial Intelligence | Signal Processing Theory | Open Courseware)
+subcategory: Yapay Zeka     # Yalnızca Açık Dersler için: diğer dört kategoriden biri
 summary: Kartta başlığın altında görünen bir-iki cümlelik özet.
 author: Yazarın adı
 ---

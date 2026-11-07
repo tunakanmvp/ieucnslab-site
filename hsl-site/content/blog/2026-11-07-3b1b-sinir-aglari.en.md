@@ -2,8 +2,8 @@
 title: 3Blue1Brown, Seeing Neural Networks
 slug: 3blue1brown-neural-networks
 date: 2026-11-07T13:12:00+03:00
-category: Open courseware
-subcategory: Artificial intelligence
+category: Open Courseware
+subcategory: Artificial Intelligence
 summary: "A short video series that explains how neural networks learn through animation rather than formulas. Possibly the best place to start."
 author: Computational Neuroscience Lab
 ---

@@ -2,7 +2,7 @@
 title: Facilities
 description: The recording and analysis equipment we use in our experiments.
 ---
-## Bitbrain recording system
+## Bitbrain Recording System
 
 We use **Bitbrain SennsLab** to design experiments and record data.
 
@@ -25,7 +25,7 @@ We use **Bitbrain SennsLab** to design experiments and record data.
   </figure>
 </div>
 
-## iMotions multimodal recording system
+## iMotions Multimodal Recording System
 
 This system combines EEG, screen-based eye tracking and electrodermal activity recording. The software package includes **iMotions Core**, **Screen-Based Eye Tracking**, **Affectiva**, **GSR** and **EEG** modules.
 

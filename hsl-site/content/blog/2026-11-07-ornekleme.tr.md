@@ -2,7 +2,7 @@
 title: Örnekleme, Filmlerde Tekerlekler Neden Geriye Döner?
 url: /blog/ornekleme/
 date: 2026-11-07T12:22:00+03:00
-category: Sinyal işleme teorisi
+category: Sinyal İşleme Teorisi
 summary: "Filmlerde hızla giden bir arabanın tekerlekleri bazen geriye dönüyormuş gibi görünür. Bu küçük yanılsama, dijital sinyal işlemenin en temel kuralını anlatıyor."
 author: Berkay İlber Tunakan
 ---
@@ -10,13 +10,13 @@ Beyin sinyali sürekli akar. Bilgisayar ise sürekli bir şeyi saklayamaz, sinya
 
 Peki saniyede kaç fotoğraf yeter?
 
-## Geriye dönen tekerlekler
+## Geriye Dönen Tekerlekler
 
 Bir filmde hızla giden bir arabanın tekerleklerini hatırlayın. Bazen yavaşlıyor, duruyor, hatta geriye dönüyormuş gibi görünürler. Sebebi kamera: saniyede belli sayıda kare çeker. Tekerlek iki kare arasında neredeyse bir tam tur atarsa, kamera onu sanki biraz geri gitmiş gibi yakalar.
 
 Sinyallerde de aynısı olur. Çok hızlı salınan bir dalgayı yeterince sık örneklemezseniz, kayıtta o dalga daha yavaş, sahte bir dalga gibi görünür. Buna **örtüşme** (aliasing) diyoruz. Sinsi olan şu: kayda baktığınızda hiçbir şeyin yanlış olduğunu anlayamazsınız.
 
-## Nyquist kuralı
+## Nyquist Kuralı
 
 Çözüm basit bir kurala dayanır: sinyalde bulunan en yüksek frekansın **iki katından** daha sık örnekleme yapmalısınız. Bu sınırı [Shannon](https://doi.org/10.1109/JRPROC.1949.232969) 1949'da açıkça ortaya koydu. Kural sağlandığında, örneklerden orijinal sürekli sinyal eksiksiz geri elde edilebilir.
 

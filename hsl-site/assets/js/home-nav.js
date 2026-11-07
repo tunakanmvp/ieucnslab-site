@@ -1,3 +1,20 @@
+// Odak efekti: ekranın ortasındaki kart tam opak, uzaklaştıkça soluklaşır
+const focusCards = [...document.querySelectorAll("#main > .intro, #main > .home-section, #main > .join-band")];
+const focusOn = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+function updateFocus(headerBottom) {
+  if (!focusOn) return;
+  const vh = window.innerHeight;
+  const centre = headerBottom + (vh - headerBottom) / 2;
+  const range = (vh - headerBottom) * 0.55;
+  for (const card of focusCards) {
+    const r = card.getBoundingClientRect();
+    const dist = centre < r.top ? r.top - centre : centre > r.bottom ? centre - r.bottom : 0;
+    const t = Math.min(dist / range, 1);
+    const eased = t * t * (3 - 2 * t);
+    card.style.setProperty("--focus", (1 - 0.6 * eased).toFixed(3));
+  }
+}
+
 const header = document.querySelector(".site-header");
 const links = new Map(
   [...header.querySelectorAll(".nav li a")].map(link => [link.getAttribute("href"), link])
@@ -18,6 +35,7 @@ function updateCurrentSection() {
     ? sections.at(-1)
     : sections.findLast(element => element.getBoundingClientRect().top <= readingLine);
   updateBackground(section?.id);
+  updateFocus(headerBottom);
   const nextLink = links.get(`#${section?.id}`);
   if (nextLink === currentLink) return;
   currentLink?.removeAttribute("aria-current");
@@ -83,3 +101,4 @@ function updateBackground(id) {
   target.classList.add("is-active");
   activeLayer = target;
 }
+

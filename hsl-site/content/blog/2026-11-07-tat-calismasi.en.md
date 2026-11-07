@@ -10,19 +10,19 @@ There are two bottles of juice on the supermarket shelf. One label says "natural
 
 Most of us would say "of course". But taste doesn't only happen on the tongue. What we think we're eating or drinking also shapes how it tastes. That's exactly what we wanted to find out in this study.
 
-## What did we do?
+## What Did We Do?
 
 Participants tasted drinks containing different preservatives, and we varied the information they were given about the drinks beforehand. After each tasting, participants rated the drink. Meanwhile, we recorded their EEG with a 32-channel, water-based electrode headset.
 
 That let us see two things side by side: what participants said, and what their brains did.
 
-## What did we find?
+## What Did We Find?
 
 Both the type of preservative and the information given beforehand affected how participants rated the taste. In other words, knowing what was on the label changed how the drink was perceived.
 
 On the EEG side, we saw two clear differences between the moments participants liked and disliked a drink: in **gamma** activity over the forehead, and in **beta** activity over the upper back of the head. We explained what these rhythms are in our [EEG post](/en/blog/what-does-eeg-measure/).
 
-## Why does it matter?
+## Why Does It Matter?
 
 Food labels don't just inform; they shape the experience. Being able to show this with brain signals, alongside survey answers, helps us better understand what consumers mean when they say "I like it" or "I don't".
 

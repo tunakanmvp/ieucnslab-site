@@ -2,7 +2,7 @@
 title: Neuromatch Academy, Computational Neuroscience
 slug: neuromatch-computational-neuroscience
 date: 2026-11-07T13:14:00+03:00
-category: Open courseware
+category: Open Courseware
 subcategory: Basics
 summary: "A fully open computational neuroscience curriculum built by researchers from all over the world. Learn by doing, with Python notebooks."
 author: Computational Neuroscience Lab

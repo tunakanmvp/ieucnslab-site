@@ -2,8 +2,8 @@
 title: Signals And Systems With Oppenheim From MIT
 slug: oppenheim-signals-and-systems
 date: 2026-11-07T13:00:00+03:00
-category: Open courseware
-subcategory: Signal processing theory
+category: Open Courseware
+subcategory: Signal Processing Theory
 summary: "A free lecture series, taught in chalk on a blackboard, by the author of the classic signal processing textbook. Everything from Fourier to sampling is here."
 author: Computational Neuroscience Lab
 ---

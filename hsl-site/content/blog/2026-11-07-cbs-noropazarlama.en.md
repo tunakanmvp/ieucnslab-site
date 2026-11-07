@@ -2,7 +2,7 @@
 title: Copenhagen Business School, An Introduction To Consumer Neuroscience
 slug: cbs-neuromarketing
 date: 2026-11-07T13:16:00+03:00
-category: Open courseware
+category: Open Courseware
 subcategory: Neuromarketing
 summary: "Perhaps the best-known online introduction to neuromarketing. From attention to emotion, memory to decision making, ethics included."
 author: Computational Neuroscience Lab

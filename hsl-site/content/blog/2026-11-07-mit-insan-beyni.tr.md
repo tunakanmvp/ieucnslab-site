@@ -2,8 +2,8 @@
 title: MIT 9.13, Nancy Kanwisher İle İnsan Beyni
 url: /blog/mit-insan-beyni/
 date: 2026-11-07T13:04:00+03:00
-category: Açık dersler
-subcategory: Temel kavramlar
+category: Açık Dersler
+subcategory: Temel Kavramlar
 summary: "Yüz tanımadan dile, müzikten dikkate: beynin nasıl çalıştığını hiçbir ön bilgi gerektirmeden anlatan, keyifli bir lisans dersi."
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

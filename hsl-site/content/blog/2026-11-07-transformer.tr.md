@@ -2,7 +2,7 @@
 title: Transformer, Herkesin Herkese Bakabildiği Toplantı
 url: /blog/transformer-nasil-calisir/
 date: 2026-11-07T09:20:00+03:00
-category: Yapay zeka
+category: Yapay Zeka
 summary: ChatGPT gibi dil modellerinin temelindeki Transformer, bir cümleyi kelime kelime okumak yerine bütün kelimelere aynı anda bakar ve hangisinin hangisiyle ilgili olduğuna karar verir.
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---
@@ -10,7 +10,7 @@ author: Hesaplamalı Sinirbilim Laboratuvarı
 
 İşte [2017'de tanıtılan](https://arxiv.org/abs/1706.03762) Transformer mimarisinin temel fikri bu: **dikkat**.
 
-## Sırayla okumak yerine toplantı
+## Sırayla Okumak Yerine Toplantı
 
 Bir önceki yazıda anlattığımız LSTM, bir cümleyi soldan sağa, kelime kelime okur ve yolda gördüklerini bir deftere not eder. Bu yöntem işe yarar ama yavaştır, ve cümle uzadıkça baştaki bilgiler yine de silikleşebilir.
 
@@ -18,7 +18,7 @@ Transformer ise cümleyi bir toplantı masası gibi düşünür. Her kelime masa
 
 Her kelime diğerlerine ne kadar dikkat edeceğine bu şekilde karar verir. Bu işleme **öz-dikkat** (self-attention) deniyor.
 
-## Neden bu kadar başarılı?
+## Neden Bu Kadar Başarılı?
 
 İki büyük avantajı var. Birincisi, kelimeler arasındaki uzak ilişkileri kolayca yakalıyor. Cümlenin başındaki bir kelime, sonundaki bir kelimeyle doğrudan "konuşabiliyor". İkincisi, her şeye aynı anda baktığı için modern bilgisayarlarda çok hızlı eğitilebiliyor. Bu sayede devasa miktarda metinle eğitilen büyük dil modelleri mümkün hale geldi.
 

@@ -2,7 +2,7 @@
 title: Doğrusallık, Sesi İki Kat Açınca Ne Olur?
 url: /blog/dogrusallik/
 date: 2026-11-07T12:24:00+03:00
-category: Sinyal işleme teorisi
+category: Sinyal İşleme Teorisi
 summary: "Bir hoparlörün sesini iki katına çıkarırsanız müzik iki kat yüksek çıkar, şarkı değişmez. Sinyal işlemenin en güçlü araçları bu basit davranışa dayanıyor."
 author: Berkay İlber Tunakan
 ---
@@ -14,7 +14,7 @@ Sinyal işlemede "sistem", bir sinyali alıp başka bir sinyal veren her şeydir
 
 Bu iki şarta birlikte **süperpozisyon** denir. Buna bir şart daha eklenir sıklıkla: sistemin bugün de yarın da aynı davranması, yani **zamanla değişmemesi**. Bu üçünü sağlayan sistemlere kısaca LTI (doğrusal, zamanla değişmeyen) sistemler diyoruz.
 
-## Neden bu kadar önemli?
+## Neden Bu Kadar Önemli?
 
 Çünkü doğrusal bir sistemi anlamak için onu her girişle tek tek denemek gerekmez. [Fourier dönüşümü](/blog/fourier-donusumu/) her sinyali basit sinüslerin toplamına ayırır. Sistemin tek tek sinüslere ne yaptığını bilirseniz, süperpozisyon sayesinde herhangi bir sinyale ne yapacağını da bilirsiniz. Filtre tasarımının neredeyse tamamı bu fikre dayanır.
 

@@ -2,8 +2,8 @@
 title: Stanford EE261, Brad Osgood İle Fourier Dönüşümü
 url: /blog/stanford-fourier-donusumu/
 date: 2026-11-07T13:06:00+03:00
-category: Açık dersler
-subcategory: Sinyal işleme teorisi
+category: Açık Dersler
+subcategory: Sinyal İşleme Teorisi
 summary: "Fourier dönüşümüne ayrılmış koca bir dönem: Stanford'un 30 derslik serisi, ders notları ve sınavlarıyla birlikte ücretsiz."
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

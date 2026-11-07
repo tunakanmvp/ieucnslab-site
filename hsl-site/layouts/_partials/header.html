@@ -1,7 +1,7 @@
 {{ $isHome := .IsHome }}
 {{ with site.GetPage "/news" }}
 <div class="announcement-bar">
-  <div class="wrap"><a href="{{ if $isHome }}#lab-news{{ else }}{{ .RelPermalink }}#lab-news{{ end }}">{{ if eq site.Language.Lang "tr" }}Laboratuvardan haberler{{ else }}News from the lab{{ end }} <span aria-hidden="true">↗</span></a></div>
+  <div class="wrap"><a href="{{ if $isHome }}#lab-news{{ else }}{{ .RelPermalink }}#lab-news{{ end }}">{{ if eq site.Language.Lang "tr" }}Laboratuvardan Haberler{{ else }}News From The Lab{{ end }} <span aria-hidden="true">↗</span></a></div>
 </div>
 {{ end }}
 <header class="site-header">

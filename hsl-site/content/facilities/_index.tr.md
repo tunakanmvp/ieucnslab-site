@@ -3,7 +3,7 @@ title: Altyapı
 url: /altyapi/
 description: Deneylerimizde kullandığımız kayıt ve analiz donanımı.
 ---
-## Bitbrain kayıt sistemi
+## Bitbrain Kayıt Sistemi
 
 Deney tasarımı ve kayıt için **Bitbrain SennsLab** kullanıyoruz.
 
@@ -26,7 +26,7 @@ Deney tasarımı ve kayıt için **Bitbrain SennsLab** kullanıyoruz.
   </figure>
 </div>
 
-## iMotions çoklu ölçüm sistemi
+## iMotions Çoklu Ölçüm Sistemi
 
 Sistem, EEG, ekran tabanlı göz izleme ve elektrodermal aktivite ölçümünü bir araya getiriyor. Yazılım paketi **iMotions Core**, **Screen-Based Eye Tracking**, **Affectiva**, **GSR** ve **EEG** modüllerini içeriyor.
 

@@ -2,8 +2,8 @@
 title: Neuromatch Academy, Hesaplamalı Sinirbilim
 url: /blog/neuromatch-hesaplamali-sinirbilim/
 date: 2026-11-07T13:14:00+03:00
-category: Açık dersler
-subcategory: Temel kavramlar
+category: Açık Dersler
+subcategory: Temel Kavramlar
 summary: "Dünyanın dört bir yanından araştırmacıların hazırladığı, tamamen açık bir hesaplamalı sinirbilim müfredatı. Python defterleriyle, uygulayarak."
 author: Hesaplamalı Sinirbilim Laboratuvarı
 ---

@@ -10,17 +10,17 @@ Picture yourself in a supermarket. Why did you pick one of the two shampoos on t
 
 Traditional market research asks people: surveys, focus groups, interviews. These are valuable, but they have a weakness. People can't always put what they feel into words, and sometimes they'd rather not. **Neuromarketing** tries to fill that gap by looking at brain and body signals at the moment a decision is made.
 
-## What do we measure?
+## What Do We Measure?
 
 - **EEG:** the brain's electrical activity, recorded through electrodes on the scalp. It shows how the brain reacts within milliseconds to an advert or a logo.
 - **Galvanic skin response (GSR):** when we get excited, our palms sweat ever so slightly. That tiny change is a marker of emotional arousal.
 - **Eye tracking:** where the eye goes first on a package or a web page, and how long it lingers.
 
-## What can't we measure?
+## What Can't We Measure?
 
 Neuromarketing is [not mind reading](https://doi.org/10.1038/nrn2795). EEG won't tell you "this person will buy the product tomorrow". What it can do, by averaging across many participants, is support comparative findings such as "this package triggers a stronger emotional response than that one". A good study reads brain signals together with survey answers. Neither replaces the other.
 
-## In our lab
+## In Our Lab
 
 These are the questions we work on. With EEG, we study how [sustainable packaging](https://doi.org/10.1109/codit70676.2026.11630728) affects consumer behaviour, how information about preservatives in a drink changes the [way it tastes](https://doi.org/10.1109/codit70676.2026.11630919), and what trust in a brand looks like in the brain. We'll tell the story of each study in upcoming posts.
 
