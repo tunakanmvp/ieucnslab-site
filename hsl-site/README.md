@@ -31,6 +31,8 @@ hugo server
 
 ### Haber ekleme
 
+Haberler sayfası iki bölümden oluşur: üstte genel duyurular (`content/news/_index.*.md` içeriği), altta **Laboratuvardan haberler** (`content/news/` içindeki her dosya bir kart olur, karta tıklanınca tam metin açılır). Laboratuvardan haberlere yalnızca sonuçlanmış işleri (kabul, ödül, yayın vb.) yazın.
+
 `content/news/2026-12-ornek.tr.md`:
 
 ```markdown

@@ -29,5 +29,3 @@ Son kontrol: **6 Kasım 2026**
 - [TÜSEB Proje Destek duyuruları](https://proje-destek.tuseb.gov.tr/) ve [TBYS çağrı ekranı](https://tbys.tuseb.gov.tr/)
 - [KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı](https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/7664/arge-urge-ve-inovasyon-destek-programi)
 - [İEÜ Proje Geliştirme ve Teknoloji Transfer Ofisi](https://ieutto.izmirekonomi.edu.tr/)
-
-## Laboratuvardan

@@ -28,5 +28,3 @@ Last checked: **6 November 2026**
 - [TÜSEB project support notices](https://proje-destek.tuseb.gov.tr/) and [TBYS call portal](https://tbys.tuseb.gov.tr/)
 - [KOSGEB R&D and Innovation Support Programme](https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/7664/arge-urge-ve-inovasyon-destek-programi)
 - [IUE Project Development and Technology Transfer Office](https://ieutto.izmirekonomi.edu.tr/)
-
-## Lab news

@@ -1,21 +1,6 @@
-{{ with hugo.Data.featured_news }}
-  {{ $tr := eq site.Language.Lang "tr" }}
-  <ul class="news-cards">
-    {{ range . }}
-    <li>
-      <a class="news-card" href="{{ .url }}">
-        <img src="{{ .image }}" alt="" loading="lazy" decoding="async">
-        <div class="news-card-copy">
-          <time datetime="{{ .date }}">{{ time.Format ":date_long" .date }}</time>
-          <h3>{{ cond $tr .title_tr .title_en }}</h3>
-          <p>{{ cond $tr .summary_tr .summary_en }}</p>
-          <span class="news-card-source">{{ cond $tr "İEÜ’de oku" "Read at IUE" }} <span aria-hidden="true">↗</span></span>
-        </div>
-      </a>
-    </li>
-    {{ end }}
-  </ul>
-{{ else }}
-  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
-  {{ partial "news-list.html" .Pages.ByDate.Reverse }}
-{{ end }}
+{{/* Haberler: önce genel duyurular (_index içeriği), ardından laboratuvardan haberler (bölümdeki sayfalar). */}}
+{{ with .Content }}<div class="prose news-general">{{ . }}</div>{{ end }}
+<section class="lab-news" id="lab-news">
+  <h3 class="lab-news-title">{{ cond (eq site.Language.Lang "tr") "Laboratuvardan haberler" "News from the lab" }}</h3>
+  {{ partial "blog-cards.html" (dict "page" . "limit" 0 "prefix" "haber" "more" (cond (eq site.Language.Lang "tr") "Haberin tamamı" "Read more")) }}
+</section>

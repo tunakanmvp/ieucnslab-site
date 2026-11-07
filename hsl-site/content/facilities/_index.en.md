@@ -4,7 +4,7 @@ description: The recording and analysis equipment we use in our experiments.
 ---
 ## Bitbrain recording system
 
-**Status: Available in the lab.** We use **Bitbrain SennsLab** to design experiments and record data.
+We use **Bitbrain SennsLab** to design experiments and record data.
 
 <div class="equipment-grid">
   <figure class="equipment-card">
@@ -27,7 +27,7 @@ description: The recording and analysis equipment we use in our experiments.
 
 ## iMotions multimodal recording system
 
-**Status: Ordered.** This system combines EEG, screen-based eye tracking and electrodermal activity recording. The software package includes **iMotions Core**, **Screen-Based Eye Tracking**, **Affectiva**, **GSR** and **EEG** modules.
+This system combines EEG, screen-based eye tracking and electrodermal activity recording. The software package includes **iMotions Core**, **Screen-Based Eye Tracking**, **Affectiva**, **GSR** and **EEG** modules.
 
 <div class="equipment-grid">
   <figure class="equipment-card">
@@ -59,6 +59,6 @@ description: The recording and analysis equipment we use in our experiments.
 ## Software
 
 - **Bitbrain SennsLab:** Experiment design, stimulus presentation and physiological signal recording.
-- **iMotions:** The multimodal data collection interface for the system on order. The package includes Core, Screen-Based Eye Tracking, Affectiva facial expression analysis, GSR and EEG modules.
-- **Neuroelectrics NIC:** Device control and EEG recording for the Enobio 20 on order.
+- **iMotions:** Multimodal recording software that collects EEG, eye-tracking and skin conductance data in one interface. The package includes Core, Screen-Based Eye Tracking, Affectiva facial expression analysis, GSR and EEG modules.
+- **Neuroelectrics NIC:** Device control and EEG recording for the Enobio 20.
 - **Python and web-based tools:** We develop experimental environments and task interfaces. We use MNE-Python for biosignal processing and data analysis, and scikit-learn and XGBoost for machine learning.

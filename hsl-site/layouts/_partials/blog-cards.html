@@ -8,7 +8,7 @@
 <ul class="blog-cards">
   {{ range . }}
   <li data-cat="{{ .Params.category | default "" | urlize }}">
-    <details class="blog-card" id="yazi-{{ .File.ContentBaseName }}">
+    <details class="blog-card" id="{{ $.prefix | default "yazi" }}-{{ .File.ContentBaseName }}">
       <summary>
         <span class="blog-meta">
           {{ with .Params.category }}<span class="blog-cat">{{ . }}</span>{{ end }}
@@ -16,7 +16,7 @@
         </span>
         <h3 class="blog-title">{{ .Title }}</h3>
         <p class="blog-summary">{{ with .Params.summary }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }}</p>
-        <span class="person-toggle blog-toggle" aria-hidden="true"><span class="when-closed">{{ cond $tr "Yazının tamamı" "Read more" }}</span><span class="when-open">{{ cond $tr "Kapat" "Close" }}</span></span>
+        <span class="person-toggle blog-toggle" aria-hidden="true"><span class="when-closed">{{ with $.more }}{{ . }}{{ else }}{{ cond $tr "Yazının tamamı" "Read more" }}{{ end }}</span><span class="when-open">{{ cond $tr "Kapat" "Close" }}</span></span>
       </summary>
       <div class="blog-body prose">
         {{ .Content }}

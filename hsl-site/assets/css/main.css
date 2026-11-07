@@ -472,3 +472,8 @@ body:has(.bg-stage) { background-image: none; }
 .blog-body h2:last-of-type + ol { font-size: var(--step--1); color: var(--muted); padding-left: 1.25rem; }
 .blog-body h2:last-of-type + ol li { margin-bottom: .5rem; line-height: 1.5; }
 .blog-body a[target="_blank"] { text-decoration-style: solid; }
+
+/* Haberler: laboratuvardan haberler bloğu */
+.lab-news { margin-top: 2.5rem; padding-top: 1.75rem; border-top: 2px solid var(--ink); scroll-margin-top: var(--home-header-offset, 6rem); }
+.lab-news-title { display: inline-block; margin: 0 0 .25rem; font-size: var(--step-1); font-weight: 800; color: #fff; background: var(--obsidian); padding: .3em .7em; border-radius: 12px; }
+.lab-news .blog-title { font-size: clamp(1.2rem, 2.2vw, 1.55rem); }

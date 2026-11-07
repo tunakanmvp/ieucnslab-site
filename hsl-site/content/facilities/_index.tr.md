@@ -5,7 +5,7 @@ description: Deneylerimizde kullandığımız kayıt ve analiz donanımı.
 ---
 ## Bitbrain kayıt sistemi
 
-**Durum: Laboratuvarda mevcut.** Deney tasarımı ve kayıt için **Bitbrain SennsLab** kullanıyoruz.
+Deney tasarımı ve kayıt için **Bitbrain SennsLab** kullanıyoruz.
 
 <div class="equipment-grid">
   <figure class="equipment-card">
@@ -28,7 +28,7 @@ description: Deneylerimizde kullandığımız kayıt ve analiz donanımı.
 
 ## iMotions çoklu ölçüm sistemi
 
-**Durum: Sipariş verildi.** Sistem, EEG, ekran tabanlı göz izleme ve elektrodermal aktivite ölçümünü bir araya getiriyor. Yazılım paketi **iMotions Core**, **Screen-Based Eye Tracking**, **Affectiva**, **GSR** ve **EEG** modüllerini içeriyor.
+Sistem, EEG, ekran tabanlı göz izleme ve elektrodermal aktivite ölçümünü bir araya getiriyor. Yazılım paketi **iMotions Core**, **Screen-Based Eye Tracking**, **Affectiva**, **GSR** ve **EEG** modüllerini içeriyor.
 
 <div class="equipment-grid">
   <figure class="equipment-card">
@@ -60,6 +60,6 @@ description: Deneylerimizde kullandığımız kayıt ve analiz donanımı.
 ## Yazılımlar
 
 - **Bitbrain SennsLab:** Deney tasarımı, uyaran sunumu ve fizyolojik sinyal kaydı.
-- **iMotions:** Sipariş verilen sistemin çoklu veri toplama arayüzü. Paket, Core, Screen-Based Eye Tracking, Affectiva yüz ifadesi analizi, GSR ve EEG modüllerini içeriyor.
-- **Neuroelectrics NIC:** Sipariş verilen Enobio 20 için cihaz kontrolü ve EEG kaydı.
+- **iMotions:** EEG, göz izleme ve deri iletkenliği verilerini tek arayüzde toplayan çoklu ölçüm yazılımı. Paket, Core, Screen-Based Eye Tracking, Affectiva yüz ifadesi analizi, GSR ve EEG modüllerini içeriyor.
+- **Neuroelectrics NIC:** Enobio 20 için cihaz kontrolü ve EEG kaydı.
 - **Python ve web tabanlı araçlar:** Deney ortamları ve görev arayüzleri geliştiriyoruz. Biyosinyal işleme ve veri analizinde MNE-Python, makine öğrenmesinde scikit-learn ve XGBoost kullanıyoruz.
