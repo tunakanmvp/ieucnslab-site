@@ -1,6 +1,12 @@
 # Aydın Akan, 2019–present. Sources: İEÜ GCRIS, OpenAlex, ORCID, Crossref.
 - year: 2026
   eeg: true
+  title: "Investigation of the Effect of Product Mascot Gender on Consumer Emotions Using EEG Signals"
+  authors: "Berkay Ilber Tunakan, **Aydın Akan**, Nursun Ustunkarli, Riza Sadikzade"
+  venue: "Medical Technologies Congress (TIPTEKNO)"
+
+- year: 2026
+  eeg: true
   title: "Deep Model Families for EEG-Based Multi-Class Dementia Classification"
   authors: "Soner Kotan, **Aydın Akan**"
   venue: "International Journal of Neural Systems"
