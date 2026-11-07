@@ -62,3 +62,22 @@ Dosyalarda `TODO` geçen her yer doldurulmayı bekliyor:
 ```bash
 grep -rn TODO content data hugo.toml static
 ```
+
+### Blog yazısı ekleme
+
+`content/blog/` içine iki dosya ekleyin (aynı ad, farklı dil uzantısı):
+
+`2026-12-01-ornek.tr.md`:
+
+```markdown
+---
+title: Başlık (kartta büyük ve kalın görünür)
+url: /blog/ornek/
+date: 2026-12-01
+summary: Kartta başlığın altında görünen bir-iki cümlelik özet.
+author: Yazarın adı
+---
+Yazının tamamı. Karta tıklanınca açılır. Resim için: ![açıklama](/images/blog/resim.jpg)
+```
+
+`2026-12-01-ornek.en.md`: aynısı İngilizce, `url:` yerine `slug: example`.

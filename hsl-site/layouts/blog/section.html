@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "page-head.html" . }}
+<div class="wrap">
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ partial "blog-cards.html" (dict "page" . "limit" 0) }}
+</div>
+<script>
+  // Bağlantı #yazi-... ile gelinirse ilgili kartı açık göster
+  (function () {
+    var el = location.hash && document.getElementById(location.hash.slice(1));
+    if (el && el.tagName === "DETAILS") { el.open = true; el.scrollIntoView(); }
+  })();
+</script>
+{{ end }}

@@ -26,6 +26,11 @@
   image: https://images.unsplash.com/photo-1664448010557-cd3c22c21335
   credit: Google DeepMind
   page: https://unsplash.com/photos/3VSgApkySLA
+- section: blog
+  tone: "#dfefe6"
+  image: https://images.unsplash.com/photo-1664448010557-cd3c22c21335
+  credit: Google DeepMind
+  page: https://unsplash.com/photos/3VSgApkySLA
 - section: conferences
   tone: "#e4f1e0"
   image: https://images.unsplash.com/photo-1559223607-a43c990c692c

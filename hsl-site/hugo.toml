@@ -41,6 +41,10 @@ disableKinds = ["taxonomy", "term"]
       pageRef = "/news"
       weight = 50
     [[languages.tr.menus.main]]
+      name = "Blog"
+      pageRef = "/blog"
+      weight = 52
+    [[languages.tr.menus.main]]
       name = "Konferanslar"
       pageRef = "/conferences"
       weight = 55
@@ -78,6 +82,10 @@ disableKinds = ["taxonomy", "term"]
       name = "News"
       pageRef = "/news"
       weight = 50
+    [[languages.en.menus.main]]
+      name = "Blog"
+      pageRef = "/blog"
+      weight = 52
     [[languages.en.menus.main]]
       name = "Conferences"
       pageRef = "/conferences"
