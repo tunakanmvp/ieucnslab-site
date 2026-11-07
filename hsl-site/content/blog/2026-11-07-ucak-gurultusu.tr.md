@@ -24,9 +24,11 @@ Bu davalar, uçak gürültüsünün insanların yaşam kalitesi üzerindeki etki
 
 ## Nasıl Ölçtük?
 
-Yaşları 20 ile 30 arasında değişen 30 sağlıklı katılımcı, dikkat ve çalışma belleğini ölçen bir **n-back testi** çözdü. Bu testte ekranda art arda görseller beliriyor ve katılımcı, gördüğü görselin birkaç adım önceki görselle aynı olup olmadığını işaretliyor. Test üç farklı ses koşulunda tekrarlandı: **sessiz**, **orta düzeyde uçak gürültüsü** ve **yüksek düzeyde uçak gürültüsü**.
+Yaşları 20 ile 30 arasında değişen 30 sağlıklı katılımcı, dikkat ve çalışma belleğini ölçen bir **n-back testi** çözdü. Bu çalışmada testin iki adım geriye bakan (2-back) sürümünü kullandık: ekranda harfler teker teker beliriyor ve katılımcı, gelen harf iki önceki harfle aynıysa butona basıyor. Test üç farklı ses koşulunda tekrarlandı: **sessiz**, **orta düzeyde uçak gürültüsü** ve **yüksek düzeyde uçak gürültüsü**.
 
-![n-back testinden örnek ekranlar](nback.jpg "n-back testinde katılımcı, ekrandaki görselin birkaç adım önceki görselle aynı olup olmadığını işaretliyor.")
+![2-back testi için katılımcılara gösterilen yönerge](nback1.png "Katılımcılara gösterilen yönerge: gelen harf iki önceki harfle aynıysa butona basılıyor.")
+
+![2-back testi sırasında ekrandan iki örnek görüntü](nback2.png "Test sırasında ekrandan örnekler: harfler teker teker beliriyor.")
 
 Test boyunca katılımcıların beyin etkinliğini laboratuvarımızdaki EEG sistemiyle, kalp atışını ise bileğe takılan bir fotopletismografi (PPG) bandıyla kaydettik. EEG sinyallerini filtreleyip her ses koşulu için zaman ve frekans alanı özniteliklerini çıkardık. Ardından bu özniteliklerden katılımcının testteki performansını tahmin eden makine öğrenmesi modelleri eğittik.
 

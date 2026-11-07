@@ -24,9 +24,11 @@ These cases show that the impact of aircraft noise on quality of life is recogni
 
 ## How We Measured It
 
-Thirty healthy participants aged 20 to 30 solved an **n-back test**, which measures attention and working memory. Images appear on the screen one after another, and the participant marks whether the current image matches the one shown a few steps earlier. The test was repeated under three sound conditions: **silence**, **moderate aircraft noise** and **loud aircraft noise**.
+Thirty healthy participants aged 20 to 30 solved an **n-back test**, which measures attention and working memory. We used the two-step (2-back) version: letters appear on the screen one at a time, and the participant presses a button when the current letter matches the one shown two letters earlier. The test was repeated under three sound conditions: **silence**, **moderate aircraft noise** and **loud aircraft noise**.
 
-![Example screens from the n-back test](nback.jpg "In the n-back test, the participant marks whether the image on screen matches the one shown a few steps earlier.")
+![Instructions shown to participants for the 2-back test](nback1.png "Instructions shown to participants (in Turkish): press the button when the letter matches the one two letters earlier.")
+
+![Two example screens during the 2-back test](nback2.png "Example screens during the test: letters appear one at a time.")
 
 During the test we recorded brain activity with our lab's EEG system and heart rate with a wrist-worn photoplethysmography (PPG) band. We filtered the EEG signals and extracted time- and frequency-domain features for each sound condition. We then trained machine learning models that predict the participant's test performance from these features.
 

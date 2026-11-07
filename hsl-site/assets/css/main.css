@@ -474,6 +474,10 @@ body:has(.bg-stage) { background-image: none; }
 .blog-body > :first-child { padding-top: 1.1rem; border-top: 1px solid var(--grid); }
 .blog-body img { display: block; max-width: 100%; height: auto; border-radius: 10px; margin: 1rem auto; }
 .blog-figure { margin: 1.25rem 0; }
+.research-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1rem; max-width: 48rem; margin: 1.5rem 0 0; }
+.research-gallery figure { margin: 0; }
+.research-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--card-radius); display: block; }
+.research-gallery figcaption { font-size: .85rem; color: var(--muted); margin-top: .4rem; }
 .blog-figure img { margin: 0 auto .4rem; }
 .blog-figure figcaption { font-size: .85rem; opacity: .75; text-align: center; }
 .blog-author { color: var(--muted); font-style: italic; }
