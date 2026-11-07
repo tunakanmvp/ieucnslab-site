@@ -73,40 +73,42 @@
 - name: Burak Akbuğday
   match: "Burak Akbu[gğ]day"
   group: researchers
-  role_tr: ""
-  role_en: ""
+  role_tr: "Araştırma Görevlisi"
+  role_en: "Research Assistant"
   bio_tr: ""
   bio_en: ""
-  biography_tr: ""
-  biography_en: ""
+  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   email:
     - burak.akbugday@ieu.edu.tr
+    - burak.akbugday@std.ieu.edu.tr
   scholar: ""
   photo: ""
 
 - name: Sude Pehlivan Akbuğday
   match: "Sude Pehlivan"
   group: researchers
-  role_tr: ""
-  role_en: ""
+  role_tr: "Araştırma Görevlisi"
+  role_en: "Research Assistant"
   bio_tr: ""
   bio_en: ""
-  biography_tr: ""
-  biography_en: ""
+  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   email:
     - sude.pehlivan@ieu.edu.tr
+    - sude.pehlivan@std.ieu.edu.tr
   scholar: ""
   photo: ""
 
 - name: Dr. Rıza Sadıkzade
   match: "R[ıi]za Sad[ıi]kzade|Reza Sadighzadeh"
   group: researchers
-  role_tr: ""
-  role_en: ""
+  role_tr: "Dr. Öğretim Üyesi"
+  role_en: "Assistant Professor"
   bio_tr: ""
   bio_en: ""
-  biography_tr: ""
-  biography_en: ""
+  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   email:
     - riza.sadikzade@ieu.edu.tr
     - riza@taimaksan.com
@@ -116,12 +118,12 @@
 - name: Dr. Faezeh Yeganli
   match: "Yeganli"
   group: researchers
-  role_tr: ""
-  role_en: ""
+  role_tr: "Dr. Öğretim Üyesi"
+  role_en: "Assistant Professor"
   bio_tr: ""
   bio_en: ""
-  biography_tr: ""
-  biography_en: ""
+  biography_tr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  biography_en: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   email:
     - faezeh.yeganli@ieu.edu.tr
   scholar: ""
