@@ -12,7 +12,7 @@ Most of us would say "of course". But taste doesn't only happen on the tongue. W
 
 ## What did we do?
 
-Participants tasted drinks containing different preservatives, and we varied the information they were given about the drinks beforehand. After each tasting, participants rated the drink. Meanwhile, we recorded their EEG.
+Participants tasted drinks containing different preservatives, and we varied the information they were given about the drinks beforehand. After each tasting, participants rated the drink. Meanwhile, we recorded their EEG with a 32-channel, water-based electrode headset.
 
 That let us see two things side by side: what participants said, and what their brains did.
 
