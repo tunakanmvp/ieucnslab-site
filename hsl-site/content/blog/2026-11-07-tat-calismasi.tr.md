@@ -12,7 +12,7 @@ Market rafında iki şişe meyve suyu var. Birinin etiketinde "doğal koruyucu",
 
 ## Ne yaptık?
 
-Katılımcılara farklı koruyucular içeren içecekler tattırdık ve tadımdan önce içecekler hakkında farklı bilgiler verdik. Her tadımdan sonra katılımcılar içeceği değerlendirdi. Bu sırada da kuru elektrotlu bir başlıkla EEG kaydı aldık.
+Katılımcılara farklı koruyucular içeren içecekler tattırdık ve tadımdan önce içecekler hakkında farklı bilgiler verdik. Her tadımdan sonra katılımcılar içeceği değerlendirdi. Bu sırada da EEG kaydı aldık.
 
 Böylece iki şeyi birlikte görebildik: katılımcıların ne söylediğini ve beyinlerinin ne yaptığını.
 
