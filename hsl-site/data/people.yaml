@@ -7,7 +7,7 @@
   group: lead
   role_tr: Ekip Lideri
   role_en: Lab Lead
-  bio_tr: Durağan olmayan işaretlerin zaman-frekans analizi ve bu yöntemlerin haberleşme ve biyomedikal mühendisliğindeki uygulamaları üzerine çalışmaktadır.
+  bio_tr: "Durağan olmayan işaretlerin zaman-frekans analizi ve bu yöntemlerin haberleşme ve biyomedikal mühendisliğindeki uygulamaları üzerine çalışmaktadır."
   bio_en: His research focuses on time–frequency analysis of nonstationary signals and its applications in communications and biomedical engineering.
   biography_tr: |-
     Aydın Akan, Ocak 1967’de Bursa’da doğdu ve ilk ve orta öğrenimini Bursa’da tamamladı. 1984’te başladığı Uludağ Üniversitesi Elektronik Mühendisliği Bölümünden 1988’de mezun oldu. Aynı yıl başladığı İstanbul Teknik Üniversitesi Elektronik ve Haberleşme Programındaki yüksek lisansını Şubat 1991’de tamamladı. Yüksek lisans tezinde biyolojik işaretler için gerçek zamanlı adaptif gürültü giderme sistemi üzerine çalıştı.
@@ -53,9 +53,9 @@ At the Computational Neuroscience Laboratory, he conducts research in cognitive 
   group: researchers
   role_tr: Yüksek Lisans Öğrencisi
   role_en: MSc Student
-  bio_tr: İzmir Ekonomi Üniversitesi Mekatronik Mühendisliği ve Elektrik-Elektronik Mühendisliği çift anadal programlarından mezun oldu. Laboratuvarımız bünyesinde tat algısına yönelik nörofizyolojik tepkilerin EEG sinyalleri üzerinden makine öğrenmesi yöntemleriyle değerlendirilmesi üzerine çalışmalar yürüttü.
+  bio_tr: "İzmir Ekonomi Üniversitesi Mekatronik Mühendisliği ve Elektrik-Elektronik Mühendisliği çift anadal programlarından mezun oldu. Laboratuvarımız bünyesinde tat algısına yönelik nörofizyolojik tepkilerin EEG sinyalleri üzerinden makine öğrenmesi yöntemleriyle değerlendirilmesi üzerine çalışmalar yürüttü.
 
-Araştırmalarını bilişsel sinirbilim, duygusal bilgi işleme ve biyomedikal sinyal analizi alanlarında sürdürmektedir. Yüksek lisans tezi kapsamında, Türk müziğindeki farklı makamların uyandırdığı algılanan ve hissedilen duyguların ayrıştırılmasını EEG sinyalleri, makine öğrenmesi ve derin öğrenme yöntemleriyle araştırmaktadır.
+Araştırmalarını bilişsel sinirbilim, duygusal bilgi işleme ve biyomedikal sinyal analizi alanlarında sürdürmektedir. Yüksek lisans tezi kapsamında, Türk müziğindeki farklı makamların uyandırdığı algılanan ve hissedilen duyguların ayrıştırılmasını EEG sinyalleri, makine öğrenmesi ve derin öğrenme yöntemleriyle araştırmaktadır."
   bio_en: "She graduated from Izmir University of Economics with a double major in Mechatronics Engineering and Electrical and Electronics Engineering. At the Computational Neuroscience Laboratory, she has conducted research on the evaluation of neurophysiological responses to taste stimuli using EEG signals and machine learning techniques.
 
 Her research focuses on cognitive neuroscience, affective computing, and biomedical signal processing. As part of her master's thesis, she investigates the differentiation between perceived and felt emotions elicited by different makams (modal structures) in Turkish music, employing EEG-based analysis, machine learning, and deep learning methods."
@@ -70,9 +70,9 @@ Her research focuses on cognitive neuroscience, affective computing, and biomedi
   group: researchers
   role_tr: Yüksek Lisans Öğrencisi
   role_en: MSc Student
-  bio_tr: İzmir Ekonomi Üniversitesi Bilgisayar Mühendisliği ve Elektrik-Elektronik Mühendisliği çift anadal programlarından mezun oldu. Lisans eğitimi sırasında IEEE Öğrenci Kolu yönetiminde görev aldı ve üniversite bünyesinde elektrikli araç, otonom sistemler ve rover geliştirme projelerinde çalıştı.
+  bio_tr: "İzmir Ekonomi Üniversitesi Bilgisayar Mühendisliği ve Elektrik-Elektronik Mühendisliği çift anadal programlarından mezun oldu. Lisans eğitimi sırasında IEEE Öğrenci Kolu yönetiminde görev aldı ve üniversite bünyesinde elektrikli araç, otonom sistemler ve rover geliştirme projelerinde çalıştı.
 
-Araştırmalarını nöromühendislik, biyomedikal cihaz tasarımı, gömülü sistemler ve yapay zekâ uygulamaları üzerine sürdürmektedir. Yüksek lisans tezi kapsamında, geleneksel alın bölgesi odaklı ölçümlerin ötesine geçerek kafa derisinin farklı bölgelerinden veri toplayabilen, genişletilmiş uzamsal kapsama sahip bir fonksiyonel yakın kızılötesi spektroskopi (fNIRS) sistemi geliştirmektedir. Çalışmasında donanım ve yazılım entegrasyonu ile gömülü yapay zekâ yöntemlerinin nörofizyolojik veri işleme süreçlerinde kullanılmasına odaklanmaktadır.
+Araştırmalarını nöromühendislik, biyomedikal cihaz tasarımı, gömülü sistemler ve yapay zekâ uygulamaları üzerine sürdürmektedir. Yüksek lisans tezi kapsamında, geleneksel alın bölgesi odaklı ölçümlerin ötesine geçerek kafa derisinin farklı bölgelerinden veri toplayabilen, genişletilmiş uzamsal kapsama sahip bir fonksiyonel yakın kızılötesi spektroskopi (fNIRS) sistemi geliştirmektedir. Çalışmasında donanım ve yazılım entegrasyonu ile gömülü yapay zekâ yöntemlerinin nörofizyolojik veri işleme süreçlerinde kullanılmasına odaklanmaktadır."
   bio_en: "He graduated from Izmir University of Economics with a double major in Computer Engineering and Electrical and Electronics Engineering. During his undergraduate studies, he served on the board of the IEEE Student Branch and contributed to electric vehicle development, autonomous systems, and rover projects.
 
 His research focuses on neuroengineering, biomedical device development, embedded systems, and artificial intelligence. As part of his master's thesis, he is developing a functional near-infrared spectroscopy (fNIRS) system designed to extend spatial recording coverage beyond the conventional forehead-focused approach, enabling measurements across multiple regions of the scalp. His work involves hardware–software integration and the application of embedded artificial intelligence techniques to neurophysiological signal processing."
