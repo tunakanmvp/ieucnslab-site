@@ -25,6 +25,7 @@
         {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
       {{ end }}
       {{ if eq .Section "research" }}
+        {{ partial "research-hint.html" . }}
         <ul class="area-list research-grid">
           {{ range .Pages.ByWeight }}
           <li>

@@ -138,6 +138,10 @@ a:hover { text-decoration-thickness: 2px; }
 .area-summary { color: var(--muted); }
 .area:hover .area-title { color: var(--accent-ink); }
 .block .area-list { margin-top: 0; }
+.research-hint { display: flex; align-items: flex-start; gap: .3rem; margin: 1.6rem 0 .4rem; color: #c62828; }
+.research-hint-box { display: inline-block; padding: .45rem .8rem; border: 1.5px solid #c62828; border-radius: .6rem; background: #fdecea; color: #b71c1c; font-size: var(--step--1); font-weight: 600; line-height: 1.35; transform: rotate(-1.2deg); }
+.research-hint-arrow { flex: none; margin-top: .55rem; }
+.research-hint + .area-list { margin-top: .2rem; }
 .past-research { margin-top: 3rem; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--grid); }
 .past-research > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: .8rem; padding: 1.2rem 0; }
 .past-research > summary::-webkit-details-marker { display: none; }
