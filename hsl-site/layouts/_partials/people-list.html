@@ -1,7 +1,10 @@
+{{/* Ekip kartları. Karta tıklanınca detaylı özgeçmiş ve laboratuvardaki yayınlar açılır.
+     Yayınlar data/publications.yaml içinden, kişinin "match" alanındaki ifadeyle yazar listesinde aranarak bulunur. */}}
 {{ $tr := eq site.Language.Lang "tr" }}
 {{ $groupHeading := cond . "h3" "h2" }}
 {{ $personHeading := cond . "h4" "h3" }}
 {{ $people := where hugo.Data.people "draft" "ne" true }}
+{{ $allPubs := sort hugo.Data.publications "year" "desc" }}
 {{ range slice "lead" "researchers" "students" "alumni" }}
   {{ $group := . }}
   {{ $members := where $people "group" $group }}
@@ -10,31 +13,60 @@
     {{ printf "<%s>" $groupHeading | safeHTML }}{{ i18n $group }}{{ printf "</%s>" $groupHeading | safeHTML }}
     <ul class="people{{ if eq $group "lead" }} people-lead{{ end }}">
       {{ range . }}
-      <li class="person">
-        {{ $parts := split (replaceRE `^(Prof\.|Doç\.|Dr\.|Dr\. Öğr\. Üyesi)\s*` "" .name | replaceRE `^(Dr\.)\s*` "") " " }}
-        <span class="avatar-wrap">
-          <span class="avatar avatar-initials" aria-hidden="true">{{ substr (index $parts 0) 0 1 }}{{ if gt (len $parts) 1 }}{{ substr (index $parts (sub (len $parts) 1)) 0 1 }}{{ end }}</span>
-          {{ with .photo }}
-          {{ $src := cond (hasPrefix . "http") . (printf "images/people/%s" . | relURL) }}
-          <img class="avatar avatar-photo" src="{{ $src }}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
-          {{ end }}
-        </span>
-        <div>
-          {{ printf "<%s>" $personHeading | safeHTML }}{{ .name }}{{ printf "</%s>" $personHeading | safeHTML }}
-          {{ with cond $tr .role_tr .role_en }}<p class="role">{{ . }}</p>{{ end }}
-          {{ with cond $tr .bio_tr .bio_en }}<p class="bio">{{ . }}</p>{{ end }}
-          <p class="links">
-            {{ with .email }}<a href="mailto:{{ . }}">{{ . }}</a>{{ end }}
-            {{ with .scholar }}<a href="{{ . }}">Google Scholar</a>{{ end }}
-            {{ with .ieee }}<a href="{{ . }}">IEEE Xplore</a>{{ end }}
-          </p>
-          {{ with cond $tr .biography_tr .biography_en }}
-          <details class="person-biography">
-            <summary>{{ i18n "full_biography" }}</summary>
-            {{ range split . "\n\n" }}<p>{{ . }}</p>{{ end }}
-          </details>
-          {{ end }}
-        </div>
+      {{ $p := . }}
+      {{ $pubs := slice }}
+      {{ with $p.match }}
+        {{ $re := printf "(?i)%s" . }}
+        {{ range $allPubs }}{{ if findRE $re .authors 1 }}{{ $pubs = $pubs | append . }}{{ end }}{{ end }}
+      {{ end }}
+      {{ $biography := cond $tr ($p.biography_tr | default "") ($p.biography_en | default "") }}
+      {{ $parts := split (replaceRE `^(Prof\.|Doç\.|Dr\.|Dr\. Öğr\. Üyesi)\s*` "" $p.name | replaceRE `^(Dr\.)\s*` "") " " }}
+      <li class="person-item">
+        <details class="person">
+          <summary class="person-summary">
+            <span class="avatar-wrap">
+              <span class="avatar avatar-initials" aria-hidden="true">{{ substr (index $parts 0) 0 1 }}{{ if gt (len $parts) 1 }}{{ substr (index $parts (sub (len $parts) 1)) 0 1 }}{{ end }}</span>
+              {{ with $p.photo }}
+              {{ $src := cond (hasPrefix . "http") . (printf "images/people/%s" . | relURL) }}
+              <img class="avatar avatar-photo" src="{{ $src }}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">
+              {{ end }}
+            </span>
+            <span class="person-head">
+              {{ printf "<%s>" $personHeading | safeHTML }}{{ $p.name }}{{ printf "</%s>" $personHeading | safeHTML }}
+              {{ with cond $tr $p.role_tr $p.role_en }}<span class="role">{{ . }}</span>{{ end }}
+              {{ with cond $tr $p.bio_tr $p.bio_en }}<span class="bio">{{ . }}</span>{{ end }}
+              {{ with $p.email }}<a class="person-mail" href="mailto:{{ . }}">{{ . }}</a>{{ end }}
+              <span class="person-toggle" aria-hidden="true"><span class="when-closed">{{ i18n "person_more" }}</span><span class="when-open">{{ i18n "person_less" }}</span></span>
+            </span>
+          </summary>
+          <div class="person-detail">
+            {{ with $biography }}
+            <div class="person-biography">
+              <h5>{{ i18n "full_biography" }}</h5>
+              {{ range split . "\n\n" }}<p>{{ . }}</p>{{ end }}
+            </div>
+            {{ end }}
+            <div class="person-pubs">
+              <h5>{{ i18n "person_pubs" }}{{ with $pubs }} ({{ len . }}){{ end }}</h5>
+              {{ with $pubs }}
+              <ol class="person-pub-list">
+                {{ range . }}
+                <li>
+                  <span class="pp-year">{{ .year }}</span>
+                  <span class="pp-body">
+                    <span class="pp-title">{{ .title }}</span>
+                    <span class="pp-venue">{{ .venue }}{{ with .doi }} · <a href="https://doi.org/{{ . }}">DOI</a>{{ end }}{{ with .url }} · <a href="{{ . }}">{{ cond $tr "Kayıt" "Record" }}</a>{{ end }}</span>
+                  </span>
+                </li>
+                {{ end }}
+              </ol>
+              {{ else }}
+              <p class="person-empty">{{ i18n "person_no_pubs" }}</p>
+              {{ end }}
+            </div>
+            {{ with $p.scholar }}<p class="links"><a href="{{ . }}">Google Scholar</a></p>{{ end }}
+          </div>
+        </details>
       </li>
       {{ end }}
     </ul>

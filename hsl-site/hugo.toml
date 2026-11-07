@@ -41,6 +41,10 @@ disableKinds = ["taxonomy", "term"]
       pageRef = "/news"
       weight = 50
     [[languages.tr.menus.main]]
+      name = "Konferanslar"
+      pageRef = "/conferences"
+      weight = 55
+    [[languages.tr.menus.main]]
       name = "İletişim"
       pageRef = "/contact"
       weight = 60
@@ -74,6 +78,10 @@ disableKinds = ["taxonomy", "term"]
       name = "News"
       pageRef = "/news"
       weight = 50
+    [[languages.en.menus.main]]
+      name = "Conferences"
+      pageRef = "/conferences"
+      weight = 55
     [[languages.en.menus.main]]
       name = "Contact"
       pageRef = "/contact"

@@ -1,6 +1,8 @@
-# Ekip üyeleri. group: lead | researchers | students | alumni
+# Ekip üyeleri. match: yayın listesinde kişiyi bulan ifade (büyük/küçük harf duyarsız düzenli ifade).
+# group: lead | researchers | students | alumni
 # photo: static/images/people/ altına dosya koyup adını yazın ya da tam https adresi verin (boşsa ya da yüklenemezse baş harfler gösterilir)
 - name: Prof. Dr. Aydın Akan
+  match: "Ayd[ıi]n Akan"
   group: lead
   role_tr: Ekip Lideri
   role_en: Lab Lead
@@ -27,6 +29,7 @@
   photo: https://gcris.ieu.edu.tr/server/api/core/bitstreams/08f09923-8aa2-4e4b-a9bc-ece3d0cf433c/content
 
 - name: Berkay İlber Tunakan
+  match: "Tunakan"
   group: researchers
   role_tr: Araştırma Görevlisi, Yüksek Lisans Öğrencisi
   role_en: Research Assistant, MSc Student
@@ -38,6 +41,7 @@
   photo: ""
 
 - name: Nilsu Çağla Hepsev
+  match: "Hepsev"
   group: researchers
   role_tr: Yüksek Lisans Öğrencisi
   role_en: MSc Student
@@ -48,11 +52,64 @@
   photo: ""
 
 - name: Uğur Emin Baynal
+  match: "Baynal"
   group: researchers
   role_tr: Yüksek Lisans Öğrencisi
   role_en: MSc Student
   bio_tr: Bilgisayar Mühendisliği ve Elektrik-Elektronik Mühendisliği çift anadal programından mezun oldu. IEEE öğrenci kolunun yönetiminde görev aldı ve İzmir Ekonomi Üniversitesi bünyesinde elektrikli araç ve rover projelerinde çalıştı. Yüksek lisans tezinde gömülü yapay zekâ ile kayıt kapsamı genişletilmiş, yalnızca alından değil tüm kafadan kayıt alabilen yeni bir fNIRS cihazı geliştiriyor.
   bio_en: "Graduated with a double major in Computer Engineering and Electrical and Electronics Engineering. He served on the board of the IEEE student branch and worked on electric vehicle and rover projects at Izmir University of Economics. For his master's thesis he is developing a new fNIRS device with embedded AI that extends recording coverage from the forehead to the whole head."
   email: ugur.baynal@ieu.edu.tr
+  scholar: ""
+  photo: ""
+
+- name: Burak Akbuğday
+  match: "Burak Akbu[gğ]day"
+  group: researchers
+  role_tr: ""
+  role_en: ""
+  bio_tr: ""
+  bio_en: ""
+  biography_tr: ""
+  biography_en: ""
+  email: ""
+  scholar: ""
+  photo: ""
+
+- name: Sude Pehlivan Akbuğday
+  match: "Sude Pehlivan"
+  group: researchers
+  role_tr: ""
+  role_en: ""
+  bio_tr: ""
+  bio_en: ""
+  biography_tr: ""
+  biography_en: ""
+  email: ""
+  scholar: ""
+  photo: ""
+
+- name: Dr. Rıza Sadıkzade
+  match: "R[ıi]za Sad[ıi]kzade"
+  group: researchers
+  role_tr: ""
+  role_en: ""
+  bio_tr: ""
+  bio_en: ""
+  biography_tr: ""
+  biography_en: ""
+  email: ""
+  scholar: ""
+  photo: ""
+
+- name: Dr. Faezeh Yeganli
+  match: "Yeganli"
+  group: researchers
+  role_tr: ""
+  role_en: ""
+  bio_tr: ""
+  bio_en: ""
+  biography_tr: ""
+  biography_en: ""
+  email: ""
   scholar: ""
   photo: ""
