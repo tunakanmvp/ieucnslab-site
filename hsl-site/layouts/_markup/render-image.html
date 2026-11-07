@@ -1,6 +1,18 @@
+{{- /* Bare file name -> /images/<section>/ (blog: /images/blog/<post>/). "folder/x.jpg" -> /images/folder/x.jpg */ -}}
 {{- $src := .Destination -}}
 {{- if not (or (strings.HasPrefix $src "/") (strings.Contains $src "://")) -}}
-  {{- $src = printf "/images/%s" $src | relURL -}}
+  {{- if strings.Contains $src "/" -}}
+    {{- $src = printf "/images/%s" $src -}}
+  {{- else -}}
+    {{- $sec := .Page.Section | default "home" -}}
+    {{- if and (eq $sec "blog") .Page.File -}}
+      {{- $post := replaceRE `^\d{4}-\d{2}-\d{2}-` "" .Page.File.ContentBaseName -}}
+      {{- $src = printf "/images/blog/%s/%s" $post $src -}}
+    {{- else -}}
+      {{- $src = printf "/images/%s/%s" $sec $src -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $src = $src | relURL -}}
 {{- end -}}
 {{- if .Title -}}
 <figure class="blog-figure"><img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy"><figcaption>{{ .Title }}</figcaption></figure>

@@ -87,10 +87,14 @@ Yazının tamamı. Karta tıklanınca açılır. Resim için: ![açıklama](resi
 
 #### Resim ekleme
 
-Resimleri `static/images/` klasörüne koyun ve yazıda yalnızca dosya adıyla çağırın:
+Resimler `static/images/` altında menü başına bir klasörde durur: `research`, `people`, `publications`, `facilities`, `news`, `blog`, `conferences`, `contact`. Blogda her yazının kendi klasörü var; klasör adı, dosya adından tarih çıkarılmış hâlidir (`2026-11-07-fnirs.tr.md` → `static/images/blog/fnirs/`). Yeni yazı eklerken aynı mantıkla klasörünü açın.
+
+Yazıda yalnızca dosya adını yazmanız yeterli, doğru klasör otomatik bulunur. TR ve EN sürüm aynı klasörü kullanır:
 
 ```markdown
 ![EEG başlığı takılmış bir katılımcı](eeg-baslik.jpg "Alt yazı (isteğe bağlı)")
 ```
+
+Başka bir klasördeki resmi kullanmak için yolu yazın: `![...](news/foto.jpg)`.
 
 Tırnak içindeki kısım yazılırsa resmin altında alt yazı olarak görünür. Dosya adlarında Türkçe karakter ve boşluk kullanmayın (`eeg-baslik.jpg` gibi). Katılımcı yüzü ya da kimliği görünen fotoğraf eklemeyin.
