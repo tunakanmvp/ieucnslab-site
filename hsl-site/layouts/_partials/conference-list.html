@@ -1,34 +1,56 @@
-{{/* Yayın listesindeki konferans bildirileri, yeniden eskiye.
+{{/* Katıldığımız konferanslar, yeniden eskiye. Yayın listesindeki bildirilerden türetilir;
+     aynı yıl aynı konferansa giden bildiriler tek satırda toplanır.
      Bir kayıt "type: conference" ya da yayın yerinde konferans/kongre/sempozyum vb. geçiyorsa konferans sayılır.
      Parametreler: dict "page" (bölüm sayfası) "limit" (0 = hepsi) */}}
 {{ $tr := eq site.Language.Lang "tr" }}
 {{ $re := `(?i)conference|congress|symposium|proceedings|workshop|meeting|summit|kongre|sempozyum|konferans|Innovative Smart Grid|\bSIU\b|TIPTEKNO|CoDIT|EMBC|ICASSP|EUSIPCO` }}
-{{ $items := slice }}
+{{/* Bilinen konferansların tek tip adları: [desen, TR ad, EN ad] */}}
+{{ $known := slice
+  (slice `TIPTEKNO|Medical Technologies Congress` "Tıp Teknolojileri Kongresi (TIPTEKNO)" "Medical Technologies Congress (TIPTEKNO)")
+  (slice `\bSIU\b|Signal Processing and Communications Applications` "Sinyal İşleme ve İletişim Uygulamaları Kurultayı (SIU)" "Signal Processing and Communications Applications Conference (SIU)")
+  (slice `EUSIPCO|European Signal Processing Conference` "European Signal Processing Conference (EUSIPCO)" "European Signal Processing Conference (EUSIPCO)")
+  (slice `CoDIT` "International Conference on Control, Decision and Information Technologies (CoDIT)" "International Conference on Control, Decision and Information Technologies (CoDIT)")
+  (slice `ASYU|Innovations in Intelligent Systems` "Akıllı Sistemlerde Yenilikler ve Uygulamaları Konferansı (ASYU)" "Innovations in Intelligent Systems and Applications Conference (ASYU)")
+  (slice `MeMeA|Medical Measurements and Applications` "IEEE International Symposium on Medical Measurements and Applications (MeMeA)" "IEEE International Symposium on Medical Measurements and Applications (MeMeA)")
+}}
+{{ $rows := slice }}
+{{ $seen := dict }}
 {{ range sort hugo.Data.publications "year" "desc" }}
   {{ $isConf := false }}
   {{ with .type }}{{ $isConf = eq . "conference" }}{{ else }}{{ $isConf = findRE $re .venue 1 }}{{ end }}
-  {{ if $isConf }}{{ $items = $items | append . }}{{ end }}
+  {{ if $isConf }}
+    {{ $name := replaceRE ` --.*$` "" .venue }}
+    {{ $v := .venue }}
+    {{ range $known }}{{ if findRE (index . 0) $v 1 }}{{ $name = cond $tr (index . 1) (index . 2) }}{{ end }}{{ end }}
+    {{ $key := printf "%v|%s" .year $name }}
+    {{ if index $seen $key }}
+      {{ $seen = merge $seen (dict $key (add (index $seen $key) 1)) }}
+    {{ else }}
+      {{ $seen = merge $seen (dict $key 1) }}
+      {{ $rows = $rows | append (dict "year" .year "name" $name "key" $key) }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 {{ $limit := .limit | default 0 }}
-{{ $shown := cond (gt $limit 0) (first $limit $items) $items }}
-{{ if $items }}
+{{ $shown := cond (gt $limit 0) (first $limit $rows) $rows }}
+{{ if $rows }}
 <ol class="conf-list">
   {{ $lastYear := 0 }}
   {{ range $shown }}
+  {{ $n := index $seen .key }}
   <li class="conf-item">
     <span class="conf-year">{{ if ne .year $lastYear }}{{ .year }}{{ end }}</span>
     {{ $lastYear = .year }}
     <span class="conf-body">
-      <span class="conf-venue">{{ replaceRE ` --.*$` "" .venue }}</span>
-      <span class="conf-title">{{ .title }}</span>
-      {{ with .doi }}<a class="conf-link" href="https://doi.org/{{ . }}">DOI</a>{{ end }}
+      <span class="conf-venue">{{ .name }}</span>
+      <span class="conf-title">{{ $n }} {{ cond $tr "bildiri" (cond (eq $n 1) "paper" "papers") }}</span>
     </span>
   </li>
   {{ end }}
 </ol>
-{{ if gt (len $items) (len $shown) }}
-<a class="section-link" href="{{ .page.RelPermalink }}">{{ cond $tr "Tüm konferans bildirileri" "All conference papers" }} ({{ len $items }})</a>
+{{ if gt (len $rows) (len $shown) }}
+<a class="section-link" href="{{ .page.RelPermalink }}">{{ cond $tr "Tüm konferanslar" "All conferences" }} ({{ len $rows }})</a>
 {{ end }}
 {{ else }}
-<p>{{ cond $tr "Henüz konferans bildirisi eklenmedi." "No conference papers yet." }}</p>
+<p>{{ cond $tr "Henüz konferans eklenmedi." "No conferences yet." }}</p>
 {{ end }}
