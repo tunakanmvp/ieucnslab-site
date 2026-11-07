@@ -26,4 +26,8 @@ EEG tarafında, katılımcıların içeceği beğendiği ve beğenmediği duruml
 
 Gıda etiketleri sadece bilgi vermiyor, deneyimi de şekillendiriyor. Bunu anket cevaplarının yanında beyin sinyalleriyle de gösterebilmek, tüketicinin "beğendim" ya da "beğenmedim" derken neyi kastettiğini daha iyi anlamamıza yardım ediyor.
 
-Çalışmayı Temmuz 2026'da İtalya'nın Bari kentinde düzenlenen 12. IEEE CoDIT konferansında sunduk. Bildirinin tam künyesine [yayınlar sayfamızdan](/yayinlar/) ulaşabilirsiniz.
+Çalışmayı Temmuz 2026'da İtalya'nın Bari kentinde düzenlenen 12. IEEE CoDIT konferansında [sunduk](https://doi.org/10.1109/codit70676.2026.11630919). Bildirinin tam künyesine [yayınlar sayfamızdan](/yayinlar/) ulaşabilirsiniz.
+
+## Kaynaklar
+
+1. Tunakan, B. İ., Akan, A., Taskin, Y., Turhan, K. N. (2026). *Analysis of Human Emotions for Different Taste Stimuli Using EEG Signals.* IEEE CoDIT. [DOI: 10.1109/codit70676.2026.11630919](https://doi.org/10.1109/codit70676.2026.11630919)

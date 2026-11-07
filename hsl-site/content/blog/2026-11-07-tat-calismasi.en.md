@@ -26,4 +26,8 @@ On the EEG side, we saw two clear differences between the moments participants l
 
 Food labels don't just inform; they shape the experience. Being able to show this with brain signals, alongside survey answers, helps us better understand what consumers mean when they say "I like it" or "I don't".
 
-We presented the study at the 12th IEEE CoDIT conference in Bari, Italy, in July 2026. You'll find the full reference on our [publications page](/en/publications/).
+We presented the study at the [12th IEEE CoDIT conference](https://doi.org/10.1109/codit70676.2026.11630919) in Bari, Italy, in July 2026. You'll find the full reference on our [publications page](/en/publications/).
+
+## References
+
+1. Tunakan, B. İ., Akan, A., Taskin, Y., Turhan, K. N. (2026). *Analysis of Human Emotions for Different Taste Stimuli Using EEG Signals.* IEEE CoDIT. [DOI: 10.1109/codit70676.2026.11630919](https://doi.org/10.1109/codit70676.2026.11630919)

@@ -8,7 +8,7 @@ author: Hesaplamalı Sinirbilim Laboratuvarı
 ---
 Şu cümleyi okuyun: *"Kedi süt kabını devirdi çünkü o çok açtı."* "O" kimdi? Kedi tabii. Peki şu cümlede: *"Kedi süt kabını devirdi çünkü o masanın kenarındaydı."* Bu sefer "o" süt kabı. İki cümlede de aynı kelimeyi okuyorsunuz, ama ne anlama geldiğine karar vermek için cümlenin geri kalanına bakmanız gerekiyor.
 
-İşte Transformer mimarisinin temel fikri bu: **dikkat**.
+İşte [2017'de tanıtılan](https://arxiv.org/abs/1706.03762) Transformer mimarisinin temel fikri bu: **dikkat**.
 
 ## Sırayla okumak yerine toplantı
 
@@ -27,3 +27,7 @@ Bu arada toplantı masasında oturanların kelime olması şart değil. Bir resm
 ## EEG'de Transformer
 
 EEG'de farklı elektrotlar ve farklı zaman dilimleri arasındaki ilişkiler çok önemli. Örneğin alın bölgesindeki bir değişimin, birkaç yüz milisaniye sonra kafanın arka tarafındaki bir değişimle bağlantılı olup olmadığı. Transformer'ın "herkes herkese bakabilir" yapısı, bu tür uzak ilişkileri öğrenmek için doğal bir araç. Son yıllarda EEG'yi anlamak için geliştirilen büyük "temel modellerin" çoğu bu mimariye dayanıyor.
+
+## Kaynaklar
+
+1. Vaswani, A. ve ark. (2017). *Attention Is All You Need.* NeurIPS. [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)

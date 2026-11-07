@@ -8,7 +8,7 @@ author: Computational Neuroscience Lab
 ---
 Read this sentence: *"The cat knocked over the milk bowl because it was hungry."* What was "it"? The cat, of course. Now this one: *"The cat knocked over the milk bowl because it was on the edge of the table."* This time "it" is the bowl. You read the same word in both sentences, but to decide what it means, you have to look at the rest of the sentence.
 
-That's the core idea behind the Transformer architecture: **attention**.
+That's the core idea behind the Transformer architecture, [introduced in 2017](https://arxiv.org/abs/1706.03762): **attention**.
 
 ## A meeting instead of reading in order
 
@@ -27,3 +27,7 @@ By the way, the people at the table don't have to be words. They can be patches 
 ## Transformers and EEG
 
 In EEG, relationships between different electrodes and different moments in time matter a lot. For example, whether a change over the forehead is linked to a change at the back of the head a few hundred milliseconds later. The Transformer's "everyone can look at everyone" design is a natural tool for learning such distant relationships. Most of the large "foundation models" built in recent years to understand EEG are based on this architecture.
+
+## References
+
+1. Vaswani, A. et al. (2017). *Attention Is All You Need.* NeurIPS. [arXiv:1706.03762](https://arxiv.org/abs/1706.03762)

@@ -467,3 +467,8 @@ body:has(.bg-stage) { background-image: none; }
 .blog-filter button { font: inherit; font-size: var(--step--1); font-weight: 600; color: var(--ink); background: var(--surface); border: 1px solid #8fbfa3; border-radius: 999px; padding: .35rem .9rem; cursor: pointer; }
 .blog-filter button:hover { border-color: var(--accent); }
 .blog-filter button[aria-pressed="true"] { background: var(--obsidian); color: #fff; border-color: var(--obsidian); }
+/* Blog kaynakça */
+.blog-body h2:last-of-type { font-size: var(--step-0); margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--grid); }
+.blog-body h2:last-of-type + ol { font-size: var(--step--1); color: var(--muted); padding-left: 1.25rem; }
+.blog-body h2:last-of-type + ol li { margin-bottom: .5rem; line-height: 1.5; }
+.blog-body a[target="_blank"] { text-decoration-style: solid; }
