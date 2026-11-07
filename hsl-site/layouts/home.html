@@ -25,7 +25,7 @@
         {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
       {{ end }}
       {{ if eq .Section "research" }}
-        {{ partial "research-hint.html" . }}
+        {{ partial "research-hint.html" (dict "kind" "research") }}
         <ul class="area-list research-grid">
           {{ range .Pages.ByWeight }}
           <li>
@@ -37,12 +37,14 @@
           {{ end }}
         </ul>
       {{ else if eq .Section "people" }}
+        {{ partial "research-hint.html" (dict "kind" "people") }}
         {{ partial "people-list.html" true }}
       {{ else if eq .Section "publications" }}
         {{ partial "publication-recent.html" . }}
       {{ else if eq .Section "news" }}
         {{ partial "news-section.html" . }}
       {{ else if eq .Section "blog" }}
+        {{ partial "research-hint.html" (dict "kind" "blog") }}
         {{ partial "blog-cards.html" (dict "page" . "limit" 3 "cat" (index site.Params.blog_categories 0)) }}
       {{ else if eq .Section "conferences" }}
         {{ partial "conference-list.html" (dict "page" . "limit" 6) }}

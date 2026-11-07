@@ -1,6 +1,11 @@
 {{ $tr := eq site.Language.Lang "tr" }}
+{{ $kind := "research" }}{{ with .kind }}{{ $kind = . }}{{ end }}
+{{ $txt := dict
+  "research" (cond $tr "Ayrıntılarını öğrenmek için kutucuklara tıklayabilirsiniz" "Click a card to learn more")
+  "people" (cond $tr "Ayrıntılı bilgi için kişilere tıklayabilirsiniz" "Click a person to learn more")
+  "blog" (cond $tr "Yazıyı açmak için kartlara tıklayabilirsiniz" "Click a card to open the post") }}
 <div class="research-hint" aria-hidden="true">
-  <span class="research-hint-box">{{ cond $tr "Ayrıntılarını öğrenmek için kutucuklara tıklayabilirsiniz" "Click a card to learn more" }}</span>
+  <span class="research-hint-box">{{ index $txt $kind }}</span>
   <svg class="research-hint-arrow" viewBox="0 0 60 48" width="52" height="42" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
     <path d="M6 6 C 30 4, 46 14, 44 40"/>
     <path d="M36 32 L 44 41 L 51 31"/>
