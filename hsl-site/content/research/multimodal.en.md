@@ -1,8 +1,8 @@
 ---
-title: Multimodal biosignals and embedded systems
+title: Multimodal biosignals
 weight: 40
-summary: We combine EEG with skin response, eye tracking and fNIRS, and build models that run on the device.
+summary: We combine EEG with skin response and eye-tracking data to catch what a single signal misses.
 ---
-What one signal misses, another can catch. We analyse EEG, galvanic skin response (GSR) and eye-tracking data together, and we work on on-device TinyML models that improve signal quality in fNIRS devices.
+What one signal misses, another can catch. We analyse EEG, galvanic skin response (GSR) and eye-tracking data together. Our fNIRS work is described on the [fNIRS with embedded AI](/en/research/fnirs-with-embedded-ai/) page.
 
 TODO: project images, related publications.
