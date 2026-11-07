@@ -1,4 +1,4 @@
 ---
 title: Publications
-description: Research published by our lab.
+description: Research published by our lab members.
 ---

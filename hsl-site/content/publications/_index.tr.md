@@ -1,5 +1,5 @@
 ---
 title: Yayınlar
 url: /yayinlar/
-description: Laboratuvarımızca yayımlanan çalışmalar.
+description: Laboratuvar üyelerimizce yayımlanan çalışmalar.
 ---
