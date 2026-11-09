@@ -1,0 +1,39 @@
+{{ define "main" }}
+{{ $tr := eq site.Language.Lang "tr" }}
+<header class="page-head wrap">
+  {{ with site.GetPage "/research" }}<a class="crumb" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+  <h1>{{ .Title }}</h1>
+</header>
+<article class="wrap">
+  <dl class="past-facts">
+    <div><dt>{{ cond $tr "Destekleyen" "Funder" }}</dt><dd>{{ .Params.funder }}</dd></div>
+    {{ with .Params.program }}<div><dt>{{ cond $tr "Program" "Programme" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.number }}<div><dt>{{ cond $tr "Proje no." "Project no." }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.years }}<div><dt>{{ cond $tr "Dönem" "Period" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.pi }}<div><dt>{{ cond $tr "Yürütücü" "Principal investigator" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.team }}<div><dt>{{ cond $tr "Ekip" "Team" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.status }}<div><dt>{{ cond $tr "Durum" "Status" }}</dt><dd>{{ if eq . "ongoing" }}{{ cond $tr "Sürüyor" "Ongoing" }}{{ else }}{{ cond $tr "Tamamlandı" "Completed" }}{{ end }}</dd></div>{{ end }}
+  </dl>
+  <div class="prose">{{ .Content }}</div>
+  {{ $dois := .Params.dois | default slice }}
+  {{ $titles := .Params.titles | default slice }}
+  {{ $pubs := slice }}
+  {{ range hugo.Data.publications }}
+    {{ if or (and .doi (in $dois (lower .doi))) (in $titles .title) }}{{ $pubs = $pubs | append . }}{{ end }}
+  {{ end }}
+  {{ with $pubs }}
+  <h2 class="research-subhead">{{ cond $tr "Bu proje kapsamındaki yayınlar" "Publications from this project" }} ({{ len . }})</h2>
+  <ul class="pub-list project-pubs">
+    {{ range sort . "year" "desc" }}
+    <li>
+      <span class="pub-year">{{ .year }}</span>
+      <strong class="pub-title">{{ .title }}</strong>
+      <span class="pub-authors">{{ .authors | markdownify }}</span>
+      <span class="pub-venue"><em>{{ .venue }}</em>{{ with .doi }} · <a href="https://doi.org/{{ . }}">DOI</a>{{ end }}</span>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+  {{ with site.GetPage "/research" }}<p><a class="section-link" href="{{ .RelPermalink }}">← {{ .Title }}</a></p>{{ end }}
+</article>
+{{ end }}

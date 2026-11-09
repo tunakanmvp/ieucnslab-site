@@ -1,0 +1,58 @@
+# Projeler — "Araştırma ve Projeler" sayfasındaki "Projelerimiz" bölümü.
+# Her girdi için bir kart ve ayrı bir detay sayfası otomatik oluşur.
+# Alanlar (isteğe bağlı olanlar boş bırakılabilir):
+#   id                    : kısa, benzersiz ad (adres için kullanılır), ör. "bap-2022-07"
+#   funder_tr / funder_en : destekleyen kurum
+#   program_tr / program_en : destek programı (isteğe bağlı)
+#   number                : proje numarası
+#   title_tr / title_en   : projenin resmî adı (boşsa kurum + numara gösterilir)
+#   years                 : ör. "2022–2024" (isteğe bağlı)
+#   pi                    : yürütücü (isteğe bağlı)
+#   team                  : ekip (isteğe bağlı)
+#   status                : "ongoing" (sürüyor) ya da "completed" (tamamlandı) (isteğe bağlı)
+#   summary_tr / summary_en : 1–3 cümlelik özet
+#   dois                  : bu projeden çıkan yayınların DOI listesi (yayın listesinden otomatik eşlenir)
+#   titles                : DOI'si olmayan yayınlar için başlık listesi (isteğe bağlı)
+
+- id: bap-2022-07
+  funder_tr: "İzmir Ekonomi Üniversitesi Bilimsel Araştırma Projeleri Koordinasyon Birimi"
+  funder_en: "İzmir University of Economics, Scientific Research Projects Coordination Unit"
+  program_tr: "BAP"
+  program_en: "BAP"
+  number: "2022-07"
+  title_tr: ""
+  title_en: ""
+  years: ""
+  pi: ""
+  team: ""
+  status: ""
+  summary_tr: "Koku uyaranlarına verilen EEG tepkilerinin nöropazarlama amacıyla incelenmesi başta olmak üzere, EEG sinyallerinin makine öğrenmesi ve derin öğrenme yöntemleriyle analiz edildiği çalışmalarımızı destekleyen proje. Koku ve tüketici duyguları, tat algısı ve ürün maskotları üzerine çalışmaların yanı sıra DEHB ve Alzheimer demansının EEG ile tespitine yönelik çalışmalar da bu proje kapsamında kısmen desteklendi."
+  summary_en: "A project supporting our work on analysing EEG signals with machine learning and deep learning, above all the study of EEG responses to olfactory stimuli for neuromarketing. Alongside studies on scent and consumer emotion, taste perception and product mascots, work on detecting ADHD and Alzheimer's dementia from EEG was also partially supported under this project."
+  dois:
+    - "10.23919/eusipco58844.2023.10289818"
+    - "10.1016/j.bbe.2024.07.003"
+    - "10.23919/eusipco63174.2024.10714940"
+    - "10.5152/electrica.2024.23111"
+    - "10.1109/tiptekno63488.2024.10755366"
+    - "10.1109/tiptekno68206.2025.11270194"
+    - "10.1109/tiptekno68206.2025.11270101"
+    - "10.1109/codit70676.2026.11630919"
+  titles:
+    - "Investigation of the Effect of Product Mascot Gender on Consumer Emotions Using EEG Signals"
+
+- id: tubitak-2209b-1199b472338877
+  funder_tr: "TÜBİTAK"
+  funder_en: "TÜBİTAK (Scientific and Technological Research Council of Türkiye)"
+  program_tr: "2209-B Sanayiye Yönelik Lisans Araştırma Projeleri Destekleme Programı"
+  program_en: "2209-B Industry-Oriented Undergraduate Research Projects Programme"
+  number: "1199B472338877"
+  title_tr: ""
+  title_en: ""
+  years: ""
+  pi: ""
+  team: ""
+  status: "completed"
+  summary_tr: "Farklı çevresel gürültü düzeylerinin dikkat, çalışma belleği ve zihinsel iş yükü üzerindeki etkisinin, 2-back görevi sırasında eşzamanlı kaydedilen EEG ve PPG sinyalleri ile yapay zekâ yöntemleri kullanılarak incelendiği lisans araştırma projesi."
+  summary_en: "An undergraduate research project investigating how different levels of environmental noise affect attention, working memory and mental workload, using EEG and PPG recorded simultaneously during a 2-back task and artificial intelligence methods."
+  dois:
+    - "10.1109/tiptekno63488.2024.10755381"

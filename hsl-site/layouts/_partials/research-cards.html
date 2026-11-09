@@ -2,6 +2,10 @@
 <h2 class="research-subhead">{{ cond $tr "Aktif Araştırmalarımız" "Our Active Research" }}</h2>
 {{ partial "research-hint.html" (dict "kind" "research") }}
 {{ partial "research-card-grid.html" .Pages.ByWeight }}
+{{ with site.GetPage "/projects" }}{{ with .RegularPages }}
+<h2 class="research-subhead">{{ cond $tr "Projelerimiz" "Our Projects" }}</h2>
+{{ partial "research-card-grid.html" . }}
+{{ end }}{{ end }}
 {{ with site.GetPage "/past" }}{{ with .RegularPages }}
 <details class="past-research">
   <summary><span class="past-title">{{ cond $tr "Geçmiş Projelerimiz" "Our Past Projects" }}</span><span class="past-count">{{ len . }}</span></summary>

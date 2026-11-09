@@ -516,3 +516,7 @@ body:has(.bg-stage) { background-image: none; }
 .blog-subfilter[hidden] { display: none; }
 .blog-meta .blog-subcat { background: var(--accent); }
 .blog-empty { margin-top: 1.5rem; opacity: .75; }
+.project-pubs { list-style: none; padding: 0; margin: 1rem 0 2rem; border-top: 1px solid var(--grid); }
+.project-pubs li { display: grid; gap: .15rem; padding: .9rem 0; border-bottom: 1px solid var(--grid); }
+.project-pubs .pub-year { font-size: var(--step--1); font-weight: 600; color: var(--accent-ink); }
+.project-pubs .pub-authors, .project-pubs .pub-venue { color: var(--muted); font-size: .95rem; }
