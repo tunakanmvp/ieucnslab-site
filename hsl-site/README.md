@@ -3,7 +3,7 @@
 Hugo ile yapılmış, Türkçe/İngilizce iki dilli statik site. Dış tema veya modül bağımlılığı yoktur; tüm tasarım bu repodadır.
 
 - Türkçe: `/` (varsayılan) · İngilizce: `/en/`
-- Yayın: GitHub Pages (`.github/workflows/hugo.yaml`, `main` dalına push'ta otomatik)
+- Yayın: Cloudflare Pages (proje `ieucnslab-site`, `main` dalına push'ta otomatik derlenir)
 
 ## Yerelde çalıştırma
 
@@ -48,15 +48,14 @@ Metin...
 
 Aynı adla `.en.md` sürümünü de ekleyin (onda `url:` gerekmez).
 
-## Yayına alma (bir kerelik)
+## Yayına alma (Cloudflare Pages)
 
-1. GitHub'da yeni repo açın, bu klasörü `main` dalına push'layın.
-2. Repo → Settings → Pages → Source: **GitHub Actions**.
-3. Domain: `static/CNAME` ve `hugo.toml` içindeki `baseURL` değerini kendi domaininizle değiştirin.
-4. Domain sağlayıcısının DNS ayarlarında:
-   - Kök domain için 4 adet `A` kaydı: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - `www` için `CNAME` → `<github-kullanici-adi>.github.io`
-5. Settings → Pages → Custom domain alanına domaini yazın, DNS doğrulanınca **Enforce HTTPS**'i açın.
+Site Cloudflare Pages'te yayında; `main` dalına her push'ta otomatik derlenir. Kurulum ayarları:
+
+- Framework preset: Hugo · Build command: `hugo --minify` · Output: `public` · Root directory: `hsl-site`
+- Ortam değişkeni: `HUGO_VERSION` = `0.169.0`
+- Alan adı METUnic'te kayıtlı; nameserver'lar Cloudflare'da (`gemma.ns.cloudflare.com`, `toby.ns.cloudflare.com`). DNS kayıtları Cloudflare panelinden yönetilir.
+- `ieucnslab.org` ve `www.ieucnslab.org`, Pages projesinin **Custom domains** bölümüne bağlı.
 
 ## Yapılacaklar
 
