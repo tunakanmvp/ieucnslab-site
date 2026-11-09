@@ -17,7 +17,7 @@ function updateFocus(headerBottom) {
 
 const header = document.querySelector(".site-header");
 const links = new Map(
-  [...header.querySelectorAll(".nav li a")].map(link => [link.getAttribute("href"), link])
+  [...header.querySelectorAll(".nav li a[data-section]")].map(link => [link.dataset.section, link])
 );
 const sections = [...document.querySelectorAll("[data-nav-section]")];
 let currentLink;
@@ -36,7 +36,7 @@ function updateCurrentSection() {
     : sections.findLast(element => element.getBoundingClientRect().top <= readingLine);
   updateBackground(section?.id);
   updateFocus(headerBottom);
-  const nextLink = links.get(`#${section?.id}`);
+  const nextLink = links.get(section?.id);
   if (nextLink === currentLink) return;
   currentLink?.removeAttribute("aria-current");
   nextLink?.setAttribute("aria-current", "location");

@@ -6,7 +6,7 @@
     <p class="hero-uni">{{ $uni }}</p>
     <h1 class="hero-title">{{ site.Title }}</h1>
     <p class="hero-tagline">{{ site.Params.tagline }}</p>
-    {{ with site.GetPage "/research" }}<a class="button" href="#home-{{ .Section }}">{{ i18n "all_research" }}</a>{{ end }}
+    {{ with site.GetPage "/research" }}<a class="button" href="{{ .RelPermalink }}">{{ i18n "all_research" }}</a>{{ end }}
   </div>
   <div class="wrap wrap-wide">{{ partial "eeg.html" . }}</div>
 </section>
