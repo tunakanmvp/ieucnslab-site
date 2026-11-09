@@ -4,7 +4,7 @@
 {{ partial "research-card-grid.html" .Pages.ByWeight }}
 {{ with site.GetPage "/projects" }}{{ with .RegularPages }}
 <h2 class="research-subhead">{{ cond $tr "Projelerimiz" "Our Projects" }}</h2>
-{{ partial "research-card-grid.html" . }}
+{{ partial "research-card-grid.html" (sort . "Params.order") }}
 {{ end }}{{ end }}
 {{ with site.GetPage "/past" }}{{ with .RegularPages }}
 <details class="past-research">

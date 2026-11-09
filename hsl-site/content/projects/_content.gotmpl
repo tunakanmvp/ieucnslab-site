@@ -1,21 +1,23 @@
 {{- /* Projeler: data/projects.yaml dosyasındaki her girdi için TR ve EN detay sayfası üretir. Bu dosyayı düzenlemenize gerek yok. */ -}}
 {{ .EnableAllLanguages }}
 {{ $tr := eq .Site.Language.Lang "tr" }}
-{{ range (hugo.Data.projects | default slice) }}
+{{ range $i, $p := (hugo.Data.projects | default slice) }}
   {{ $funder := cond $tr .funder_tr (.funder_en | default .funder_tr) }}
   {{ $program := cond $tr .program_tr (.program_en | default .program_tr) }}
   {{ $prefix := cond (eq .program_tr "BAP") (cond $tr "İEÜ BAP" "IEU BAP") (printf "%s %s" .funder_tr (index (split .program_tr " ") 0)) }}
-  {{ $short := printf "%s %s" $prefix .number }}
+  {{ $short := strings.TrimSpace (printf "%s %s" $prefix .number) }}
   {{ $title := cond $tr .title_tr (.title_en | default .title_tr) }}
   {{ $cardmeta := $short }}
-  {{ if not $title }}{{ $cardmeta = "" }}{{ $title = cond $tr (printf "%s Projesi %s" $prefix .number) (printf "%s Project %s" $prefix .number) }}{{ end }}
+  {{ if not $title }}{{ $cardmeta = "" }}{{ $title = strings.TrimSpace (cond $tr (printf "%s Projesi %s" $prefix .number) (printf "%s Project %s" $prefix .number)) }}{{ end }}
+  {{ $statuses := dict "ongoing" (cond $tr "Sürüyor" "Ongoing") "completed" (cond $tr "Tamamlandı" "Completed") "pending" (cond $tr "Başvuru değerlendirmede" "Application under review") }}
+  {{ with .status }}{{ $cardmeta = index $statuses . }}{{ end }}
   {{ $summary := cond $tr .summary_tr (.summary_en | default .summary_tr) }}
   {{ $.AddPage (dict
     "path" .id
     "kind" "page"
     "title" $title
     "summary" $summary
-    "params" (dict "cardmeta" $cardmeta "funder" $funder "program" $program "number" .number "years" .years "pi" .pi "team" .team "status" .status "dois" .dois "titles" .titles)
+    "params" (dict "order" $i "cardmeta" $cardmeta "funder" $funder "program" $program "number" .number "years" .years "pi" .pi "team" .team "status" .status "statuslabel" (index $statuses (.status | default "x")) "dois" .dois "titles" .titles)
     "content" (dict "mediaType" "text/markdown" "value" $summary)
   ) }}
 {{ end }}

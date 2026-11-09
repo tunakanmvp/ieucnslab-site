@@ -12,9 +12,9 @@
     {{ with .Params.years }}<div><dt>{{ cond $tr "Dönem" "Period" }}</dt><dd>{{ . }}</dd></div>{{ end }}
     {{ with .Params.pi }}<div><dt>{{ cond $tr "Yürütücü" "Principal investigator" }}</dt><dd>{{ . }}</dd></div>{{ end }}
     {{ with .Params.team }}<div><dt>{{ cond $tr "Ekip" "Team" }}</dt><dd>{{ . }}</dd></div>{{ end }}
-    {{ with .Params.status }}<div><dt>{{ cond $tr "Durum" "Status" }}</dt><dd>{{ if eq . "ongoing" }}{{ cond $tr "Sürüyor" "Ongoing" }}{{ else }}{{ cond $tr "Tamamlandı" "Completed" }}{{ end }}</dd></div>{{ end }}
+    {{ with .Params.statuslabel }}<div><dt>{{ cond $tr "Durum" "Status" }}</dt><dd>{{ . }}</dd></div>{{ end }}
   </dl>
-  <div class="prose">{{ .Content }}</div>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
   {{ $dois := .Params.dois | default slice }}
   {{ $titles := .Params.titles | default slice }}
   {{ $pubs := slice }}

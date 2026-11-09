@@ -1,5 +1,5 @@
 # Projeler — "Araştırma ve Projeler" sayfasındaki "Projelerimiz" bölümü.
-# Her girdi için bir kart ve ayrı bir detay sayfası otomatik oluşur.
+# Her girdi için bir kart ve ayrı bir detay sayfası otomatik oluşur. Kartlar bu dosyadaki sırayla gösterilir.
 # Alanlar (isteğe bağlı olanlar boş bırakılabilir):
 #   id                    : kısa, benzersiz ad (adres için kullanılır), ör. "bap-2022-07"
 #   funder_tr / funder_en : destekleyen kurum
@@ -9,10 +9,37 @@
 #   years                 : ör. "2022–2024" (isteğe bağlı)
 #   pi                    : yürütücü (isteğe bağlı)
 #   team                  : ekip (isteğe bağlı)
-#   status                : "ongoing" (sürüyor) ya da "completed" (tamamlandı) (isteğe bağlı)
+#   status                : "ongoing" (sürüyor), "completed" (tamamlandı) ya da "pending" (başvuru değerlendirmede) (isteğe bağlı)
 #   summary_tr / summary_en : 1–3 cümlelik özet
 #   dois                  : bu projeden çıkan yayınların DOI listesi (yayın listesinden otomatik eşlenir)
 #   titles                : DOI'si olmayan yayınlar için başlık listesi (isteğe bağlı)
+
+- id: bap-2026-altyapi
+  funder_tr: "İzmir Ekonomi Üniversitesi Bilimsel Araştırma Projeleri Koordinasyon Birimi"
+  funder_en: "İzmir University of Economics, Scientific Research Projects Coordination Unit"
+  program_tr: "BAP"
+  program_en: "BAP"
+  number: ""
+  title_tr: "Çok Kipli Psikofizyolojik Araştırma Altyapısı"
+  title_en: "Multimodal Psychophysiological Research Infrastructure"
+  years: "2026–"
+  pi: "Prof. Dr. Aydın Akan"
+  team: ""
+  status: "ongoing"
+  summary_tr: "EEG, deri iletkenliği (GSR), göz takibi ve yüz ifadesi verilerini anketlerle birlikte, eşzamanlı olarak toplayıp analiz edebilen ortak bir araştırma altyapısı kurmayı amaçlayan proje. Altyapı; duygu, dikkat, güven ve karar verme gibi süreçlerin müzik, koku ve tat algısı, nöropazarlama ve tüketici davranışı gibi farklı alanlarda incelenmesine ve lisansüstü tez çalışmalarına hizmet edecek. Proje, İEÜ BAP Komisyonu tarafından 2026'da desteklenmeye uygun bulundu."
+  summary_en: "A project to build a shared research infrastructure that records and analyses EEG, skin conductance (GSR), eye tracking and facial expression data simultaneously, together with questionnaires. The infrastructure will support the study of emotion, attention, trust and decision-making across areas such as music, smell and taste perception, neuromarketing and consumer behaviour, as well as graduate theses. The project was approved for funding by the IEU BAP Commission in 2026."
+
+- id: tubitak-2209a-2026
+  funder_tr: "TÜBİTAK"
+  funder_en: "TÜBİTAK (Scientific and Technological Research Council of Türkiye)"
+  program_tr: "2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı"
+  program_en: "2209-A University Students Research Projects Support Programme"
+  number: ""
+  title_tr: ""
+  title_en: ""
+  status: "pending"
+  summary_tr: ""
+  summary_en: ""
 
 - id: bap-2022-07
   funder_tr: "İzmir Ekonomi Üniversitesi Bilimsel Araştırma Projeleri Koordinasyon Birimi"
