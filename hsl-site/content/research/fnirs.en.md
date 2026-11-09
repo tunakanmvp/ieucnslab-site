@@ -6,19 +6,32 @@ summary: We are building a wearable, whole-head fNIRS system that runs AI on the
 ---
 *Master's thesis research by Uğur Emin Baynal. Part of our project led by Prof. Dr. Aydın Akan, submitted to TÜSEB and [granted pre-acceptance](/en/news/tuseb-b-pre-acceptance/).*
 
-## Research Problem
+## State of the Art
 
-fNIRS uses light to measure changes in oxygenated and deoxygenated haemoglobin in the cortex, non-invasively and portably. We explained how it works in our [fNIRS post](/en/blog/what-is-fnirs/). But limitations running from hardware to software can increase bias in fNIRS research [1]:
+fNIRS uses light to measure changes in oxygenated and deoxygenated haemoglobin in the cortex, non-invasively and portably. We explained how it works in our [fNIRS post](/en/blog/what-is-fnirs/). Limitations running from hardware to software can, however, increase bias in fNIRS research [1]:
 
-- **Motion artefacts** are the biggest source of corrupted measurements. Reviews of the field show that the balance between hardware and algorithmic solutions is still unclear [2].
-- **Extracerebral contributions.** Because light first passes through the scalp and skull, systemic factors such as blood pressure can produce misleading signals that look like brain activity [3].
-- **Optode–scalp contact.** Contact is harder to achieve through dark, thick or curly hair. This is not only a technical problem but an inclusivity problem that leads to these people being excluded from research [1].
+- **Motion artefacts** are the largest source of corrupted measurements, and the balance between hardware and algorithmic solutions is still unclear [2].
+- **Extracerebral contributions.** Because light first passes through the scalp and skull, systemic factors such as blood pressure can produce signals that look like brain activity [3].
+- **Optode–scalp contact** is harder to achieve through dark, thick or curly hair. This is not only a technical issue but an inclusivity issue that leads to these people being excluded from research [1].
 
-Today, signal quality is mostly assessed after recording has finished, during analysis. A corrupted channel is only noticed then, when the data has already been lost. Machine learning methods that detect bad channels automatically are just emerging [4, 5], but they run after recording, on desktop computers.
+Signal quality is mostly assessed after recording, during analysis, when a corrupted channel can no longer be recovered. Machine learning methods that detect bad channels automatically are emerging [4, 5], but they run offline on desktop computers.
 
-## What We Do
+## Excellence
 
-We are developing a wearable fNIRS system that covers the whole head. Our aim is to turn signal quality control from a step that comes after recording into part of how the device behaves during recording. To do this, we are working on embedded AI methods that run on the device itself. We hope this will let problems that today are only noticed during analysis be caught during recording, and allow reliable measurements from people with a wide range of hair and skin characteristics.
+### Objectives
+
+- **O1.** Develop a wearable fNIRS system that covers the whole head.
+- **O2.** Turn signal quality control from a post-recording step into part of how the device behaves during recording.
+- **O3.** Enable reliable measurements from people with a wide range of hair and skin characteristics.
+
+### Ambition and Progress Beyond the State of the Art
+
+- Moving quality assessment from offline analysis onto the device itself, through embedded AI, aims to catch problems while they can still be corrected.
+- Addressing optode contact as an inclusivity problem aims to widen who can take part in fNIRS research.
+
+### Methodology
+
+The work combines the design of a whole-head wearable fNIRS system with embedded AI methods that run on the device during recording.
 
 ## References
 

@@ -5,25 +5,32 @@ summary: We study how a product's label changes its taste, and how the positive 
 ---
 *Based on the CoDIT 2026 paper by Berkay İlber Tunakan, Aydın Akan, Yaren Taşkın and Kamile Nazan Turhan: "Analysis of Human Emotions for Different Taste Stimuli Using EEG Signals" ([doi:10.1109/CoDIT70676.2026.11630919](https://doi.org/10.1109/CoDIT70676.2026.11630919)).*
 
-## Research Problem
+## State of the Art
 
-Whether we like a product does not depend on its taste alone. Label claims such as "natural" or "artificial" strongly shape how consumers view food additives and whether they buy [1]. Taste is also a multisensory experience: the brain integrates taste, smell, texture and expectation, and oscillations in different frequency bands play different roles in that integration [2].
+Consumer acceptance of food is shaped not only by sensory properties but by what the label says. Survey-based research shows that claims such as "natural" or "artificial" strongly influence attitudes towards food additives and willingness to buy [1]. Flavour itself is a multisensory construct: the brain integrates taste, smell, texture and expectation, and oscillatory activity across frequency bands coordinates this integration [2].
 
-Questionnaires and tasting scores measure what people say. But stated liking can be shaped by the bias a label creates. EEG follows the brain's response at the moment of tasting with millisecond resolution, offering a more objective window on the process [3]. Brain responses to sweeteners and additives have been studied [4], and natural and artificial additives are thought to shape food perception through different neural processes [8]. Yet whether a product contains a **natural or artificial preservative** and whether the participant **knows it** had not been studied together.
+Most evaluations of food liking still rely on hedonic rating scales, which are vulnerable to expectation and labelling bias. EEG offers an objective, millisecond-resolution complement. Benchmark affective EEG datasets [3] and systematic analyses of critical frequency bands and channels [6] have established spectral features for emotion recognition, while graph-based deep models have pushed classification performance on large datasets [7]. In food research specifically, EEG has been used to characterise responses to sweetener type and concentration [4], and the effect of natural versus artificial additives on neurocognitive food perception has recently been reviewed [8].
 
-So we ask: How does knowing the preservative type change the taste of the same drink? Do positive and negative hedonic states leave distinguishable traces in EEG? Can we recognise the emotional response automatically from those traces?
+Three gaps remain. First, preservative type and label disclosure have not been manipulated jointly, so the contribution of the product and of the label to the hedonic response cannot be separated. Second, few studies classify hedonic state from EEG recorded during actual consumption rather than passive viewing. Third, it is unclear whether deep learning models, which dominate large benchmark datasets, remain the best choice for the small samples typical of food-EEG experiments.
 
-## How We Work
+## Excellence
 
-Participants taste two detox water samples, one with a natural and one with an artificial preservative, both without knowing what they drink (blind) and after being told the content (informed). This gives a 2×2 design. The samples are presented so they cannot be told apart by appearance, so any difference comes only from taste and label information.
+### Objectives
 
-We record EEG during tasting and collect participants' liking and emotion ratings after each trial. These self-reports form the positive and negative hedonic state labels. We extract frequency band powers and time-domain features [5, 6] from the EEG and compare classical machine learning and deep learning models [3, 7]. The study was approved by the İzmir University of Economics ethics committee.
+- **O1.** Quantify how disclosure of preservative type (natural vs. artificial) changes the hedonic evaluation of an otherwise identical product.
+- **O2.** Identify EEG spectral signatures that distinguish positive from negative hedonic states during real tasting.
+- **O3.** Establish a data-efficient classification pipeline for small-sample food-EEG and benchmark classical ensemble methods against deep learning.
 
-## Findings
+### Ambition and Progress Beyond the State of the Art
 
-- **The label changes the taste.** Under blind conditions both samples were rated positively. When participants were told the drink contained an artificial preservative, the same drink was perceived clearly negatively, pointing to a label-induced cognitive bias.
-- **The brain shows distinguishing traces.** Positive and negative hedonic states differed significantly, especially in **frontal gamma** and **parietal beta** bands.
-- **Tree-based ensembles lead on small data.** XGBoost gave the best result with 87.5% accuracy, followed by random forest and support vector machines, while the deep neural network lagged behind.
+- A 2×2 design crossing preservative type with blind vs. informed tasting, with EEG recorded during actual consumption, separates the effect of the product from the effect of the label.
+- The study demonstrates a label-induced cognitive bias: both samples were rated positively under blind conditions, while the informed artificial condition was rated strongly negatively.
+- Frontal gamma and parietal beta activity were identified as markers that differ significantly between hedonic states.
+- Tree-based ensembles outperformed deep learning on this sample (XGBoost 87.5% accuracy, with a deep neural network performing lower), providing evidence for data-efficient models in consumer neuroscience.
+
+### Methodology
+
+Participants taste two detox water samples containing a natural or an artificial preservative, presented identically, both blind and with the content disclosed. EEG is recorded throughout, and self-reported liking and emotion after each trial provide the hedonic labels. Band power and time-domain (Hjorth) features [5, 6] are extracted, and classical machine learning and deep learning models are compared [3, 7]. The study was approved by the İzmir University of Economics ethics committee and its results are published at IEEE CoDIT 2026.
 
 A plain-language summary of the study is on the blog: [Can a Label Change Taste?](/en/blog/can-a-label-change-taste/)
 

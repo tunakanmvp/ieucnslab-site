@@ -5,26 +5,32 @@ summary: We study how the emotion perceived in Turkish makam music and the emoti
 ---
 *Master's thesis research by Nilsu Çağla Hepsev.*
 
-## Research Problem
+## State of the Art
 
-We don't always feel sad when we listen to a sad song. The emotion we think the music expresses and the emotion we experience while listening don't always match. Music psychology separates these two levels as **perceived** and **felt** emotion [1]. A review of work on the topic also shows that the two sometimes overlap and sometimes diverge, and that the listener's musical preference can change this relationship [2].
+We don't always feel sad when we listen to a sad song. Music psychology separates the emotion a piece is thought to express from the emotion the listener experiences, as **perceived** and **felt** emotion [1]. Reviews show that the two sometimes overlap and sometimes diverge, and that musical preference can change this relationship [2].
 
-This distinction matters a great deal when interpreting brain and body signals measured during music listening. Most emotion recognition studies work with a single general "emotion" label. Yet whether a change in the signal accompanies what the music conveys or what the listener experiences cannot be asked without separating the two.
+Music-evoked emotion recognition from physiological signals is an active field. Benchmark datasets combine EEG with peripheral signals such as skin conductance [5], recommendations exist for electrodermal measurement [6], and recent reviews summarise the machine learning and deep learning methods applied to music-evoked EEG [7]. Emotion is usually described along the valence and arousal dimensions [3] and rated with pictorial scales such as the Self-Assessment Manikin [4].
 
-Turkish makam music is a powerful source of stimuli for studying this question. Each makam has its own seyir, a characteristic route the melody follows, and these routes carry culturally defined emotional associations. The relationship between makams and brain activity has been studied before [8], and presentation features such as the tuning system have been shown to affect the emotion induced [9]. This study's contribution is to measure perceived and felt emotion separately, relate them to EEG and skin conductance together, and test the resulting models on participants they have never seen.
+Two gaps motivate this work. First, most studies use a single general "emotion" label, so it remains unclear whether a change in the signal accompanies what the music conveys or what the listener feels. Second, Turkish makam music, whose makams follow characteristic melodic routes (seyir) with culturally defined emotional associations, has been studied with EEG [8] and its presentation features have been shown to affect induced emotion [9], but perceived and felt emotion have not been measured separately alongside EEG and skin conductance.
 
-## Research Questions
+## Excellence
 
-1. For the same makam recording, how far do perceived and felt emotion diverge?
-2. Do emotional ratings of different makam recordings differ within the same person?
-3. Which dimensions of felt emotion are EEG and skin conductance related to?
-4. Does using EEG and skin conductance together estimate emotion in new participants better than using a single signal?
+### Objectives
 
-## How We Work
+- **O1.** Measure how far perceived and felt emotion diverge for the same makam recording.
+- **O2.** Test whether emotional ratings of different makam recordings differ within the same person.
+- **O3.** Determine which dimensions of felt emotion EEG and skin conductance relate to.
+- **O4.** Assess whether combining EEG and skin conductance estimates emotion in new participants better than either signal alone.
 
-Participants listen to wordless seyir recordings of about 50 seconds each, selected from the Rast, Hicaz, Hüseyni, Uşşak, Segâh, Nihavent, Kürdilihicazkâr and Sabâ makams. We describe emotion along two dimensions: **valence**, from negative to positive, and **arousal**, from calm to excited [3]. After each piece, participants use the Self-Assessment Manikin, which relies on pictorial figures rather than words [4], to rate separately the emotion they perceive in the music and the emotion they themselves feel.
+### Ambition and Progress Beyond the State of the Art
 
-Throughout listening we simultaneously record brain activity with 32-channel EEG and the body's arousal with skin conductance (GSR/EDA) measured from the fingers [5, 6]. From the EEG we extract power changes in different frequency bands, and from skin conductance both slow level changes and short responses. We then compare machine learning and deep learning models that use EEG alone, skin conductance alone and the two combined, treating perceived and felt emotion as separate targets [7].
+- Treating perceived and felt emotion as separate targets makes it possible to ask which of the two the brain and body signals actually follow.
+- Turkish makam music provides a culturally grounded and under-studied stimulus set for affective computing.
+- Evaluating models on participants they have never seen gives a realistic picture of how well emotion recognition generalises.
+
+### Methodology
+
+Participants listen to wordless seyir recordings of about 50 seconds each, selected from the Rast, Hicaz, Hüseyni, Uşşak, Segâh, Nihavent, Kürdilihicazkâr and Sabâ makams. After each piece they rate, with the Self-Assessment Manikin, the emotion they perceive in the music and the emotion they feel, along valence and arousal [3, 4]. EEG (32 channels) and finger skin conductance are recorded simultaneously [5, 6]. Band power changes are extracted from the EEG, and slow level changes and short responses from skin conductance. Machine learning and deep learning models using EEG alone, skin conductance alone and both together are compared, with perceived and felt emotion as separate targets [7].
 
 ## References
 

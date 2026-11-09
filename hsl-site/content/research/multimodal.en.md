@@ -5,27 +5,34 @@ summary: We use EEG and skin conductance together to measure consumers' emotiona
 ---
 *Based on the TIPTEKNO'26 poster by Berkay İlber Tunakan, Aydın Akan, Nursun Üstünkarlı and Rıza Sadıkzade: "Investigation of the Effect of Product Mascot Gender on Consumer Emotions Using EEG Signals". Publication in IEEE Xplore is in progress.*
 
-## Research Problem
+## State of the Art
 
-Brands promote their products with anthropomorphised mascots. How these mascots look, including their perceived gender, can affect brand evaluation and purchase intention [1, 2]. In consumer neuroscience, EEG is also used to study the brain traces of product preferences [9]. Yet the mascot effect is mostly measured with questionnaires and rating scales, and studies of brain responses to mascots have stayed descriptive rather than classifying the emotional response automatically [3].
+Brands promote their products with anthropomorphised mascots, and how these mascots look, including their perceived gender, can affect brand evaluation and purchase intention [1, 2]. In consumer neuroscience, EEG is used to study the brain traces of product preferences [9], and studies of brain responses to brand mascots have begun to appear [3].
 
-No single signal captures the whole emotion. EEG reflects brain activity accompanying emotional and cognitive processes, while galvanic skin response (GSR) reflects autonomic arousal [4, 5]. So we ask: Which signal better carries the **arousal** and **valence** (pleasantness) of a response to a mascot, and does combining the two improve prediction?
+No single signal captures the whole emotion. EEG reflects brain activity accompanying emotional and cognitive processes, while galvanic skin response (GSR) reflects autonomic arousal; benchmark datasets combine the two for emotion recognition [4, 5]. Established EEG features include time-domain Hjorth parameters [6], band power [4] and frontal alpha asymmetry linked to affective processing [7], and Transformer-based architectures are increasingly applied to EEG [8].
 
-## How We Work
+Two gaps remain. The mascot effect is still measured mostly with questionnaires and rating scales, and neural studies of mascots have stayed descriptive rather than classifying the emotional response automatically [3]. It is also unclear which signal carries which dimension of the response, arousal or valence, and whether combining signals helps on the small, imbalanced datasets typical of consumer studies.
 
-Participants view mascots we designed for an energy drink, toilet paper and ice cream, with one masculine and one feminine mascot per product. The images are matched in size, resolution and background, so any difference comes from the mascot itself. After each product pair, participants report their emotional ratings in a digital questionnaire.
+## Excellence
 
-During viewing we record EEG and finger skin conductance simultaneously in the same software environment. Resting recordings at the start of each session are used for subject-wise normalisation. From the EEG we extract time-domain (Hjorth parameters) [6], frequency band power [4] and frontal alpha asymmetry features, the latter linked to affective processing [7].
+### Objectives
 
-For classification we developed a lightweight multimodal neural network that processes EEG, skin conductance and hand-crafted EEG features in separate branches before fusing them. We compare it with single-signal models and with Inception- and Transformer-based architectures [8]. Because the classes are imbalanced, we evaluate models primarily by AUC rather than accuracy.
+- **O1.** Measure the emotional response to masculine and feminine product mascots with EEG and skin conductance recorded simultaneously.
+- **O2.** Determine which signal better carries arousal and which better carries valence.
+- **O3.** Develop a lightweight multimodal model and benchmark it against single-signal and larger deep learning architectures.
 
-## Findings
+### Ambition and Progress Beyond the State of the Art
 
-- **The body carries arousal, the brain carries pleasantness.** For arousal, skin conductance alone came close to the multimodal model. Valence prediction relied on EEG, especially frontal asymmetry.
-- **Frontal alpha separates valence.** Alpha power was suppressed and more stable in pleasant moments, and higher and more variable in unpleasant ones.
-- **Fusion pays off.** The lightweight model using EEG and skin conductance together gave the best result for both arousal (AUC 0.776) and valence (AUC 0.746). Transformer results with high accuracy but low AUC showed why AUC should be the main metric on small, imbalanced data.
+- The study moves mascot research from descriptive analysis to automatic classification of the emotional response.
+- It separates the roles of the signals: skin conductance alone came close to the multimodal model for arousal, while valence relied on EEG, especially frontal asymmetry.
+- Frontal alpha separated valence: alpha power was suppressed and more stable in pleasant moments, and higher and more variable in unpleasant ones.
+- The lightweight fusion model gave the best result for both arousal (AUC 0.776) and valence (AUC 0.746), and Transformer results with high accuracy but low AUC showed why AUC should be the main metric on small, imbalanced data.
 
-For other work combining physiological signals see the [Music and the brain](/en/research/music/) page, and for our fNIRS work see [fNIRS with embedded AI](/en/research/fnirs-with-embedded-ai/).
+### Methodology
+
+Participants view mascots we designed for an energy drink, toilet paper and ice cream, one masculine and one feminine per product, with images matched in size, resolution and background. After each product pair they rate their emotional response in a digital questionnaire. EEG and finger skin conductance are recorded simultaneously, with resting recordings used for subject-wise normalisation. Hjorth, band power and frontal alpha asymmetry features [4, 6, 7] feed a lightweight network that processes EEG, skin conductance and hand-crafted features in separate branches before fusing them; it is compared with single-signal models and Inception- and Transformer-based architectures [8], with AUC as the primary metric.
+
+For related work see [Music and the brain](/en/research/music/) and [fNIRS with embedded AI](/en/research/fnirs-with-embedded-ai/).
 
 ## References
 
