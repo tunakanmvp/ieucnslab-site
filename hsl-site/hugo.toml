@@ -17,6 +17,8 @@ disableKinds = ["taxonomy", "term"]
     locale = "tr-TR"
     title = "Computational Neuroscience Lab"
     weight = 1
+    [languages.tr.permalinks.page]
+      past = "/arastirma/gecmis/:contentbasename/"
     [languages.tr.params]
       blog_categories = ["Temel Kavramlar", "Nöropazarlama", "Yapay Zeka", "Sinyal İşleme Teorisi", "Araştırmalarımız", "Açık Dersler"]
       blog_courses = "Açık Dersler"
@@ -24,7 +26,7 @@ disableKinds = ["taxonomy", "term"]
       tagline = "Beynin elektriksel dilini, duyguları ve kararları anlamak için ölçüyor ve modelliyoruz."
 
     [[languages.tr.menus.main]]
-      name = "Araştırma"
+      name = "Araştırma ve Projeler"
       pageRef = "/research"
       weight = 10
     [[languages.tr.menus.main]]
@@ -61,6 +63,8 @@ disableKinds = ["taxonomy", "term"]
     locale = "en-US"
     title = "Computational Neuroscience Lab"
     weight = 2
+    [languages.en.permalinks.page]
+      past = "/research/past/:contentbasename/"
     [languages.en.params]
       blog_categories = ["Basics", "Neuromarketing", "Artificial Intelligence", "Signal Processing Theory", "Our Research", "Open Courseware"]
       blog_courses = "Open Courseware"
@@ -68,7 +72,7 @@ disableKinds = ["taxonomy", "term"]
       tagline = "We measure and model the brain's electrical language to understand emotions and decisions."
 
     [[languages.en.menus.main]]
-      name = "Research"
+      name = "Research & Projects"
       pageRef = "/research"
       weight = 10
     [[languages.en.menus.main]]

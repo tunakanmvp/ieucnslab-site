@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ $tr := eq site.Language.Lang "tr" }}
+<header class="page-head wrap">
+  {{ with site.GetPage "/research" }}<a class="crumb" href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+  <h1>{{ .Title }}</h1>
+</header>
+<article class="wrap">
+  <dl class="past-facts">
+    <div><dt>{{ cond $tr "Yıl" "Year" }}</dt><dd>{{ .Params.year }}</dd></div>
+    {{ with .Params.degree }}<div><dt>{{ cond $tr "Tür" "Type" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.who }}<div><dt>{{ cond $tr "Ekip" "Team" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+    {{ with .Params.advisor }}<div><dt>{{ cond $tr "Danışman" "Supervisor" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+  </dl>
+  <div class="prose">{{ .Content }}</div>
+  {{ with .Params.link }}<p><a class="button" href="{{ . }}">{{ cond $tr "Çalışmaya git" "View the work" }} ↗</a></p>{{ end }}
+  {{ with site.GetPage "/research" }}<p><a class="section-link" href="{{ .RelPermalink }}">← {{ .Title }}</a></p>{{ end }}
+</article>
+{{ end }}

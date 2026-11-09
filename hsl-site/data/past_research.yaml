@@ -5,7 +5,9 @@
 #   degree_tr / degree_en : ör. "Yüksek lisans tezi" / "Master's thesis" (isteğe bağlı)
 #   year                  : yıl
 #   summary_tr / summary_en : 1–3 cümlelik özet
+#   advisor               : danışman (isteğe bağlı), ör. "Prof. Dr. Aydın Akan"
 #   link                  : tez, bildiri ya da DOI bağlantısı (isteğe bağlı)
+# Her girdi için Araştırma ve Projeler sayfasında bir kart ve ayrı bir detay sayfası otomatik oluşur.
 #
 # Örnek:
 # - year: 2023

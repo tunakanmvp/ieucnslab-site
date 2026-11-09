@@ -5,15 +5,15 @@
     {{ partial "news-section.html" . }}
   {{ else }}
     {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
-    {{ if .Pages }}
-    {{ if eq .Section "research" }}{{ partial "research-hint.html" (dict "kind" "research") }}{{ end }}
+    {{ if eq .Section "research" }}
+      {{ partial "research-cards.html" . }}
+    {{ else if .Pages }}
     <ul class="area-list">
       {{ range .Pages.ByWeight }}
       <li><a class="area" href="{{ .RelPermalink }}"><span class="area-title">{{ .Title }}</span><span class="area-summary">{{ .Summary | plainify }}</span></a></li>
       {{ end }}
     </ul>
     {{ end }}
-    {{ if eq .Section "research" }}{{ partial "past-research.html" . }}{{ end }}
   {{ end }}
 </div>
 {{ end }}

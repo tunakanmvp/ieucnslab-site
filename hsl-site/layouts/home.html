@@ -26,16 +26,7 @@
       {{ end }}
       {{ if eq .Section "research" }}
         {{ partial "research-hint.html" (dict "kind" "research") }}
-        <ul class="area-list research-grid">
-          {{ range .Pages.ByWeight }}
-          <li>
-            <a class="area" href="{{ .RelPermalink }}">
-              <span class="area-title">{{ .Title }}</span>
-              <span class="area-summary">{{ .Summary | plainify }}</span>
-            </a>
-          </li>
-          {{ end }}
-        </ul>
+        {{ partial "research-card-grid.html" .Pages.ByWeight }}
       {{ else if eq .Section "people" }}
         {{ partial "research-hint.html" (dict "kind" "people") }}
         {{ partial "people-list.html" true }}

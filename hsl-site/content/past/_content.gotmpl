@@ -1,0 +1,16 @@
+{{- /* Geçmiş çalışmalar: data/past_research.yaml dosyasındaki her girdi için TR ve EN detay sayfası üretir. Bu dosyayı düzenlemenize gerek yok. */ -}}
+{{ .EnableAllLanguages }}
+{{ $tr := eq .Site.Language.Lang "tr" }}
+{{ range (hugo.Data.past_research | default slice) }}
+  {{ $words := split ((.title_en | default .title_tr) | lower) " " }}
+  {{ $path := printf "%v-%s" .year (delimit (first 6 $words) " " | urlize) }}
+  {{ $summary := cond $tr .summary_tr (.summary_en | default .summary_tr) }}
+  {{ $.AddPage (dict
+    "path" $path
+    "kind" "page"
+    "title" (cond $tr .title_tr (.title_en | default .title_tr))
+    "summary" $summary
+    "params" (dict "year" .year "who" .who "degree" (cond $tr .degree_tr (.degree_en | default .degree_tr)) "link" .link "advisor" .advisor)
+    "content" (dict "mediaType" "text/markdown" "value" $summary)
+  ) }}
+{{ end }}

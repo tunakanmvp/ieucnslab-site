@@ -60,9 +60,9 @@ a:hover { text-decoration-thickness: 2px; }
 .wordmark { display: flex; align-items: baseline; gap: .7rem; color: inherit; text-decoration: none; }
 .wordmark-short { font-weight: 800; font-size: var(--step-1); letter-spacing: -0.04em; color: inherit; }
 .wordmark-long { font-weight: 500; font-size: var(--step--1); color: var(--light-muted); max-width: 14ch; line-height: 1.2; }
-.nav { display: flex; align-items: center; gap: 1.75rem; flex-wrap: wrap; }
-.nav ul { display: flex; gap: 1.25rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
-.nav a { color: inherit; text-transform: uppercase; letter-spacing: .1em; text-decoration: none; font-weight: 500; font-size: var(--step--1); padding-block: .25rem; }
+.nav { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.nav ul { display: flex; gap: .85rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.nav a { color: inherit; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; font-weight: 500; font-size: var(--step--1); padding-block: .25rem; }
 .nav li a {
   position: relative;
   display: inline-block;
@@ -160,7 +160,14 @@ a:hover { text-decoration-thickness: 2px; }
 .research-grid .area { height: 100%; display: flex; flex-direction: column; gap: .8rem; padding: clamp(1.5rem, 3vw, 2rem); background: var(--surface); border: 1px solid transparent; border-radius: var(--card-radius); }
 .research-grid .area:hover { border-color: var(--accent); }
 .research-grid .area-title { font-size: 1.35rem; }
-.research-grid .area-summary { font-size: 1rem; }
+.research-grid .area-summary { font-size: 1rem; flex: 1; }
+.research-grid .area-meta { font-size: var(--step--1); font-weight: 600; color: var(--accent-ink); }
+.research-grid .area-more { font-size: var(--step--1); font-weight: 600; color: var(--accent-ink); }
+.research-subhead { margin: 2.5rem 0 0; font-size: var(--step-1); }
+.past-research .research-grid { padding-bottom: 1.5rem; }
+.past-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem 2rem; margin: 0 0 2rem; padding: 1.2rem 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--grid); }
+.past-facts dt { font-size: var(--step--1); color: var(--muted); }
+.past-facts dd { margin: .2rem 0 0; font-weight: 600; }
 .section-link { display: inline-block; padding: .65rem 1.2rem; margin-top: 1.25rem; border: 1px solid #8fbfa3; border-radius: var(--pill-radius); font-size: .875rem; font-weight: 650; text-transform: uppercase; letter-spacing: .08em; text-decoration: none; }
 .section-link:hover { border-color: var(--ink); }
 

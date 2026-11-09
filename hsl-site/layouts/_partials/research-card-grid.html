@@ -1,0 +1,12 @@
+<ul class="area-list research-grid">
+  {{ range . }}
+  <li>
+    <a class="area" href="{{ .RelPermalink }}">
+      {{ with .Params.year }}<span class="area-meta">{{ . }}</span>{{ end }}
+      <span class="area-title">{{ .Title }}</span>
+      <span class="area-summary">{{ .Summary | plainify | truncate 170 }}</span>
+      <span class="area-more">{{ cond (eq site.Language.Lang "tr") "Ayrıntılar" "Read more" }} →</span>
+    </a>
+  </li>
+  {{ end }}
+</ul>

@@ -1,0 +1,10 @@
+{{ $tr := eq site.Language.Lang "tr" }}
+<h2 class="research-subhead">{{ cond $tr "Aktif Araştırmalarımız" "Our Active Research" }}</h2>
+{{ partial "research-hint.html" (dict "kind" "research") }}
+{{ partial "research-card-grid.html" .Pages.ByWeight }}
+{{ with site.GetPage "/past" }}{{ with .RegularPages }}
+<details class="past-research">
+  <summary><span class="past-title">{{ cond $tr "Geçmiş Projelerimiz" "Our Past Projects" }}</span><span class="past-count">{{ len . }}</span></summary>
+  {{ partial "research-card-grid.html" (sort . "Params.year" "desc") }}
+</details>
+{{ end }}{{ end }}
