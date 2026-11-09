@@ -42,6 +42,7 @@
       {{ else if eq .Section "contact" }}
         {{ partial "contact-details.html" . }}
       {{ end }}
+      <a class="section-detail-link" href="{{ .RelPermalink }}">{{ cond (eq site.Language.Lang "tr") (printf "%s sayfasına git" .Title) (printf "Go to %s" .Title) }} <span aria-hidden="true">→</span></a>
     </section>
     {{ end }}
   {{ end }}

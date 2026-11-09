@@ -138,6 +138,8 @@ a:hover { text-decoration-thickness: 2px; }
 .area-summary { color: var(--muted); }
 .area:hover .area-title { color: var(--accent-ink); }
 .block .area-list { margin-top: 0; }
+.section-detail-link { display: table; margin: 1.75rem 0 0 auto; padding: .45rem .9rem; border: 1.5px solid #c62828; border-radius: .6rem; background: #fdecea; color: #b71c1c; font-size: var(--step--1); font-weight: 600; text-decoration: none; }
+.section-detail-link:hover { background: #c62828; color: #fff; }
 .research-hint { display: flex; align-items: flex-start; gap: .3rem; margin: 1.6rem 0 .4rem; color: #c62828; }
 .research-hint-box { display: inline-block; padding: .45rem .8rem; border: 1.5px solid #c62828; border-radius: .6rem; background: #fdecea; color: #b71c1c; font-size: var(--step--1); font-weight: 600; line-height: 1.35; transform: rotate(-1.2deg); }
 .research-hint-arrow { flex: none; margin-top: .55rem; }
