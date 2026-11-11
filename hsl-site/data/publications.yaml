@@ -1,6 +1,12 @@
 # Aydın Akan, 2019–present. Sources: İEÜ GCRIS, OpenAlex, ORCID, Crossref.
 - year: 2026
   eeg: true
+  title: "A Comparative Study of Aggregation and Feature Selection Strategies for Subject-Level ADHD Classification Using EEG"
+  authors: "Sude Pehlivan Akbugday, Ozlem Karabiber Cura, **Aydın Akan**"
+  venue: "European Signal Processing Conference (EUSIPCO)"
+
+- year: 2026
+  eeg: true
   title: "Investigation of the Effect of Product Mascot Gender on Consumer Emotions Using EEG Signals"
   authors: "Berkay Ilber Tunakan, **Aydın Akan**, Nursun Ustunkarli, Riza Sadikzade"
   venue: "Medical Technologies Congress (TIPTEKNO)"
