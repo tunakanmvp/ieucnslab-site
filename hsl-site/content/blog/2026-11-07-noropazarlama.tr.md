@@ -8,7 +8,7 @@ author: Hesaplamalı Sinirbilim Laboratuvarı
 ---
 Bir markete girdiğinizi düşünün. Raftaki iki şampuandan birini neden seçtiniz? Sorulduğunda muhtemelen "kokusu güzel" ya da "fiyatı uygun" dersiniz. Oysa kararınızı etkileyen şeylerin bir kısmı, ambalajın rengi, logonun tanıdıklığı ya da bir önceki deneyiminiz, siz farkına bile varmadan işini çoktan yapmıştır.
 
-![Raf önünde karar veren bir tüketicinin zihninde koku, fiyat, marka, renk ve önceki deneyim tartışıyor](karar_ani.jpg "Karar anı: Biz tek bir sebep söylesek de zihnimizde pek çok etken aynı anda söz alır.")
+![Raf önünde karar veren bir tüketicinin zihninde koku, fiyat, marka, renk ve önceki deneyim tartışıyor](karar_ani_v2.jpg "Karar anı: Biz tek bir sebep söylesek de zihnimizde pek çok etken aynı anda söz alır.")
 
 Klasik pazarlama araştırması insanlara sorar: anket, odak grup, mülakat. Bunlar değerlidir, ama bir sorunları var. İnsanlar hissettiklerini her zaman tam olarak söyleyemez, bazen de söylemek istemez. **Nöropazarlama**, kararın verildiği anda beyin ve beden sinyallerine bakarak bu boşluğu doldurmaya çalışır.
 
@@ -18,7 +18,7 @@ Klasik pazarlama araştırması insanlara sorar: anket, odak grup, mülakat. Bun
 - **Galvanik deri tepkisi (GSR):** Heyecanlandığımızda avuç içimiz çok az terler. Bu küçük değişim, duygusal uyarılmanın bir göstergesidir.
 - **Göz izleme:** Bir ambalajda ya da web sayfasında gözün ilk nereye gittiği, nerede ne kadar oyalandığı.
 
-![EEG başlığı, avuç içine takılan GSR elektrotları ve göz izleme ile oluşturulan ambalaj ısı haritası](ne_olcuyoruz.jpg "Soldan sağa: EEG ile beyin etkinliği, GSR ile duygusal uyarılma, göz izleme ile dikkatin nereye gittiği.")
+![EEG başlığı, avuç içine takılan GSR elektrotları ve göz izleme ile oluşturulan ambalaj ısı haritası](ne_olcuyoruz_v2.jpg "Soldan sağa: EEG ile beyin etkinliği, GSR ile duygusal uyarılma, göz izleme ile dikkatin nereye gittiği.")
 
 ## Neyi Ölçemiyoruz?
 
