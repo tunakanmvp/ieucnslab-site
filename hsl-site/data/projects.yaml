@@ -64,8 +64,23 @@
     - "10.1109/tiptekno68206.2025.11270194"
     - "10.1109/tiptekno68206.2025.11270101"
     - "10.1109/codit70676.2026.11630919"
+    - "10.1109/codit70676.2026.11630728"
   titles:
     - "Investigation of the Effect of Product Mascot Gender on Consumer Emotions Using EEG Signals"
+
+- id: tubitak-2209a-1919b012425267
+  funder_tr: "TÜBİTAK"
+  funder_en: "TÜBİTAK (Scientific and Technological Research Council of Türkiye)"
+  program_tr: "2209-A Üniversite Öğrencileri Araştırma Projeleri Destekleme Programı"
+  program_en: "2209-A University Students Research Projects Support Programme"
+  number: "1919B012425267"
+  title_tr: ""
+  title_en: ""
+  status: ""
+  summary_tr: "Sürdürülebilir (ahşap lifli) ve geleneksel (cam) içecek ambalajlarının tüketicide uyandırdığı duygusal tepkilerin EEG sinyalleri ve makine öğrenmesi yöntemleriyle incelendiği lisans araştırma projesi."
+  summary_en: "An undergraduate research project investigating consumers' emotional responses to sustainable (wood fibre) and conventional (glass) drink packaging using EEG signals and machine learning."
+  dois:
+    - "10.1109/codit70676.2026.11630728"
 
 - id: tubitak-2209b-1199b472338877
   funder_tr: "TÜBİTAK"
