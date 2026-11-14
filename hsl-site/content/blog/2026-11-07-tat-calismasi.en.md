@@ -8,7 +8,7 @@ author: Berkay İlber Tunakan
 ---
 There are two bottles of juice on the supermarket shelf. One label says "natural preservative", the other names a chemical preservative. The ingredients are almost identical. Would they taste the same to you?
 
-![Someone in a supermarket aisle holding two bottles of juice, one labelled "natural" and the other "sodium benzoate"](tat_calismasi.jpg "The same juice, two different labels. What we read on the label shapes how we imagine the drink, and how it tastes.")
+![Someone in a supermarket aisle holding two bottles of juice, one labelled "natural" and the other "sodium benzoate"](tat_calismasi.jpg#yan "The same juice, two different labels. What we read on the label shapes how we imagine the drink, and how it tastes.")
 
 Most of us would say "of course". But taste doesn't only happen on the tongue. What we think we're eating or drinking also shapes how it tastes. That's exactly what we wanted to find out in this study.
 

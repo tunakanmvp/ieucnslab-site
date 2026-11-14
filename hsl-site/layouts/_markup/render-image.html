@@ -1,5 +1,9 @@
-{{- /* Bare file name -> /images/<section>/ (blog: /images/blog/<post>/). "folder/x.jpg" -> /images/folder/x.jpg */ -}}
-{{- $src := .Destination -}}
+{{- /* Bare file name -> /images/<section>/ (blog: /images/blog/<post>/). "folder/x.jpg" -> /images/folder/x.jpg
+       Size via fragment: x.jpg#genis (wide), #yan (floats beside text), #kucuk (small, centred) */ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.Path -}}
+{{- if strings.Contains .Destination "://" -}}{{- $src = printf "%s://%s%s" $u.Scheme $u.Host $u.Path -}}{{- end -}}
+{{- $size := $u.Fragment -}}
 {{- $show := true -}}
 {{- if not (or (strings.HasPrefix $src "/") (strings.Contains $src "://")) -}}
   {{- if strings.Contains $src "/" -}}
@@ -17,8 +21,8 @@
   {{- $src = $src | relURL -}}
 {{- end -}}
 {{- if not $show -}}{{- /* image not uploaded yet: render nothing */ -}}
-{{- else if .Title -}}
-<figure class="blog-figure"><img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy"><figcaption>{{ .Title }}</figcaption></figure>
+{{- else if or .Title $size -}}
+<figure class="blog-figure{{ with $size }} fig-{{ . }}{{ end }}"><img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy">{{ with .Title }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>
 {{- else -}}
 <img src="{{ $src }}" alt="{{ .PlainText }}" loading="lazy">
 {{- end -}}

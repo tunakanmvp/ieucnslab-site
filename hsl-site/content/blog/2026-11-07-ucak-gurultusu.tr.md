@@ -26,9 +26,9 @@ Bu davalar, uçak gürültüsünün insanların yaşam kalitesi üzerindeki etki
 
 ## Nasıl Ölçtük?
 
-Yaşları 20 ile 30 arasında değişen 30 sağlıklı katılımcı, dikkat ve çalışma belleğini ölçen bir **n-back testi** çözdü. Bu çalışmada testin iki adım geriye bakan (2-back) sürümünü kullandık: ekranda harfler teker teker beliriyor ve katılımcı, gelen harf iki önceki harfle aynıysa butona basıyor. Test üç farklı ses koşulunda tekrarlandı: **sessiz**, **orta düzeyde uçak gürültüsü** ve **yüksek düzeyde uçak gürültüsü**.
+![2-back testi için katılımcılara gösterilen yönerge](nback1.png#yan "Katılımcılara gösterilen yönerge: gelen harf iki önceki harfle aynıysa butona basılıyor.")
 
-![2-back testi için katılımcılara gösterilen yönerge](nback1.png "Katılımcılara gösterilen yönerge: gelen harf iki önceki harfle aynıysa butona basılıyor.")
+Yaşları 20 ile 30 arasında değişen 30 sağlıklı katılımcı, dikkat ve çalışma belleğini ölçen bir **n-back testi** çözdü. Bu çalışmada testin iki adım geriye bakan (2-back) sürümünü kullandık: ekranda harfler teker teker beliriyor ve katılımcı, gelen harf iki önceki harfle aynıysa butona basıyor. Test üç farklı ses koşulunda tekrarlandı: **sessiz**, **orta düzeyde uçak gürültüsü** ve **yüksek düzeyde uçak gürültüsü**.
 
 ![2-back testi sırasında ekrandan iki örnek görüntü](nback2.png "Test sırasında ekrandan örnekler: harfler teker teker beliriyor.")
 

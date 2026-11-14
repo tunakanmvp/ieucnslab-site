@@ -544,3 +544,17 @@ body:has(.bg-stage) { background-image: none; }
 .stat-value { font-size: clamp(1.8rem, 3.6vw, 2.4rem); font-weight: 700; line-height: 1; color: var(--accent); letter-spacing: -0.02em; }
 .stat-label { font-size: .95rem; line-height: 1.35; color: var(--muted); }
 .stat-label p { margin: 0; }
+
+/* Blog image sizes: ![alt](x.jpg#genis "caption") / #yan / #kucuk */
+.post .prose h2 { clear: both; }
+.blog-figure img { border-radius: 14px; }
+.fig-genis { width: min(66rem, calc(100vw - 2 * var(--gutter))); max-width: none; margin: 2.25rem 0; }
+.fig-genis img { width: 100%; }
+.fig-kucuk { max-width: 26rem; margin-inline: auto; }
+.fig-yan { float: right; width: 46%; margin: .35rem 0 1rem 1.75rem; }
+.fig-yan figcaption { text-align: left; }
+@media (max-width: 720px) {
+  .fig-yan { float: none; width: auto; margin: 1.25rem 0; }
+}
+.post-box, .stat-row, .pull-quote { display: flow-root; }
+.stat-row { display: grid; }

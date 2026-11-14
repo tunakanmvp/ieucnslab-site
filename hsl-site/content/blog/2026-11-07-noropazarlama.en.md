@@ -8,17 +8,17 @@ author: Computational Neuroscience Lab
 ---
 Picture yourself in a supermarket. Why did you pick one of the two shampoos on the shelf? Asked, you'd probably say "it smells nice" or "the price was right". Yet some of what shaped your choice, the colour of the bottle, a familiar logo, your last experience with the brand, had already done its work before you noticed.
 
-![A shopper at the shelf while scent, price, brand, colour and past experience argue in their mind](karar_ani_v2.jpg "The moment of choice: we may name a single reason, but many factors speak up in our mind at once.")
+![A shopper at the shelf while scent, price, brand, colour and past experience argue in their mind](karar_ani_v2.jpg#genis "The moment of choice: we may name a single reason, but many factors speak up in our mind at once.")
 
 Traditional market research asks people: surveys, focus groups, interviews. These are valuable, but they have a weakness. People can't always put what they feel into words, and sometimes they'd rather not. **Neuromarketing** tries to fill that gap by looking at brain and body signals at the moment a decision is made.
 
 ## What Do We Measure?
 
+![An EEG cap, GSR electrodes on the palm and an eye-tracking heatmap on a package](ne_olcuyoruz_v2.jpg#yan "From left to right: brain activity with EEG, emotional arousal with GSR, and where attention goes with eye tracking.")
+
 - **EEG:** the brain's electrical activity, recorded through electrodes on the scalp. It shows how the brain reacts within milliseconds to an advert or a logo.
 - **Galvanic skin response (GSR):** when we get excited, our palms sweat ever so slightly. That tiny change is a marker of emotional arousal.
 - **Eye tracking:** where the eye goes first on a package or a web page, and how long it lingers.
-
-![An EEG cap, GSR electrodes on the palm and an eye-tracking heatmap on a package](ne_olcuyoruz_v2.jpg "From left to right: brain activity with EEG, emotional arousal with GSR, and where attention goes with eye tracking.")
 
 ## What Can't We Measure?
 
