@@ -16,6 +16,8 @@ Bir önceki yazıda anlattığımız LSTM, bir cümleyi soldan sağa, kelime kel
 
 Transformer ise cümleyi bir toplantı masası gibi düşünür. Her kelime masada oturan bir kişidir ve herkes aynı anda herkese bakabilir. "O" kelimesi masadakilere sorar: "Benim anlamımı en çok kim belirliyor?" İlk cümlede "açtı" ve "kedi" ona en yüksek sesle cevap verir. İkinci cümlede ise "masanın kenarındaydı" ve "süt kabı".
 
+![Toplantı masasında kelimeleri temsil eden kişiler; ortadaki "o" kelimesi diğerlerine bakıyor ve anlamının "kedi" olduğu ortaya çıkıyor](transformer_toplanti_tr.jpg#genis "Solda: \"o\" masadakilere anlamını soruyor. Sağda: herkes birbirine baktıktan sonra \"o\"nun kedi olduğu netleşiyor.")
+
 Her kelime diğerlerine ne kadar dikkat edeceğine bu şekilde karar verir. Bu işleme **öz-dikkat** (self-attention) deniyor.
 
 ## Neden Bu Kadar Başarılı?

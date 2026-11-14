@@ -16,6 +16,8 @@ The LSTM we described in the previous post reads a sentence left to right, word 
 
 The Transformer treats the sentence like a meeting table instead. Each word is a person at the table, and everyone can look at everyone at once. The word "it" asks the table: "Who decides my meaning the most?". In the first sentence, "hungry" and "cat" answer loudest. In the second, "edge of the table" and "milk bowl".
 
+![People at a meeting table represent words; the word in the middle looks to the others, and it becomes clear that it refers to the cat](transformer_toplanti_en.jpg#genis "Left: a word asks the table what it means. Right: after everyone looks at everyone else, it becomes clear the word refers to the cat.")
+
 That's how each word decides how much attention to pay to the others. The process is called **self-attention**.
 
 ## Why Does It Work So Well?
