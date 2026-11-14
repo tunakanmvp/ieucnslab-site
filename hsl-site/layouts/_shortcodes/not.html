@@ -1,0 +1,5 @@
+{{- $tr := eq .Page.Language.Lang "tr" -}}
+<aside class="post-box post-note">
+  <p class="post-box-label">{{ .Get "title" | default (cond $tr "Biliyor muydunuz?" "Did you know?") }}</p>
+  {{ .Inner | .Page.RenderString (dict "display" "block") }}
+</aside>

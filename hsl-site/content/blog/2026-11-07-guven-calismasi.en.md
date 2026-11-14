@@ -12,6 +12,12 @@ You download a new banking app. A company you have never heard of promises you a
 
 Most of us answer within seconds. But in those few seconds, the brain runs an incredibly complex calculation: Will this brand keep its promise? What if I lose? Has it let me down before? What is my gut telling me?
 
+{{< kisaca >}}
+- We usually decide whether to trust a brand within seconds, and behind that decision lies a complex calculation in the brain.
+- Trust does not sit in a single "centre" of the brain; it emerges from different regions working together.
+- Instead of imposing a ready-made label on the brain, we look at **how EEG patterns at moments of trust group together on their own**.
+{{< /kisaca >}}
+
 ## The Classic Way To Measure Trust: The Investment Game
 
 Economists and neuroscientists have long used a simple but powerful game to measure trust. In the **investment game**, one player is given money and asked to send part of it to another player. The money sent is multiplied, and the other player decides how much to send back. How much you send is a measure of how much you trust the other person [1].
@@ -31,6 +37,8 @@ Most EEG studies of trust start with a label: each moment is marked "trusted" or
 We turn the question around. Instead of telling the brain "this is trust", we ask it: **How do EEG patterns recorded at moments of trust decisions group together by their similarity to one another?** For this we use a kind of AI called **unsupervised learning**. These methods find the natural groups in the data on their own, without being told the right answer. It is like sorting a box of mixed buttons by colour, size and number of holes without anyone telling you how.
 
 Once these groups emerge, the really interesting part begins: Do the clusters the brain forms on its own match the brand's familiarity, whether it is liked, the participant's decision, or the outcome of that decision?
+
+{{< alinti >}}Trust is the invisible currency of the economy.{{< /alinti >}}
 
 ## How We Work
 

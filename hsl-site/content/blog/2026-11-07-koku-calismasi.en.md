@@ -10,6 +10,12 @@ author: Computational Neuroscience Lab
 
 The faint scent of vanilla that greets you when you walk into a shop is no accident. From airport terminals to cosmetics counters, scents are chosen deliberately to influence how we feel and what we do. But how do we measure what a scent really makes us feel? Asking "Did you like it?" tells only part of the story.
 
+{{< kisaca >}}
+- We turned EEG recordings of 57 participants in scented and unscented moments into colourful **brain maps**.
+- A lightweight AI looking at these maps told scented moments apart with up to **98.4%** accuracy.
+- The trace of smell showed most clearly in **theta** waves over the forehead and temples.
+{{< /kisaca >}}
+
 In our [smell post](/en/blog/smell-the-brains-shortcut/) we explained why smell reaches the brain by a shortcut. In this post we explain how we "photographed" the trace that shortcut leaves in the brain.
 
 ## Reading The Brain Like A Weather Map
@@ -29,6 +35,8 @@ Convolutional neural networks (CNNs) were developed to recognise faces or object
 Fifty-seven participants took part. Each was recorded with EEG in both a scented and an unscented condition, and after each condition they rated how **aroused** (calm to excited) and how **pleased** they felt. The model learned to classify these two dimensions separately.
 
 We made an important choice here: we kept the model small and simple. In earlier work we had extracted many time, frequency and nonlinear features from the EEG ([TIPTEKNO 2024](https://doi.org/10.1109/tiptekno63488.2024.10755366)). This time we built a lightweight model that relies only on frequency information and the map of a single rhythm. The aim was a method simple enough to run one day in real-time, portable systems.
+
+{{< alinti >}}It is possible to read what a scent makes us feel directly from brain signals, without asking.{{< /alinti >}}
 
 ## Theta Waves Give The Scent Away
 

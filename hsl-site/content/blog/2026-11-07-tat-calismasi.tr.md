@@ -18,7 +18,15 @@ Katılımcılara farklı koruyucular içeren içecekler tattırdık ve tadımdan
 
 Böylece iki şeyi birlikte görebildik: katılımcıların ne söylediğini ve beyinlerinin ne yaptığını.
 
+{{< alinti >}}Gıda etiketleri sadece bilgi vermiyor, deneyimi de şekillendiriyor.{{< /alinti >}}
+
 ## Ne Bulduk?
+
+{{< sayilar >}}
+2 | şişe meyve suyu: doğal ve kimyasal koruyuculu
+2×2 | koruyucu türü × etiket bilgisi
+%87,5 | beğeni durumunu EEG'den ayırt etme doğruluğu
+{{< /sayilar >}}
 
 Hem koruyucunun türü hem de katılımcılara önceden verilen bilgi, tat değerlendirmelerini etkiledi. Yani etikette yazanı bilmek, içeceğin nasıl algılandığını değiştirdi.
 

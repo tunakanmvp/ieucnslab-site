@@ -10,6 +10,12 @@ author: Hesaplamalı Sinirbilim Laboratuvarı
 
 Bir mağazaya girdiğinizde sizi karşılayan hafif vanilya kokusu tesadüf değil. Havalimanı terminallerinden kozmetik reyonlarına kadar pek çok yerde kokular, bizim ne hissettiğimizi ve ne yapacağımızı etkilemek için bilerek seçiliyor. Ama bir kokunun bize gerçekten ne hissettirdiğini nasıl ölçeceğiz? "Beğendiniz mi?" diye sormak işin yalnızca bir kısmını anlatıyor.
 
+{{< kisaca >}}
+- 57 katılımcının kokulu ve kokusuz anlardaki EEG kayıtlarını renkli **beyin haritalarına** çevirdik.
+- Bu haritalara bakan hafif bir yapay zekâ, kokulu anları **%98,4**'e varan doğrulukla ayırt etti.
+- Kokunun izi en net **teta** dalgalarında ve alın-şakak bölgelerinde göründü.
+{{< /kisaca >}}
+
 [Koku yazımızda](/blog/koku-beyne-giden-kestirme-yol/) kokunun beyne neden kestirme bir yoldan ulaştığını anlatmıştık. Bu yazıda o yolun beyinde bıraktığı izi nasıl "fotoğrafladığımızı" anlatıyoruz.
 
 ## Beyni Bir Hava Durumu Haritası Gibi Okumak
@@ -29,6 +35,8 @@ Evrişimli sinir ağları (CNN), fotoğraflardaki yüzleri ya da nesneleri tanı
 Çalışmaya 57 katılımcı katıldı. Katılımcılar hem kokulu hem kokusuz bir koşulda EEG kaydına alındı ve her koşulun ardından ne kadar **uyarıldıklarını** (sakinden heyecanlıya) ve ne kadar **hoşnut olduklarını** puanladılar. Model bu iki boyutu ayrı ayrı sınıflandırmayı öğrendi.
 
 Burada önemli bir tercih yaptık: Modeli büyük ve karmaşık tutmadık. Önceki çalışmalarımızda EEG'den zaman, frekans ve doğrusal olmayan pek çok farklı öznitelik çıkarmıştık ([TIPTEKNO 2024](https://doi.org/10.1109/tiptekno63488.2024.10755366)). Bu kez yalnızca frekans bilgisine ve tek bir ritmin haritasına dayanan hafif bir model kurduk. Amaç, ileride gerçek zamanlı ve taşınabilir sistemlerde çalışabilecek kadar sade bir yöntem geliştirmekti.
+
+{{< alinti >}}Bir kokunun bize ne hissettirdiğini soru sormadan, doğrudan beyin sinyallerinden okumak mümkün.{{< /alinti >}}
 
 ## Teta Dalgaları Kokuyu Ele Veriyor
 

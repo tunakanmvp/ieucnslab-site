@@ -10,6 +10,12 @@ author: Hesaplamalı Sinirbilim Laboratuvarı
 
 Size "Çevre dostu ambalajı tercih eder misiniz?" diye sorsak büyük ihtimalle "Evet" dersiniz. Ankette hepimiz biraz daha yeşiliz. Çünkü bu soruya "hayır" demek pek hoş durmuyor. Araştırmacılar buna **sosyal beğenirlik yanlılığı** diyor: İnsanlar, doğru olduğunu düşündükleri ya da hoş karşılanacak cevabı verme eğiliminde.
 
+{{< kisaca >}}
+- Ankette çevre dostu ambalajı severiz; ama beynimiz cam şişeye daha **olumlu ve heyecanlı** tepki verdi.
+- İki ambalaj beyinde **farklı bölgelerde** işlendi.
+- Duyguyu en iyi, beyin sinyalinin **karmaşıklığını** ölçen özellikler ele verdi.
+{{< /kisaca >}}
+
 Oysa bir ürünü raftan alıp almamamız çoğu zaman birkaç saniyede, büyük kısmı farkında olmadan verdiğimiz bir karar. Ambalaj da ürünle ilk temas noktamız. Biz de bu çalışmada soruyu tersinden sorduk: Sürdürülebilir bir ambalaja baktığımızda **beynimiz** ne söylüyor?
 
 ## Ahşap Liften Bir Şişe
@@ -33,7 +39,14 @@ EEG'den duyguyu okumak için çoğu çalışma, beyin dalgalarının farklı fre
 
 Bu öznitelikleri kullanan hafif bir makine öğrenmesi modeli, katılımcıların dört farklı duygu durumunu cam şişede **%94,4**, ahşap lifli şişede **%90,7** doğrulukla ayırt etti. Model, ekran kartı gerektirmeden sıradan bir bilgisayarda çalışabiliyor.
 
+{{< sayilar >}}
+56 | katılımcı, 32 kanallı EEG
+%94,4 | cam şişede dört duygu durumunu ayırt etme doğruluğu
+%90,7 | ahşap lifli şişede doğruluk
+{{< /sayilar >}}
+
 ## Neden Önemli?
+
 
 Sürdürülebilirlik, markaların ve tasarımcıların gündeminin en üstünde. Ama tüketicinin çevre dostu ambalaja gerçekte nasıl tepki verdiğini yalnızca anketle anlamak zor. Bu çalışma, ambalaj malzemesinin beyinde ölçülebilir farklar yarattığını ve sürdürülebilir bir ambalajın "doğru" seçim olmasının, onu kendiliğinden çekici yapmadığını gösteriyor. Çevre dostu ambalajı daha çekici kılmanın yollarını aramak için de beyin sinyalleri güçlü bir pusula olabilir.
 

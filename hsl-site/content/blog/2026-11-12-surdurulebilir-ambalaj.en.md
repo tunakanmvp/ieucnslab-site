@@ -10,6 +10,12 @@ author: Computational Neuroscience Lab
 
 If we asked you "Would you choose eco-friendly packaging?", you would most likely say "Yes". In surveys we are all a little greener, because saying "no" to that question doesn't feel great. Researchers call this **social desirability bias**: people tend to give the answer they think is right or will be well received.
 
+{{< kisaca >}}
+- In surveys we love eco-friendly packaging, but our brains responded to the glass bottle more **positively and with more excitement**.
+- The two packages were processed in **different brain regions**.
+- Emotion was best revealed by features measuring the **complexity** of the brain signal.
+{{< /kisaca >}}
+
 Yet whether we take a product off the shelf is often decided in a few seconds, largely without our noticing. Packaging is our first point of contact with the product. So in this study we turned the question around: when we look at sustainable packaging, what does our **brain** say?
 
 ## A Bottle Made Of Wood Fibre
@@ -33,7 +39,14 @@ To read emotion from EEG, most studies look at the power of brain waves in diffe
 
 A lightweight machine learning model using these features distinguished participants' four emotional states with **94.4%** accuracy for the glass bottle and **90.7%** for the wood fibre bottle. The model runs on an ordinary computer without a graphics card.
 
+{{< sayilar >}}
+56 | participants, 32-channel EEG
+94.4% | accuracy telling four emotional states apart for glass
+90.7% | accuracy for wood fibre
+{{< /sayilar >}}
+
 ## Why It Matters
+
 
 Sustainability is at the top of the agenda for brands and designers. But it is hard to understand how consumers really respond to eco-friendly packaging from surveys alone. This study shows that packaging material creates measurable differences in the brain, and that being the "right" choice does not automatically make sustainable packaging appealing. Brain signals can be a powerful compass in the search for ways to make eco-friendly packaging more attractive.
 

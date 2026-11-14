@@ -34,7 +34,16 @@ Thirty healthy participants aged 20 to 30 solved an **n-back test**, which measu
 
 During the test we recorded brain activity with our lab's EEG system and heart rate with a wrist-worn photoplethysmography (PPG) band. We filtered the EEG signals and extracted time- and frequency-domain features for each sound condition. We then trained machine learning models that predict the participant's test performance from these features.
 
+{{< alinti >}}Aircraft noise leaves an immediate trace in the body. Its effect on attention is more complex than we thought.{{< /alinti >}}
+
 ## What We Found
+
+{{< sayilar >}}
+30 | participants, three sound conditions
+80% | of male participants showed a clear heart-rate rise
+70% | accuracy predicting performance from EEG
+0.81 | highest AUC, on channel Cz
+{{< /sayilar >}}
 
 **Louder sound, faster heart.** As sound level and the mental load of the test increased, participants' heart rate rose. The increase was clear in about 80% of male participants and about 60% of female participants.
 

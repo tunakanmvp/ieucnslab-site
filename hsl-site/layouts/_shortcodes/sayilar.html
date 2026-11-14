@@ -1,0 +1,7 @@
+{{- /* Her satır: değer | açıklama */ -}}
+<div class="stat-row">
+  {{- range split (strings.TrimSpace .Inner) "\n" }}{{ with strings.TrimSpace . }}
+    {{- $p := split . "|" }}
+    <div class="stat"><span class="stat-value">{{ index $p 0 | strings.TrimSpace }}</span><span class="stat-label">{{ index $p 1 | strings.TrimSpace | $.Page.RenderString }}</span></div>
+  {{- end }}{{ end }}
+</div>

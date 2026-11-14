@@ -34,7 +34,16 @@ Yaşları 20 ile 30 arasında değişen 30 sağlıklı katılımcı, dikkat ve �
 
 Test boyunca katılımcıların beyin etkinliğini laboratuvarımızdaki EEG sistemiyle, kalp atışını ise bileğe takılan bir fotopletismografi (PPG) bandıyla kaydettik. EEG sinyallerini filtreleyip her ses koşulu için zaman ve frekans alanı özniteliklerini çıkardık. Ardından bu özniteliklerden katılımcının testteki performansını tahmin eden makine öğrenmesi modelleri eğittik.
 
+{{< alinti >}}Uçak gürültüsü bedende hemen iz bırakıyor. Dikkat üzerindeki etkisi ise düşündüğümüzden daha karmaşık.{{< /alinti >}}
+
 ## Ne Bulduk?
+
+{{< sayilar >}}
+30 | katılımcı, üç ses koşulu
+%80 | erkek katılımcılarda belirgin kalp hızı artışı
+%70 | EEG'den performans tahmini doğruluğu
+0,81 | Cz kanalında en yüksek AUC
+{{< /sayilar >}}
 
 **Ses arttıkça kalp hızlandı.** Ses düzeyi ve testin zihinsel yükü arttıkça katılımcıların kalp atışı da yükseldi. Bu artış erkek katılımcıların yaklaşık %80'inde, kadın katılımcıların ise yaklaşık %60'ında belirgindi.
 

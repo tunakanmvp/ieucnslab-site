@@ -18,7 +18,15 @@ Participants tasted drinks containing different preservatives, and we varied the
 
 That let us see two things side by side: what participants said, and what their brains did.
 
+{{< alinti >}}Food labels don't just inform; they shape the experience.{{< /alinti >}}
+
 ## What Did We Find?
+
+{{< sayilar >}}
+2 | bottles of juice: natural and chemical preservative
+2×2 | preservative type × label information
+87.5% | accuracy telling liking apart from EEG
+{{< /sayilar >}}
 
 Both the type of preservative and the information given beforehand affected how participants rated the taste. In other words, knowing what was on the label changed how the drink was perceived.
 

@@ -12,6 +12,12 @@ Telefonunuza yeni bir bankacılık uygulaması indiriyorsunuz. Daha önce hiç a
 
 Bu soruya çoğumuz birkaç saniye içinde cevap veririz. Ama o birkaç saniyede beynimizde inanılmaz derecede karmaşık bir hesap yapılır: Bu marka sözünü tutar mı? Kaybedersem ne olur? Daha önce beni hayal kırıklığına uğrattı mı? İçimden ne geçiyor?
 
+{{< kisaca >}}
+- Bir markaya güvenip güvenmediğimize çoğu zaman birkaç saniyede karar veririz; bu kararın arkasında beyinde karmaşık bir hesap yatar.
+- Güven beyinde tek bir "merkezde" değil, birlikte çalışan farklı bölgelerde ortaya çıkar.
+- Beyne hazır bir etiket dayatmak yerine, güven anlarındaki EEG örüntülerinin **kendiliğinden nasıl gruplandığına** bakıyoruz.
+{{< /kisaca >}}
+
 ## Güveni Ölçmenin Klasik Yolu: Yatırım Oyunu
 
 Ekonomistler ve sinirbilimciler güveni ölçmek için yıllardır basit ama çok etkili bir oyun kullanıyor. **Yatırım oyunu**nda bir oyuncuya para verilir ve bu paranın bir kısmını karşı tarafa göndermesi istenir. Gönderilen para katlanır ve karşı taraf ne kadarını geri vereceğine kendisi karar verir. Ne kadar gönderdiğiniz, karşınızdakine ne kadar güvendiğinizin ölçüsüdür [1].
@@ -31,6 +37,8 @@ EEG ile güveni inceleyen çalışmaların çoğu işe bir etiketle başlıyor: 
 Biz soruyu ters çeviriyoruz. Beyne "bu güvendir" demek yerine, ona soruyoruz: **Güven kararı anlarında kaydedilen EEG örüntüleri, kendi aralarındaki benzerliğe göre nasıl gruplanıyor?** Bunun için yapay zekânın **denetimsiz öğrenme** denen bir türünü kullanıyoruz. Bu yöntemler, kendisine doğru cevap söylenmeden, verinin içindeki doğal grupları kendisi buluyor. Tıpkı bir kutu karışık düğmeyi, kimse söylemeden rengine, boyuna ve delik sayısına göre ayırmak gibi.
 
 Bu gruplar ortaya çıktıktan sonra asıl ilginç kısım başlıyor: Beynin kendiliğinden oluşturduğu bu kümeler markanın tanınırlığıyla mı, sevilip sevilmediğiyle mi, katılımcının verdiği kararla mı, yoksa kararın sonucuyla mı örtüşüyor?
+
+{{< alinti >}}Güven, ekonominin görünmez para birimi.{{< /alinti >}}
 
 ## Nasıl Çalışıyoruz?
 
