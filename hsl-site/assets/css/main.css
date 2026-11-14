@@ -558,3 +558,10 @@ body:has(.bg-stage) { background-image: none; }
 }
 .post-box, .stat-row, .pull-quote { display: flow-root; }
 .stat-row { display: grid; }
+/* Portrait images: #sag (right) / #sol (left), narrower than #yan */
+.fig-sag { float: right; width: 31%; margin: .35rem 0 1rem 1.75rem; }
+.fig-sol { float: left; width: 27%; margin: .35rem 1.75rem 1rem 0; }
+.fig-sag figcaption, .fig-sol figcaption { text-align: left; }
+@media (max-width: 720px) {
+  .fig-sag, .fig-sol { float: none; width: 70%; margin: 1.25rem auto; }
+}
